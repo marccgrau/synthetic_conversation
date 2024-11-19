@@ -1,0 +1,42 @@
+media_type:
+  - type: 'phone call'
+    description: |
+      A direct phone call between the customer and service agent, focusing on verbal communication without any visual cues.
+      The interaction relies solely on voice to convey information, emotions, and tone.
+      **Guidelines**:
+        - Responses should be clear, calm, and structured to guide the conversation efficiently.
+        - Use a polite, professional, and empathetic tone.
+        - Summarize key points when needed to ensure understanding.
+        - Avoid long pauses and provide verbal affirmations (e.g., "I understand" or "Let me check that for you").
+        - Ensure your speech is articulate and paced appropriately to avoid confusion.
+
+  - type: 'live chat'
+    description: |
+      A text-based chat session in real-time where messages are exchanged rapidly. This medium requires quick, concise, and friendly responses that simulate a natural, real-time conversation in written form.
+      **Guidelines**:
+        - Keep responses brief, direct, and relevant to maintain a smooth flow of conversation.
+        - Use a friendly and approachable tone, but remain professional.
+        - Acknowledge the customer’s concerns promptly before providing solutions or information.
+        - Use clear language, free from jargon, and keep responses easily digestible.
+        - Emoticons and informal language may be used sparingly if they align with the brand's communication style and improve rapport.
+
+  - type: 'email'
+    description: |
+      A formal communication channel where the customer sends an inquiry via email, and the service agent replies with a structured, polite, and detailed response.
+      **Guidelines**:
+        - Begin with a polite greeting and introduction (e.g., "Dear [Customer Name], Thank you for reaching out.").
+        - Provide detailed and well-structured answers, using paragraphs to separate different points.
+        - Maintain a professional and informative tone throughout the email.
+        - Use correct spelling, grammar, and punctuation to reflect professionalism.
+        - Conclude with a call to action or summary of the next steps, and sign off with a polite closing (e.g., "Kind regards, [Your Name]").
+        - Use the actual name of the customer as well as your name
+
+  - type: 'social media message'
+    description: |
+      An informal conversation conducted through social media messaging platforms like Facebook Messenger, Instagram Direct, or Twitter DMs. Responses should be concise, friendly, and align with the casual nature of social media.
+      **Guidelines**:
+        - Keep messages brief and conversational, reflecting a friendly and approachable tone.
+        - Use language that resonates with the platform’s audience; avoid overly formal language.
+        - Acknowledge the customer’s message quickly and keep the response direct.
+        - Be mindful of the public nature of some platforms; avoid sharing sensitive information publicly.
+        - Use emojis judiciously to enhance the friendly tone but ensure they are appropriate and align with the brand’s voice.
