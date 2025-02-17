@@ -13,19 +13,50 @@ from scenario_loader import load_scenario_data  # Import the new scenario loader
 from settings import configure_llm_settings
 from simple_service_agent_creator import create_simple_service_agent
 from som_service_agent_creator import create_society_of_mind_agent
-
 from utils import get_client
 
 
 def parse_arguments():
     """Parse command-line arguments."""
-    parser = argparse.ArgumentParser(description="Run the conversation simulation between service and customer agents.")
-    parser.add_argument("--model_name", type=str, default="gpt-4o-mini", help="Name of the model to use (e.g., 'gpt-4o-mini').")
-    parser.add_argument("--model_provider", type=str, default="openai", help="Provider of the model (e.g., 'openai', 'groq').")
-    parser.add_argument("--iterations", type=int, default=1, help="Number of iterations to run the simulation.")
-    parser.add_argument("--human_input_mode_sa", type=str, default="NEVER", help="Human input mode for the service agent.")
-    parser.add_argument("--human_input_mode_ca", type=str, default="NEVER", help="Human input mode for the customer agent.")
-    parser.add_argument("--agent_type", type=str, default="rag", help="Type of agent to use (e.g., 'rag', 'society_of_mind').")
+    parser = argparse.ArgumentParser(
+        description="Run the conversation simulation between service and customer agents."
+    )
+    parser.add_argument(
+        "--model_name",
+        type=str,
+        default="gpt-4o-mini",
+        help="Name of the model to use (e.g., 'gpt-4o-mini').",
+    )
+    parser.add_argument(
+        "--model_provider",
+        type=str,
+        default="openai",
+        help="Provider of the model (e.g., 'openai', 'groq').",
+    )
+    parser.add_argument(
+        "--iterations",
+        type=int,
+        default=1,
+        help="Number of iterations to run the simulation.",
+    )
+    parser.add_argument(
+        "--human_input_mode_sa",
+        type=str,
+        default="NEVER",
+        help="Human input mode for the service agent.",
+    )
+    parser.add_argument(
+        "--human_input_mode_ca",
+        type=str,
+        default="NEVER",
+        help="Human input mode for the customer agent.",
+    )
+    parser.add_argument(
+        "--agent_type",
+        type=str,
+        default="rag",
+        help="Type of agent to use (e.g., 'rag', 'society_of_mind').",
+    )
     return parser.parse_args()
 
 
@@ -69,7 +100,6 @@ def main():
                 scenario_data,
                 pdf_index,
                 web_index,
-                args.model_name,
                 args.human_input_mode_sa,
             )
         elif args.agent_type == "society_of_mind":
@@ -82,14 +112,12 @@ def main():
             )
         else:
             service_agent = create_simple_service_agent(
-                scenario_data["service_agent_system_message"],
-                service_config,
+                scenario_data,
                 args.human_input_mode_sa,
             )
 
         customer_agent = create_customer_agent(
             scenario_data,
-            customer_config,
             args.human_input_mode_ca,
         )
 
@@ -119,7 +147,7 @@ def main():
 
 def save_results(results):
     """Save results to a JSON file."""
-    output_dir = "simulation_outputs"
+    output_dir = "agentic_simulation_outputs"
     os.makedirs(output_dir, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = os.path.join(output_dir, f"conversations_{timestamp}.json")

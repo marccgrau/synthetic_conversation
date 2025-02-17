@@ -1,11 +1,12 @@
 from typing import Any, Dict
 
-from autogen.agentchat.contrib.llamaindex_conversable_agent import LLamaIndexConversableAgent
+from autogen.agentchat.contrib.llamaindex_conversable_agent import (
+    LLamaIndexConversableAgent,
+)
 from llama_index.core import VectorStoreIndex
 from llama_index.core.agent import ReActAgent
 from llama_index.core.tools import QueryEngineTool
 from settings import Settings
-
 from utils import termination_msg
 
 

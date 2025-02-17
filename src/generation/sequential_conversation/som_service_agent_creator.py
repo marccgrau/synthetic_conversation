@@ -1,13 +1,14 @@
 from typing import Any, Dict
 
 from autogen import ConversableAgent, GroupChat, GroupChatManager
-from autogen.agentchat.contrib.llamaindex_conversable_agent import LLamaIndexConversableAgent
+from autogen.agentchat.contrib.llamaindex_conversable_agent import (
+    LLamaIndexConversableAgent,
+)
 from autogen.agentchat.contrib.society_of_mind_agent import SocietyOfMindAgent
 from llama_index.core import VectorStoreIndex
 from llama_index.core.agent import ReActAgent
 from llama_index.core.tools import QueryEngineTool
 from settings import Settings
-
 from utils import termination_msg
 
 
@@ -72,7 +73,9 @@ def create_rag_service_agent(
     )
 
 
-def create_conversational_agent(scenario_data: Dict[str, Any], llm_config: Dict[str, Any]) -> ConversableAgent:
+def create_conversational_agent(
+    scenario_data: Dict[str, Any], llm_config: Dict[str, Any]
+) -> ConversableAgent:
     """Create the agent responsible for generating replies."""
     # Construct the system message based on scenario data
     system_message = f"""
@@ -113,7 +116,9 @@ def create_conversational_agent(scenario_data: Dict[str, Any], llm_config: Dict[
     )
 
 
-def create_critic_agent(scenario_data: Dict[str, Any], llm_config: Dict[str, Any]) -> ConversableAgent:
+def create_critic_agent(
+    scenario_data: Dict[str, Any], llm_config: Dict[str, Any]
+) -> ConversableAgent:
     """Create the critic agent that evaluates responses."""
     system_message = f"""
     You are an internal quality assurance specialist reviewing the responses provided by {scenario_data['selected_service_agent_name']}.
@@ -151,7 +156,9 @@ def create_inner_groupchat(
 ) -> GroupChatManager:
     """Create the inner GroupChat to enable agents to work collaboratively."""
 
-    def custom_speaker_selection_func(last_speaker: ConversableAgent, groupchat: GroupChat) -> ConversableAgent:
+    def custom_speaker_selection_func(
+        last_speaker: ConversableAgent, groupchat: GroupChat
+    ) -> ConversableAgent:
         """Define a custom speaker selection function for the group chat."""
         messages = groupchat.messages
 
@@ -196,7 +203,11 @@ def create_inner_groupchat(
 
 
 def create_society_of_mind_agent(
-    scenario_data: Dict[str, Any], pdf_index: VectorStoreIndex, web_index: VectorStoreIndex, llm_config: Dict[str, Any], human_input_mode: str
+    scenario_data: Dict[str, Any],
+    pdf_index: VectorStoreIndex,
+    web_index: VectorStoreIndex,
+    llm_config: Dict[str, Any],
+    human_input_mode: str,
 ) -> SocietyOfMindAgent:
     """Create a Society of Mind Agent with collaborative inner agents.
 
@@ -220,12 +231,16 @@ def create_society_of_mind_agent(
 
     """
     # Create inner agents
-    rag_agent = create_rag_service_agent(scenario_data, pdf_index, web_index, human_input_mode)
+    rag_agent = create_rag_service_agent(
+        scenario_data, pdf_index, web_index, human_input_mode
+    )
     conversational_agent = create_conversational_agent(scenario_data, llm_config)
     critic_agent = create_critic_agent(scenario_data, llm_config)
 
     # Create inner group chat manager
-    manager = create_inner_groupchat(rag_agent, conversational_agent, critic_agent, llm_config)
+    manager = create_inner_groupchat(
+        rag_agent, conversational_agent, critic_agent, llm_config
+    )
 
     # Wrap the inner group chat in a Society of Mind agent
     return SocietyOfMindAgent(

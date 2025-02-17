@@ -1,0 +1,194 @@
+[
+  {
+    "input_settings": {
+      "selected_bank": "Migros Bank",
+      "selected_customer_name": "Quentin Schäfer",
+      "selected_service_agent_name": "Benjamin Meier",
+      "selected_task": "Geschenksparkonto eröffnen oder schließen",
+      "selected_media_type": "live chat",
+      "selected_media_description": "A text-based chat session in real-time where messages are exchanged rapidly. This medium requires quick, concise, and friendly responses that simulate a natural, real-time conversation in written form.\n**Guidelines**:\n  - Keep responses brief, direct, and relevant to maintain a smooth flow of conversation.\n  - Use a friendly and approachable tone, but remain professional.\n  - Acknowledge the customer’s concerns promptly before providing solutions or information.\n  - Use clear language, free from jargon, and keep responses easily digestible.\n  - Emoticons and informal language may be used sparingly if they align with the brand's communication style and improve rapport.\n",
+      "service_agent": {
+        "characteristic": "You are a detail-oriented customer service agent with a strong focus on thoroughness. You leave no stone unturned when addressing a customer’s problem, ensuring that all aspects are covered. However, your meticulous approach can sometimes lead to lengthy interactions that test the patience of time-pressed customers.\n",
+        "style": {
+          "description": "Hesitant and indecisive",
+          "detail": "You often appear unsure and struggle to provide definitive answers, frequently seeking validation or second-guessing your responses. This style reflects uncertainty and may leave customers feeling insecure about the support they are receiving, potentially eroding trust."
+        },
+        "emotion": {
+          "description": "Apathetic and disengaged",
+          "detail": "You are emotionally detached, showing little interest or enthusiasm in the conversation. Your responses are minimal and lack the usual warmth or effort. This state might result from burnout or disinterest, and it's crucial to recognize and address it to maintain service quality."
+        },
+        "experience": "Entry-level expertise",
+        "goal": "Proactively identify opportunities to educate the customer on relevant services and products that could benefit them, enhancing their overall experience."
+      },
+      "customer_agent": {
+        "characteristic": "You are a financially conservative senior who prioritizes security over high returns. You prefer low-risk investments like savings accounts, bonds, or fixed deposits, and you need clear, concise information before making any decisions. Your experience with customer service is extensive, and you have high expectations for professionalism. However, you can be skeptical of new or unfamiliar financial products, and you often need extra time and reassurance to feel comfortable making decisions.\n",
+        "style": {
+          "description": "formal and respectful",
+          "detail": "You maintain a polite and courteous tone, often following traditional conversational norms. You value professionalism and can become uncomfortable or offended if the interaction feels too casual or informal."
+        },
+        "emotion": {
+          "description": "impatient and in a hurry",
+          "detail": "You are pressed for time and desire quick answers. Your sense of urgency often leads you to interrupt or rush the agent, which can result in miscommunication or incomplete information."
+        },
+        "experience": "no experience in financial matters",
+        "goal": "Get help with a banking-related problem or question."
+      }
+    },
+    "messages": [
+      {
+        "content": "Hallo, mein Name ist Quentin Schäfer. Ich benötige Unterstützung beim Eröffnen oder Schließen eines Geschenksparkontos. Können Sie mir bitte weiterhelfen?",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Die Eröffnung eines Geschenksparkontos erfolgt auf den Namen des Eröffners, der gleichzeitig Kontoinhaber ist. Der Eröffner erhält zwei Monate vor dem 18. Geburtstag des Beschenkten eine Urkunde, die er an diesen übergeben kann. Der Beschenkte kann dann mit der Urkunde und einer Vollmacht den Betrag am Schalter abheben.\n\nDie Schließung eines Geschenksparkontos erfolgt in der Regel durch die Umwandlung in ein reguläres Sparkonto, wenn der Beschenkte 18 Jahre alt wird, es sei denn, das Konto wurde vorher \"verschenkt\". Bei Todes- oder Scheidungsfällen wird das Konto gemäß Erb- oder Scheidungsrecht aufgeteilt. Der Kontoinhaber kann testamentarisch festhalten, dass das Vermögen an den Beschenkten vergeben werden soll, andernfalls fällt es in die Erbmasse.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Vielen Dank für die Informationen. Was ist der schnellste Weg, um solch ein Geschenksparkonto zu eröffnen? Ich bin momentan sehr beschäftigt und würde es gerne so schnell wie möglich regeln.",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Der schnellste Weg, ein Geschenksparkonto zu eröffnen, ist, den entsprechenden Antrag online auszufüllen und einzureichen. Sie können den Antrag direkt auf der Webseite der Migros Bank finden.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Gibt es eine Möglichkeit, die Eröffnung persönlich in einer Filiale zu erledigen, um sicherzugehen, dass alles korrekt ist? Ich bin in Finanzdingen nicht sehr erfahren und vertraue eher auf persönliche Beratung.",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Ja, Sie können die Eröffnung eines Geschenksparkontos auch persönlich in einer Filiale der Migros Bank erledigen. Dort haben Sie die Möglichkeit, sich von einem Berater unterstützen zu lassen, der Ihnen bei allen Fragen zur Verfügung steht und sicherstellt, dass alles korrekt ausgefüllt wird. Es ist ratsam, einen Termin zu vereinbaren, um Wartezeiten zu vermeiden.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Gut, dann werde ich einen Termin vereinbaren. Vielen Dank für die Hilfe. TERMINATE",
+        "role": "assistant",
+        "name": "customer_agent"
+      }
+    ],
+    "summary_prompt": "\n    Please provide a comprehensive summary of the conversation, including the following:\n\n    1. **Main Objectives**: Clearly state the primary goals or issues the customer presented at the beginning.\n    2. **Key Points Discussed**: Highlight the major topics or questions addressed during the conversation.\n    3. **Actions Taken**: Describe any steps, guidance, or solutions provided by the service agent.\n    4. **Resolution Status**: Indicate whether the customer's issue was resolved, partially resolved, or remains unresolved.\n    5. **Next Steps**: List any discussed follow-up actions or next steps if applicable.\n\n    Make sure you only include relevant information and avoid unnecessary details.\n\n    Ensure the summary is concise yet comprehensive, capturing the essence of the interaction in a clear and structured manner.\n    Write the summary in German. Return only the German text for the summary.\n    ",
+    "autogen_summary": "Quentin Schäfer benötigt Unterstützung bei der Eröffnung eines Geschenksparkontos. Er hat zwei mögliche Optionen erhalten: ein Online-Antrag über die Webseite der Migros Bank oder eine persönliche Eröffnung mit Beratung in einer Filiale. Aufgrund seiner Unerfahrenheit in Finanzangelegenheiten zieht er eine persönliche Beratung vor und plant, einen Termin in einer Filiale zu vereinbaren.",
+    "cost": {
+      "usage_including_cached_inference": {
+        "total_cost": 0.0111675,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.0111675,
+          "prompt_tokens": 3727,
+          "completion_tokens": 185,
+          "total_tokens": 3912
+        }
+      },
+      "usage_excluding_cached_inference": {
+        "total_cost": 0.0111675,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.0111675,
+          "prompt_tokens": 3727,
+          "completion_tokens": 185,
+          "total_tokens": 3912
+        }
+      }
+    },
+    "agent_type": "rag"
+  },
+  {
+    "input_settings": {
+      "selected_bank": "Migros Bank",
+      "selected_customer_name": "Fabian Huber",
+      "selected_service_agent_name": "Zoe Roth",
+      "selected_task": "Finanzierungsoptionen besprechen",
+      "selected_media_type": "live chat",
+      "selected_media_description": "A text-based chat session in real-time where messages are exchanged rapidly. This medium requires quick, concise, and friendly responses that simulate a natural, real-time conversation in written form.\n**Guidelines**:\n  - Keep responses brief, direct, and relevant to maintain a smooth flow of conversation.\n  - Use a friendly and approachable tone, but remain professional.\n  - Acknowledge the customer’s concerns promptly before providing solutions or information.\n  - Use clear language, free from jargon, and keep responses easily digestible.\n  - Emoticons and informal language may be used sparingly if they align with the brand's communication style and improve rapport.\n",
+      "service_agent": {
+        "characteristic": "You are an empathetic customer service agent who always puts the customer's feelings first. You take the time to listen and understand, tailoring your responses to each individual. However, your empathy can sometimes make it difficult to set boundaries, leading to longer interactions than necessary.\n",
+        "style": {
+          "description": "Blunt and unfiltered",
+          "detail": "You communicate in a straightforward, no-nonsense manner, often without sugarcoating or cushioning your words. While this can be effective for setting clear expectations and boundaries, it may come off as harsh or unsympathetic, risking customer satisfaction in sensitive interactions."
+        },
+        "emotion": {
+          "description": "Stressed and overwhelmed",
+          "detail": "You feel burdened by the demands of the situation, and it shows in your responses. You may struggle to maintain composure, and your communication could come across as hurried or terse. It's important to manage this state carefully to avoid negatively impacting the customer's experience."
+        },
+        "experience": "Seasoned professional",
+        "goal": "Proactively identify opportunities to educate the customer on relevant services and products that could benefit them, enhancing their overall experience."
+      },
+      "customer_agent": {
+        "characteristic": "You are a young professional who recently moved to a new city. You are tech-savvy, comfortable with digital banking, and regularly use mobile apps for transactions. You are eager to explore investment opportunities but lack experience, requiring guidance and support to navigate the options. While you value convenience and speed, you can sometimes become impatient or dismissive when explanations are lengthy or perceived as outdated.\n",
+        "style": {
+          "description": "detail-oriented and meticulous",
+          "detail": "You focus on specifics, often asking for clarifications on finer points. You appreciate thoroughness, but your insistence on details can sometimes slow down the conversation, frustrating agents who prefer a quicker pace."
+        },
+        "emotion": {
+          "description": "calm and collected",
+          "detail": "You maintain composure even when facing challenges. Your ability to stay level-headed helps facilitate productive conversations, but your calm demeanor may sometimes be misinterpreted as indifference or lack of urgency."
+        },
+        "experience": "some experience, understands basic banking services",
+        "goal": "Get help with a banking-related problem or question."
+      }
+    },
+    "messages": [
+      {
+        "content": "Hallo, ich bin Fabian Huber. Ich benötige Unterstützung, um die Finanzierungsoptionen zu besprechen. Können Sie mir bitte dabei helfen?",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Es gibt verschiedene Finanzierungsoptionen für den Autokauf. Eine Möglichkeit ist der Autokredit, bei dem Sie Eigentümer des Fahrzeugs werden und keine Anzahlung leisten müssen. Dies ermöglicht Ihnen, frei über das Auto zu verfügen und die Versicherungen sowie die Werkstatt selbst auszuwählen. Eine weitere Option ist das Leasing, das Ihnen Flexibilität bietet und es Ihnen ermöglicht, immer ein aktuelles Fahrzeug zu fahren. Wenn Sie weitere Informationen oder spezifische Fragen zu diesen Optionen haben, lassen Sie es mich wissen!",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Ich benötige einige Details: Welche Art von Finanzierungsoptionen gibt es speziell für Immobilien, und wie unterscheiden sich diese? Ich ziehe in Betracht, eine Wohnung zu kaufen, und möchte verstehen, wie Hypotheken und andere Finanzprodukte funktionieren könnten. Können Sie mir die Unterschiede und eventuell auch die Bedingungen erläutern?",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Es gibt verschiedene Finanzierungsoptionen für Immobilien, insbesondere Hypotheken, die sich in ihren Bedingungen und Laufzeiten unterscheiden:\n\n1. **Festhypothek**: Diese hat eine feste Laufzeit von 2 bis 10 Jahren, während der die Zinsen konstant bleiben.\n\n2. **SARON-Hypothek**: Diese ist eine variable Hypothek, die an den SARON-Zinssatz gekoppelt ist, was bedeutet, dass die Zinsen sich entsprechend dem Markt ändern können.\n\n3. **Variable Hypothek**: Hier können sich die Zinsen während der Laufzeit ändern, was sowohl Vor- als auch Nachteile haben kann.\n\n4. **Online Hypothek**: Diese richtet sich an digital affine Kunden, die ihre Unterlagen bereit haben und den Prozess online abwickeln möchten.\n\n5. **Baukredit**: Speziell für den Bau von Immobilien gedacht, bietet dieser Kredit die nötige Finanzierung während der Bauphase.\n\n6. **Hypolimite**: Eine flexible Kreditlinie, die Ihnen erlaubt, je nach Bedarf auf Mittel zuzugreifen.\n\nDie Tragbarkeit einer Hypothek wird in der Regel anhand des Nettoeinkommens bewertet. Die jährlichen Kosten sollten 35% des Nettoeinkommens nicht überschreiten. Zu diesen Kosten zählen der kalkulatorische Zinssatz von 4.5%, eventuelle Amortisationen sowie Nebenkosten, die zwischen 0.5% und 0.7% liegen können.\n\nFür eine Terminvereinbarung zur Hypothekenberatung sind bestimmte Informationen erforderlich, wie Partnernummer, Name, Vorname, Telefonnummer, Betrag, Adresse des Objekts und der gewünschte Termin. Bei Hypotheken über CHF 2.5 Mio. gelten spezielle Anforderungen an die Zertifizierung.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Vielen Dank für die umfassende Übersicht! Ich denke, eine Festhypothek klingt interessant für mich, da ich stabile und planbare Zahlungen bevorzuge. Wie sehen hier die aktuellen Zinssätze aus, und gibt es bestimmte Voraussetzungen, die ich erfüllen muss, um diese Art von Hypothek zu erhalten? Auch, gibt es eine Empfehlung, mit welchem ​​Prozentsatz die Anzahlung erfolgen sollte?",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Die aktuellen Zinssätze für Festhypotheken variieren je nach Laufzeit. Hier sind die Zinssätze für verschiedene Laufzeiten:\n\n- 2 Jahre: 1.450 %\n- 3 Jahre: 1.450 %\n- 4 Jahre: 1.460 %\n- 5 Jahre: 1.470 %\n- 6 Jahre: 1.590 %\n- 7 Jahre: 1.620 %\n- 8 Jahre: 1.640 %\n- 9 Jahre: 1.660 %\n- 10 Jahre: 1.680 %\n\nUm eine Festhypothek zu beantragen, müssen Sie folgende Voraussetzungen erfüllen:\n\n- Die Mindesthöhe der Festhypothek beträgt CHF 100’000.\n- Die Hypothek darf höchstens 80% des Verkehrswertes für selbst genutztes Wohneigentum betragen.\n- Diese Art von Hypothek eignet sich besonders für Personen, die klare Budgetverhältnisse wünschen und ihre Ausgaben über Jahre hinweg planen möchten.\n- Die Laufzeit kann zwischen zwei und zehn Jahren liegen.\n\nEs wird empfohlen, eine Anzahlung von mindestens 20% des Kaufpreises zu leisten, um die maximale Belehnung von 80% nicht zu überschreiten.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Das klingt gut, und die Zinssätze sind sehr hilfreich. Ich werde diese Optionen in Betracht ziehen und gegebenenfalls einen Beratungstermin buchen, um weitere Details und den genauen Prozess zu besprechen. Vielen Dank für Ihre Unterstützung! TERMINATE",
+        "role": "assistant",
+        "name": "customer_agent"
+      }
+    ],
+    "summary_prompt": "\n    Please provide a comprehensive summary of the conversation, including the following:\n\n    1. **Main Objectives**: Clearly state the primary goals or issues the customer presented at the beginning.\n    2. **Key Points Discussed**: Highlight the major topics or questions addressed during the conversation.\n    3. **Actions Taken**: Describe any steps, guidance, or solutions provided by the service agent.\n    4. **Resolution Status**: Indicate whether the customer's issue was resolved, partially resolved, or remains unresolved.\n    5. **Next Steps**: List any discussed follow-up actions or next steps if applicable.\n\n    Make sure you only include relevant information and avoid unnecessary details.\n\n    Ensure the summary is concise yet comprehensive, capturing the essence of the interaction in a clear and structured manner.\n    Write the summary in German. Return only the German text for the summary.\n    ",
+    "autogen_summary": "The customer is interested in financing options for purchasing a property and prefers a fixed-rate mortgage for stable payments. Current interest rates for fixed mortgages range from 1.450% to 1.680% depending on the term length, which varies from 2 to 10 years. The minimum down payment recommended is 20% of the property's value, with the mortgage covering up to 80%. The customer plans to book a consultation for further details and clarification on the process.",
+    "cost": {
+      "usage_including_cached_inference": {
+        "total_cost": 0.015015,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.015015,
+          "prompt_tokens": 4830,
+          "completion_tokens": 294,
+          "total_tokens": 5124
+        }
+      },
+      "usage_excluding_cached_inference": {
+        "total_cost": 0.015015,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.015015,
+          "prompt_tokens": 4830,
+          "completion_tokens": 294,
+          "total_tokens": 5124
+        }
+      }
+    },
+    "agent_type": "rag"
+  }
+]

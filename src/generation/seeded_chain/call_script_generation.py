@@ -5,7 +5,7 @@ from typing import Any, Dict, List
 
 from loguru import logger
 
-from src.config import config
+from src.generation.config import config
 from src.generation.seeded_chain.chains.call_script.generation_chains import (
     generation_resolved_chain_de_instruct,
     generation_resolved_chain_en_instruct,
@@ -16,7 +16,7 @@ from src.generation.seeded_chain.chains.call_script.validation_chains import (
     validation_chain_de_instruct,
     validation_chain_en_instruct,
 )
-from src.utils import (
+from src.generation.utils import (
     aggregate_json_files,
     get_random_examples,
     get_random_topics,

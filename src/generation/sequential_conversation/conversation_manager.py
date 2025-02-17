@@ -2,7 +2,6 @@ from typing import Any, Dict
 
 from autogen import GroupChat, GroupChatManager
 from autogen.agentchat import ConversableAgent
-
 from utils import termination_msg
 
 

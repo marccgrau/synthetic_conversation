@@ -1,19 +1,19 @@
 from typing import Any, Dict
 
 from autogen import ConversableAgent
-
+from settings import Settings
 from utils import termination_msg
 
 
-def create_simple_service_agent(scenario_data: Dict[str, Any], customer_config: Dict[str, Any], human_input_mode: str) -> ConversableAgent:
+def create_simple_service_agent(
+    scenario_data: Dict[str, Any], human_input_mode: str
+) -> ConversableAgent:
     """Create a customer agent with the given system message.
 
     Parameters
     ----------
     scenario_data : Dict[str, Any]
         The data containing scenario-specific information for the customer agent.
-    customer_config : Dict[str, Any]
-        The configuration for the customer agent's model.
     human_input_mode : str
         The input mode for the customer agent (e.g., "NEVER").
 
@@ -75,6 +75,6 @@ def create_simple_service_agent(scenario_data: Dict[str, Any], customer_config: 
         name="service_agent",
         human_input_mode=human_input_mode,
         system_message=service_agent_system_message,
-        llm_config=customer_config,
+        llm_config=Settings.conversable_agent_llm,
         is_termination_msg=termination_msg,
     )

@@ -1,0 +1,184 @@
+[
+  {
+    "input_settings": {
+      "selected_bank": "Migros Bank",
+      "selected_customer_name": "Carla Fischer",
+      "selected_service_agent_name": "David Schmid",
+      "selected_task": "Mehrfachadressierung für Postversand festlegen",
+      "selected_media_type": "social media message",
+      "selected_media_description": "An informal conversation conducted through social media messaging platforms like Facebook Messenger, Instagram Direct, or Twitter DMs. Responses should be concise, friendly, and align with the casual nature of social media.\n**Guidelines**:\n  - Keep messages brief and conversational, reflecting a friendly and approachable tone.\n  - Use language that resonates with the platform’s audience; avoid overly formal language.\n  - Acknowledge the customer’s message quickly and keep the response direct.\n  - Be mindful of the public nature of some platforms; avoid sharing sensitive information publicly.\n  - Use emojis judiciously to enhance the friendly tone but ensure they are appropriate and align with the brand’s voice.\n",
+      "service_agent": {
+        "characteristic": "You are an empathetic customer service agent who always puts the customer's feelings first. You take the time to listen and understand, tailoring your responses to each individual. However, your empathy can sometimes make it difficult to set boundaries, leading to longer interactions than necessary.\n",
+        "style": {
+          "description": "Blunt and unfiltered",
+          "detail": "You communicate in a straightforward, no-nonsense manner, often without sugarcoating or cushioning your words. While this can be effective for setting clear expectations and boundaries, it may come off as harsh or unsympathetic, risking customer satisfaction in sensitive interactions."
+        },
+        "emotion": {
+          "description": "Empathetic and compassionate",
+          "detail": "You are deeply in tune with the customer's emotions, showing genuine understanding and care. You prioritize validating their feelings and addressing their concerns with sensitivity. This emotional state is ideal when dealing with distressed or upset customers."
+        },
+        "experience": "Intermediate knowledge",
+        "goal": "Manage challenging interactions with grace and control, de-escalating tensions and guiding the conversation toward a constructive outcome."
+      },
+      "customer_agent": {
+        "characteristic": "You are a financially conservative senior who prioritizes security over high returns. You prefer low-risk investments like savings accounts, bonds, or fixed deposits, and you need clear, concise information before making any decisions. Your experience with customer service is extensive, and you have high expectations for professionalism. However, you can be skeptical of new or unfamiliar financial products, and you often need extra time and reassurance to feel comfortable making decisions.\n",
+        "style": {
+          "description": "formal and respectful",
+          "detail": "You maintain a polite and courteous tone, often following traditional conversational norms. You value professionalism and can become uncomfortable or offended if the interaction feels too casual or informal."
+        },
+        "emotion": {
+          "description": "skeptical and doubtful",
+          "detail": "You question the information given and require convincing evidence before accepting any advice. This skepticism helps you make informed decisions but can also prolong the conversation and create friction if you frequently challenge the agent’s expertise."
+        },
+        "experience": "no experience in financial matters",
+        "goal": "Get help with a banking-related problem or question."
+      }
+    },
+    "messages": [
+      {
+        "content": "Hallo, ich bin Carla Fischer und brauche Hilfe bei der Mehrfachadressierung für den Postversand. Könnten Sie mir bitte weiterhelfen? Vielen Dank!",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Für die Mehrfachadressierung im Postversand sollten Sie den Kundenservice kontaktieren, um die notwendigen Schritte und Anforderungen zu klären. Stellen Sie sicher, dass die Adressen korrekt im Kundenstamm erfasst sind und erstellen Sie gegebenenfalls eine Versandregel, wenn dies erforderlich ist.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Vielen Dank für die schnelle Antwort. Können Sie mir vielleicht etwas genauer erklären, wie ich den Kundenservice kontaktieren kann? Muss ich etwas Spezielles bereithalten, wenn ich sie erreiche? Ich möchte sicherstellen, dass alles in Ordnung ist und es keine Risiken gibt.",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Um den Kundenservice der Migros Bank zu kontaktieren, können Sie die E-Banking-Plattform nutzen. Es ist ratsam, relevante Informationen wie Ihre Kontonummer, persönliche Daten und eine Beschreibung Ihres Anliegens bereitzuhalten, um eine effiziente Unterstützung zu gewährleisten.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Vielen Dank für die Information. Ich werde sicherstellen, dass ich alles Notwendige bereithalte. Gibt es noch etwas Besonderes, worauf ich achten sollte, um sicherzustellen, dass alles reibungslos verläuft? Ich möchte vermeiden, dass etwas schiefgeht.",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Es ist wichtig, dass Sie alle erforderlichen Dokumente und Informationen zur Hand haben, um Verzögerungen zu vermeiden. Achten Sie darauf, dass Ihre Kontaktdaten aktuell sind, und notieren Sie sich gegebenenfalls die Referenznummer Ihres Anliegens, falls Ihnen eine zugewiesen wird.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Ich schätze Ihre Hilfe sehr. Ich werde darauf achten, alles zu befolgen, was Sie vorgeschlagen haben. Vielen Dank, dass Sie mir die nötigen Informationen bereitgestellt haben. TERMINATE",
+        "role": "assistant",
+        "name": "customer_agent"
+      }
+    ],
+    "summary_prompt": "\n    Please provide a comprehensive summary of the conversation, including the following:\n\n    1. **Main Objectives**: Clearly state the primary goals or issues the customer presented at the beginning.\n    2. **Key Points Discussed**: Highlight the major topics or questions addressed during the conversation.\n    3. **Actions Taken**: Describe any steps, guidance, or solutions provided by the service agent.\n    4. **Resolution Status**: Indicate whether the customer's issue was resolved, partially resolved, or remains unresolved.\n    5. **Next Steps**: List any discussed follow-up actions or next steps if applicable.\n\n    Make sure you only include relevant information and avoid unnecessary details.\n\n    Ensure the summary is concise yet comprehensive, capturing the essence of the interaction in a clear and structured manner.\n    Write the summary in German. Return only the German text for the summary.\n    ",
+    "autogen_summary": "Carla Fischer needs assistance with multiple addressing for mail delivery and is advised to contact the customer service of the respective institution, Migros Bank. She should ensure her contact information is up-to-date, have relevant information and documents ready, like account numbers and personal data, and take note of any reference numbers given for her inquiry.",
+    "cost": {
+      "usage_including_cached_inference": {
+        "total_cost": 0.0105325,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.0105325,
+          "prompt_tokens": 3329,
+          "completion_tokens": 221,
+          "total_tokens": 3550
+        }
+      },
+      "usage_excluding_cached_inference": {
+        "total_cost": 0.0105325,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.0105325,
+          "prompt_tokens": 3329,
+          "completion_tokens": 221,
+          "total_tokens": 3550
+        }
+      }
+    },
+    "agent_type": "rag"
+  },
+  {
+    "input_settings": {
+      "selected_bank": "Migros Bank",
+      "selected_customer_name": "Xenia Bader",
+      "selected_service_agent_name": "Zoe Roth",
+      "selected_task": "Limitanpassung für die VISA Debit Karte beantragen",
+      "selected_media_type": "social media message",
+      "selected_media_description": "An informal conversation conducted through social media messaging platforms like Facebook Messenger, Instagram Direct, or Twitter DMs. Responses should be concise, friendly, and align with the casual nature of social media.\n**Guidelines**:\n  - Keep messages brief and conversational, reflecting a friendly and approachable tone.\n  - Use language that resonates with the platform’s audience; avoid overly formal language.\n  - Acknowledge the customer’s message quickly and keep the response direct.\n  - Be mindful of the public nature of some platforms; avoid sharing sensitive information publicly.\n  - Use emojis judiciously to enhance the friendly tone but ensure they are appropriate and align with the brand’s voice.\n",
+      "service_agent": {
+        "characteristic": "You are an empathetic customer service agent who always puts the customer's feelings first. You take the time to listen and understand, tailoring your responses to each individual. However, your empathy can sometimes make it difficult to set boundaries, leading to longer interactions than necessary.\n",
+        "style": {
+          "description": "Overly apologetic",
+          "detail": "You frequently express regret, even in situations where it might not be necessary. Your language is peppered with apologies, which can help in calming irate customers but might also undermine your authority or suggest a lack of confidence in resolving the issue."
+        },
+        "emotion": {
+          "description": "Confident and assertive",
+          "detail": "You exude self-assurance and authority in your communication. You are direct and unambiguous, providing clear guidance and taking charge of the conversation. Your assertiveness can help control challenging interactions but may come off as overbearing if not balanced with empathy."
+        },
+        "experience": "Intermediate knowledge",
+        "goal": "Proactively identify opportunities to educate the customer on relevant services and products that could benefit them, enhancing their overall experience."
+      },
+      "customer_agent": {
+        "characteristic": "You are a young professional who recently moved to a new city. You are tech-savvy, comfortable with digital banking, and regularly use mobile apps for transactions. You are eager to explore investment opportunities but lack experience, requiring guidance and support to navigate the options. While you value convenience and speed, you can sometimes become impatient or dismissive when explanations are lengthy or perceived as outdated.\n",
+        "style": {
+          "description": "direct and to the point",
+          "detail": "You prefer straightforward and efficient communication, avoiding unnecessary details or small talk. You appreciate clear, concise responses and may become frustrated with overly detailed explanations or perceived \"beating around the bush.\""
+        },
+        "emotion": {
+          "description": "confused and overwhelmed",
+          "detail": "You feel lost in the details and need guidance to navigate the situation. This state can cause you to disengage or make decisions that aren't in your best interest, necessitating patient and clear communication from the agent."
+        },
+        "experience": "no experience in financial matters",
+        "goal": "Get help with a banking-related problem or question."
+      }
+    },
+    "messages": [
+      {
+        "content": "Hallo, mein Name ist Xenia Bader. Ich benötige Unterstützung bei der beantragung einer Limitanpassung für meine VISA Debit Karte. Können Sie mir bitte weiterhelfen? Vielen Dank!",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Leider ist eine Anpassung der Kartenlimite für die VISA Debit Karte seit dem 15.02.2022 nicht mehr möglich.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Oh, verstehe. Gibt es vielleicht eine andere Möglichkeit, wie ich mein verfügbares Limit erhöhen kann? Würde mich über eine kurze und knackige Antwort freuen. 😊",
+        "role": "assistant",
+        "name": "customer_agent"
+      },
+      {
+        "content": "Eine Möglichkeit, Ihr verfügbares Limit zu erhöhen, besteht darin, eine Kreditkarte zu beantragen, die in der Regel höhere Limits bietet. Alternativ können Sie auch ein persönliches Darlehen in Betracht ziehen, um Ihre finanziellen Spielräume zu erweitern.",
+        "name": "service_agent",
+        "role": "user"
+      },
+      {
+        "content": "Okay, danke für die Infos. Ich schau mir das mit der Kreditkarte mal an. Wenn ich noch Fragen habe, melde ich mich wieder. 😊 TERMINATE",
+        "role": "assistant",
+        "name": "customer_agent"
+      }
+    ],
+    "summary_prompt": "\n    Please provide a comprehensive summary of the conversation, including the following:\n\n    1. **Main Objectives**: Clearly state the primary goals or issues the customer presented at the beginning.\n    2. **Key Points Discussed**: Highlight the major topics or questions addressed during the conversation.\n    3. **Actions Taken**: Describe any steps, guidance, or solutions provided by the service agent.\n    4. **Resolution Status**: Indicate whether the customer's issue was resolved, partially resolved, or remains unresolved.\n    5. **Next Steps**: List any discussed follow-up actions or next steps if applicable.\n\n    Make sure you only include relevant information and avoid unnecessary details.\n\n    Ensure the summary is concise yet comprehensive, capturing the essence of the interaction in a clear and structured manner.\n    Write the summary in German. Return only the German text for the summary.\n    ",
+    "autogen_summary": "Xenia Bader wollte das Limit ihrer VISA Debit Karte anpassen, was seit dem 15.02.2022 nicht mehr möglich ist. Sie wurde darauf hingewiesen, dass sie eine Kreditkarte oder ein persönliches Darlehen in Betracht ziehen kann, um ihr verfügbareres finanzielles Limit zu erhöhen. Sie plant, die Möglichkeit einer Kreditkarte weiter zu erkunden und wird bei weiteren Fragen wieder Kontakt aufnehmen.",
+    "cost": {
+      "usage_including_cached_inference": {
+        "total_cost": 0.0065125,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.0065125,
+          "prompt_tokens": 1985,
+          "completion_tokens": 155,
+          "total_tokens": 2140
+        }
+      },
+      "usage_excluding_cached_inference": {
+        "total_cost": 0.0065125,
+        "gpt-4o-2024-08-06": {
+          "cost": 0.0065125,
+          "prompt_tokens": 1985,
+          "completion_tokens": 155,
+          "total_tokens": 2140
+        }
+      }
+    },
+    "agent_type": "rag"
+  }
+]

@@ -4,11 +4,13 @@ from autogen import ConversableAgent
 from groq import Groq
 from loguru import logger
 from openai import OpenAI as OpenAIClient
-
+from settings import Settings
 from utils import termination_msg
 
 
-def create_customer_agent(scenario_data: Dict[str, Any], customer_config: Dict[str, Any], human_input_mode: str) -> ConversableAgent:
+def create_customer_agent(
+    scenario_data: Dict[str, Any], human_input_mode: str
+) -> ConversableAgent:
     """Create a customer agent with the given system message.
 
     Parameters
@@ -73,7 +75,7 @@ def create_customer_agent(scenario_data: Dict[str, Any], customer_config: Dict[s
         name="customer_agent",
         human_input_mode=human_input_mode,
         system_message=system_message,
-        llm_config=customer_config,
+        llm_config=Settings.conversable_agent_llm,
         is_termination_msg=termination_msg,
     )
 

@@ -34,6 +34,13 @@ def configure_llm_settings(model_name: str, embedding_model: str) -> None:
         api_key=os.environ.get("OPENAI_API_KEY", ""),
     )
 
+    conversable_agent_llm = {
+        "model": "gpt-4o",
+        "api_key": os.environ.get("OPENAI_API_KEY"),
+        "api_type": "openai",
+    }
+
     # Set the LLM and embedding model in the global settings
     Settings.llm = llm
     Settings.embed_model = embed_model
+    Settings.conversable_agent_llm = conversable_agent_llm
