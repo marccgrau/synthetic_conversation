@@ -108,7 +108,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "eab1e048-a0ee-442d-9b35-90ccb849cf6b"
   },
   {
     "input_settings": {
@@ -162,7 +163,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Betreff: Re: Unterstützung bei der Steueroptimierung für die Altersvorsorge\n\nSehr geehrter Herr Schäfer,\n\nich danke Ihnen für Ihr Feedback und kann Ihre Bedenken gut nachvollziehen. Es ist wichtig, eine klare Vorstellung von den Möglichkeiten zu haben, bevor Entscheidungen getroffen werden.\n\nZusätzlich zu den bereits genannten Produkten der Migros Bank habe ich einige Punkte, die Ihnen helfen sollten, eine informierte Entscheidung zu treffen:\n\n1. **Säule 3a Flexibilität**: Wenn Sie sich unsicher mit einem Produkt fühlen, können Sie die Flexibilität der Säule 3a nutzen. Sie müssen sich nicht gleich für den maximalen Betrag oder ein spezifisches Produkt entscheiden. Viele Kunden beginnen mit einem geringeren Beitrag und erhöhen diesen später, wenn ihr finanzieller Spielraum dies zulässt.\n\n2. **Beratung**: Sollten Sie weitere Informationen wünschen oder spezielle Fragen zu Ihrem individuellen Fall haben, ist ein Beratungsgespräch sehr hilfreich. Unsere Berater können Ihre finanzielle Situation genau analysieren und maßgeschneiderte Vorschläge unterbreiten. Es ist verständlich, dass Sie genau wissen wollen, was Sie erwartet, und Ihr Anliegen ist berechtigt. Wir werden sicherstellen, dass die Beratung auf Ihre Bedürfnisse zugeschnitten ist.\n\n3. **Zugängliche Informationen**: Ich werde Ihnen eine Übersicht über die maximalen Beiträge zur Säule 3a und relevante Informationen zu steuerlichen Auswirkungen zusammenstellen, damit Sie diese jederzeit abrufen können.\n\nIch schlage vor, dass wir gemeinsam den nächsten Schritt planen. Lassen Sie mich wissen, ob Sie weiterhin an einem Beratungstermin interessiert sind oder ob Sie spezifische Fragen zu den Produkten haben. Ihre Zufriedenheit bei der Altersvorsorge ist unser Ziel.\n\nMit freundlichen Grüßen,  \nOlivia Lang  \nMigros Bank  ",
+        "content": "Betreff: Re: Unterstützung bei der Steueroptimierung für die Altersvorsorge\n\nSehr geehrter Herr Schäfer,\n\nich danke Ihnen für Ihr Feedback und kann Ihre Bedenken gut nachvollziehen. Es ist wichtig, eine klare Vorstellung von den Möglichkeiten zu haben, bevor Entscheidungen getroffen werden.\n\nZusätzlich zu den bereits genannten Produkten der Migros Bank habe ich einige Punkte, die Ihnen helfen sollten, eine informierte Entscheidung zu treffen:\n\n1. **Säule 3a Flexibilität**: Wenn Sie sich unsicher mit einem Produkt fühlen, können Sie die Flexibilität der Säule 3a nutzen. Sie müssen sich nicht gleich für den maximalen Betrag oder ein spezifisches Produkt entscheiden. Viele Kunden beginnen mit einem geringeren Beitrag und erhöhen diesen später, wenn ihr finanzieller Spielraum dies zulässt.\n\n2. **Beratung**: Sollten Sie weitere Informationen wünschen oder spezielle Fragen zu Ihrem individuellen Fall haben, ist ein Beratungsgespräch sehr hilfreich. Unsere Berater können Ihre finanzielle Situation genau analysieren und maßgeschneiderte Vorschläge unterbreiten. Es ist verständlich, dass Sie genau wissen wollen, was Sie erwartet, und Ihr Anliegen ist berechtigt. Wir werden sicherstellen, dass die Beratung auf Ihre Bedürfnisse zugeschnitten ist.\n\n3. **Zugängliche Informationen**: Ich werde Ihnen eine Übersicht über die maximalen Beiträge zur Säule 3a und relevante Informationen zu steuerlichen Auswirkungen zusammenstellen, damit Sie diese jederzeit abrufen können.\n\nIch schlage vor, dass wir gemeinsam den nächsten Schritt planen. Lassen Sie mich wissen, ob Sie weiterhin an einem Beratungstermin interessiert sind oder ob Sie spezifische Fragen zu den Produkten haben. Ihre Zufriedenheit bei der Altersvorsorge ist unser Ziel.\n\nMit freundlichen Grüßen,  \nOlivia Lang  \nMigros Bank",
         "name": "society_of_mind",
         "role": "user"
       },
@@ -219,6 +220,7 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "4d8fc749-833d-4e8c-bc84-2519dfbd8205"
   }
 ]

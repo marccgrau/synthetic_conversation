@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Alles klar, das klingt ganz vernünftig! Ich werde dann mal mit dem Kundenservice Kontakt aufnehmen, um das Ganze formal zu regeln. Ich bin zuversichtlich, dass das zügig und problemlos ablaufen wird. Danke für die Infos und die schnelle Unterstützung, Lukas!\n\nBis bald und einen schönen Tag noch! 🌞\n\nTERMINATE",
+        "content": "Alles klar, das klingt ganz vernünftig! Ich werde dann mal mit dem Kundenservice Kontakt aufnehmen, um das Ganze formal zu regeln. Ich bin zuversichtlich, dass das zügig und problemlos ablaufen wird. Danke für die Infos und die schnelle Unterstützung, Lukas!\n\nBis bald und einen schönen Tag noch! 🌞",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "9c013915-2952-4904-bc51-bbdf586e07be"
   },
   {
     "input_settings": {
@@ -142,7 +143,7 @@
         "role": "user"
       },
       {
-        "content": "Betreff: Re: Anfrage zum Zahlungsstatus\n\nSehr geehrte Frau Baumann,\n\ndanke für Ihre Bemühungen. Ich hoffe auf eine baldige Rückmeldung mit klaren Informationen zum Zahlungsstatus. Bitte halten Sie mich auf dem Laufenden.\n\nIch bin auf eine schnelle Lösung angewiesen und danke Ihnen im Voraus für Ihre Unterstützung.\n\nMit freundlichen Grüßen,\n\nIris Bader\n\nTERMINATE",
+        "content": "Betreff: Re: Anfrage zum Zahlungsstatus\n\nSehr geehrte Frau Baumann,\n\ndanke für Ihre Bemühungen. Ich hoffe auf eine baldige Rückmeldung mit klaren Informationen zum Zahlungsstatus. Bitte halten Sie mich auf dem Laufenden.\n\nIch bin auf eine schnelle Lösung angewiesen und danke Ihnen im Voraus für Ihre Unterstützung.\n\nMit freundlichen Grüßen,\n\nIris Bader",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -169,6 +170,7 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "faec83e6-6bef-4b78-af22-95dd0e93a219"
   }
 ]

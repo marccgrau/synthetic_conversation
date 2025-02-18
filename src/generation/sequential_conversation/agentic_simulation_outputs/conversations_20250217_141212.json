@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt super! Einen Termin zu vereinbaren, ist eine gute Idee. Ich werde mich darum kümmern. Vielen Dank für die Hilfe und die Informationen! 👏😊 Bis bald in der Zweigstelle. TERMINATE",
+        "content": "Das klingt super! Einen Termin zu vereinbaren, ist eine gute Idee. Ich werde mich darum kümmern. Vielen Dank für die Hilfe und die Informationen! 👏😊 Bis bald in der Zweigstelle.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "88d10cea-3bd3-4f03-a454-9f382acc2770"
   },
   {
     "input_settings": {
@@ -142,7 +143,7 @@
         "role": "user"
       },
       {
-        "content": "Ich verstehe, das hilft mir sehr weiter! Ich werde die Konditionen meiner Kreditkarte sorgfältig prüfen. Vielen Dank für die Erklärungen. Ich finde es beruhigend, dass es hier klare Informationen gibt. TERMINATE",
+        "content": "Ich verstehe, das hilft mir sehr weiter! Ich werde die Konditionen meiner Kreditkarte sorgfältig prüfen. Vielen Dank für die Erklärungen. Ich finde es beruhigend, dass es hier klare Informationen gibt.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -169,6 +170,7 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "2dd66b06-34c2-4193-9439-d8e21c20d4da"
   }
 ]

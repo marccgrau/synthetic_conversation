@@ -76,7 +76,7 @@
         "role": "user"
       },
       {
-        "content": "Nein, das war alles sehr hilfreich. Ich denke, ich habe jetzt einen besseren Überblick darüber, wie ich vorgehen sollte. Vielen Dank für Ihre Unterstützung, das beruhigt mich ein wenig. Ich werde die nötigen Unterlagen vorbereiten und dann den nächsten Schritt gehen. Vielen Dank, und ich melde mich, wenn ich weitere Fragen habe. Auf Wiederhören.\n\nTERMINATE",
+        "content": "Nein, das war alles sehr hilfreich. Ich denke, ich habe jetzt einen besseren Überblick darüber, wie ich vorgehen sollte. Vielen Dank für Ihre Unterstützung, das beruhigt mich ein wenig. Ich werde die nötigen Unterlagen vorbereiten und dann den nächsten Schritt gehen. Vielen Dank, und ich melde mich, wenn ich weitere Fragen habe. Auf Wiederhören.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -103,7 +103,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "4f007abe-3620-431f-a85f-5c697c21c61d"
   },
   {
     "input_settings": {
@@ -167,7 +168,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Hmm, ja, das ist wirklich nicht einfach, Nico. Ich verstehe, dass das frustrierend ist... Also, wie soll ich das sagen... Mietverträge sind an sich ja meistens standardisiert, und für mehrere Mieter... das, ähm, erfordert sicher gewisse Anpassungen. Vielleicht, ja vielleicht, könnten Sie einen Vertrag erstellen und darin, äh, mehrere Parteien nennen.\n\nAber ich, äh, muss ehrlich sein, da gibt es rechtliche Feinheiten, die wirklich besser von einem Experten geklärt werden sollten. Doch, na ja, im Grunde... könnte ich Ihnen eventuell Musterverträge bereitstellen, die Ihnen als Ausgangspunkt dienen. Diese könnten Sie dann vielleicht individuell anpassen?\n\nUm wirklich sicherzugehen, dass alles korrekt ist, würde ich – wie gesagt – einen Anwalt oder einen anderen Experten konsultieren. 🤔\n\nTERMINATE",
+        "content": "Hmm, ja, das ist wirklich nicht einfach, Nico. Ich verstehe, dass das frustrierend ist... Also, wie soll ich das sagen... Mietverträge sind an sich ja meistens standardisiert, und für mehrere Mieter... das, ähm, erfordert sicher gewisse Anpassungen. Vielleicht, ja vielleicht, könnten Sie einen Vertrag erstellen und darin, äh, mehrere Parteien nennen.\n\nAber ich, äh, muss ehrlich sein, da gibt es rechtliche Feinheiten, die wirklich besser von einem Experten geklärt werden sollten. Doch, na ja, im Grunde... könnte ich Ihnen eventuell Musterverträge bereitstellen, die Ihnen als Ausgangspunkt dienen. Diese könnten Sie dann vielleicht individuell anpassen?\n\nUm wirklich sicherzugehen, dass alles korrekt ist, würde ich – wie gesagt – einen Anwalt oder einen anderen Experten konsultieren. 🤔",
         "name": "service_agent",
         "role": "user"
       }
@@ -194,7 +195,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "bab571af-028e-484a-9314-135f4ee8deb6"
   },
   {
     "input_settings": {
@@ -263,7 +265,7 @@
         "role": "user"
       },
       {
-        "content": "Danke, Frau Roth. Ich werde mein Bestes geben, um das alles richtig zu machen. Ich hoffe wirklich, dass das bald erledigt ist. Es ist beruhigend zu wissen, dass jemand da ist, um zu helfen. Wenn ich noch Fragen habe, melde ich mich. Vielen Dank für Ihre Unterstützung und Geduld. TERMINATE",
+        "content": "Danke, Frau Roth. Ich werde mein Bestes geben, um das alles richtig zu machen. Ich hoffe wirklich, dass das bald erledigt ist. Es ist beruhigend zu wissen, dass jemand da ist, um zu helfen. Wenn ich noch Fragen habe, melde ich mich. Vielen Dank für Ihre Unterstützung und Geduld.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -290,7 +292,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "5ff11d71-a0a9-43ec-8f78-24bdfd4a0259"
   },
   {
     "input_settings": {
@@ -369,7 +372,7 @@
         "role": "user"
       },
       {
-        "content": "Ja, Herr Schuler, das wäre wohl das Beste. Dann lasse ich Ihnen gerne meine Adresse zukommen. [Hier folgt Frau-Vogts-Adresse]. Ich hoffe, das ist hilfreich und... wie gesagt, ich schätze Ihre Geduld, ähm, wirklich sehr, bei diesen... wie soll ich sagen, heutigen modernen Angelegenheiten.\n\nJa, so ein bisschen Überblick, dann... kann man sich doch... also besser darauf einstellen. Ich danke Ihnen wirklich für Ihre verständnisvolle Unterstützung und... ja, den Überblick, den Sie mir gegeben haben. Vielleicht... klingt alles ein wenig einfacher so, nicht wahr?\n\nIch denke, damit kommen wir für den Augenblick, äh, gut klar. Sollten wir dann etwas arrangieren, melde ich mich wieder, ja? Vielen Dank, und... einen schönen Tag wünsche ich Ihnen noch! TERMINATE",
+        "content": "Ja, Herr Schuler, das wäre wohl das Beste. Dann lasse ich Ihnen gerne meine Adresse zukommen. [Hier folgt Frau-Vogts-Adresse]. Ich hoffe, das ist hilfreich und... wie gesagt, ich schätze Ihre Geduld, ähm, wirklich sehr, bei diesen... wie soll ich sagen, heutigen modernen Angelegenheiten.\n\nJa, so ein bisschen Überblick, dann... kann man sich doch... also besser darauf einstellen. Ich danke Ihnen wirklich für Ihre verständnisvolle Unterstützung und... ja, den Überblick, den Sie mir gegeben haben. Vielleicht... klingt alles ein wenig einfacher so, nicht wahr?\n\nIch denke, damit kommen wir für den Augenblick, äh, gut klar. Sollten wir dann etwas arrangieren, melde ich mich wieder, ja? Vielen Dank, und... einen schönen Tag wünsche ich Ihnen noch!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -396,7 +399,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "86887dbd-e287-4bf8-ae2b-e5e0cedd8c15"
   },
   {
     "input_settings": {
@@ -507,7 +511,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "41e19ba7-a8a9-4c9b-a1eb-0f4b3d08be9a"
   },
   {
     "input_settings": {
@@ -576,7 +581,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die ausführliche Antwort, Frau Roth. Das klingt sehr hilfreich. Ich denke, ein Gespräch mit einem Berater könnte wirklich sinnvoll sein, um die beste Lösung für mich zu finden. \n\nIm Moment habe ich keine weiteren Fragen, aber ich merke mir, dass ich bei Bedarf wieder anrufen oder eine Filiale besuchen kann. Ich danke Ihnen wirklich sehr für Ihre Hilfe und die klaren Antworten. Schönen Tag noch!\n\nTERMINATE",
+        "content": "Vielen Dank für die ausführliche Antwort, Frau Roth. Das klingt sehr hilfreich. Ich denke, ein Gespräch mit einem Berater könnte wirklich sinnvoll sein, um die beste Lösung für mich zu finden. \n\nIm Moment habe ich keine weiteren Fragen, aber ich merke mir, dass ich bei Bedarf wieder anrufen oder eine Filiale besuchen kann. Ich danke Ihnen wirklich sehr für Ihre Hilfe und die klaren Antworten. Schönen Tag noch!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -603,7 +608,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "dac6cf9d-e523-4ee4-b46d-a85d19486297"
   },
   {
     "input_settings": {
@@ -662,7 +668,7 @@
         "role": "user"
       },
       {
-        "content": "Danke, Quentin. Ich werde das gleich versuchen. Wenn ich Probleme habe, melde ich mich wieder. Ich hoffe, das klappt schnell, sonst verliere ich noch mehr Zeit. Bis später! 😊 TERMINATE",
+        "content": "Danke, Quentin. Ich werde das gleich versuchen. Wenn ich Probleme habe, melde ich mich wieder. Ich hoffe, das klappt schnell, sonst verliere ich noch mehr Zeit. Bis später! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -689,7 +695,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "093032a4-35b6-47ff-99c4-e4239f61db9f"
   },
   {
     "input_settings": {
@@ -733,7 +740,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Hallo Valentina Huber,\n\nhier ist Yannick Graf von der Migros Bank. Hmm, ich glaube, ich kann Ihnen da... vielleicht etwas helfen? 🤔 Oh, also, um Ihre Abrechnungen für steuerliche Zwecke zu erhalten, sollten Sie... äh, in Ihrem E-Banking-Konto anmelden, denke ich? Dort müsste es eine... Option geben, um die Dokumente herunterzuladen. Oder... vielleicht müssen Sie den Kundenservice direkt anrufen, um das zu klären... Bin mir da selbst manchmal unsicher. 😅\n\nIch hoffe das ist... jedenfalls ein bisschen hilfreich? Wenn nicht, lassen Sie es mich, also, wissen!\n\nBeste Grüße,  \nYannick Graf\n\nTERMINATE",
+        "content": "Hallo Valentina Huber,\n\nhier ist Yannick Graf von der Migros Bank. Hmm, ich glaube, ich kann Ihnen da... vielleicht etwas helfen? 🤔 Oh, also, um Ihre Abrechnungen für steuerliche Zwecke zu erhalten, sollten Sie... äh, in Ihrem E-Banking-Konto anmelden, denke ich? Dort müsste es eine... Option geben, um die Dokumente herunterzuladen. Oder... vielleicht müssen Sie den Kundenservice direkt anrufen, um das zu klären... Bin mir da selbst manchmal unsicher. 😅\n\nIch hoffe das ist... jedenfalls ein bisschen hilfreich? Wenn nicht, lassen Sie es mich, also, wissen!\n\nBeste Grüße,  \nYannick Graf",
         "name": "service_agent",
         "role": "user"
       }
@@ -760,7 +767,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "f99a8b92-c3e3-47e4-8926-c42dfd92544a"
   },
   {
     "input_settings": {
@@ -829,7 +837,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die Information, Yannick. Das hilft mir sehr weiter. Ich werde mir das Vereinskonto und die damit verbundenen Angebote näher anschauen. Das war alles, was ich wissen wollte. \n\nTERMINATE",
+        "content": "Danke für die Information, Yannick. Das hilft mir sehr weiter. Ich werde mir das Vereinskonto und die damit verbundenen Angebote näher anschauen. Das war alles, was ich wissen wollte.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -856,7 +864,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "53fa1e80-7930-4ed9-8d81-80ec76a66399"
   },
   {
     "input_settings": {
@@ -900,7 +909,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Betreff: Unterstützung beim Melden eines Besitzerwechsels einer Liegenschaft\n\nSehr geehrte Frau Bader,\n\nvielen Dank, dass Sie sich an die Migros Bank gewandt haben. Ich heiße Felix Schäfer und freue mich, Ihnen bei Ihrem Anliegen behilflich sein zu können.\n\nDer Prozess zur Meldung eines Besitzerwechsels einer Liegenschaft umfasst mehrere Schritte, die wir Ihnen im Folgenden gerne erläutern. Es ist uns wichtig, dass dieser Vorgang für Sie so reibungslos und transparent wie möglich verläuft.\n\n1. **Information über den Besitzerwechsel**: Zunächst müssen wir über den geplanten Wechsel informiert werden. Dies kann schriftlich über unser Online-Banking-Portal oder per Post an unsere Filiale erfolgen.\n\n2. **Erforderliche Dokumente**:\n   - **Kaufvertrag**: Eine Kopie des Kaufvertrags, welcher den Besitzerwechsel dokumentiert.\n   - **Amtlicher Grundbucheintrag**: Eine aktuelle Kopie des Grundbucheintrags, der den neuen Besitzer ausweist.\n   - **Personalausweis oder Reisepass**: Eine Kopie eines gültigen Ausweisdokuments sowohl des Verkäufers als auch des Käufers.\n\n3. **Terminvereinbarung**: Es empfiehlt sich, einen Termin in einer unserer Filialen zu vereinbaren, damit wir persönlich alle notwendigen Details mit Ihnen durchgehen und etwaige Fragen direkt klären können. Dies gewährleistet, dass Sie alle Informationen und Anforderungen vollständig verstehen und erfüllt haben.\n\nIch möchte Ihnen außerdem an dieser Stelle kurz auf unsere speziellen Dienstleistungen für Immobilieneigentümer hinweisen. Wenn Sie daran interessiert sind, mehr über Finanzierungsmöglichkeiten oder Versicherungslösungen zu erfahren, stehen wir Ihnen jederzeit zur Verfügung, um Sie umfassend zu beraten.\n\nFalls Sie weitere Fragen haben oder Unterstützung bei einem der Schritte benötigen, zögern Sie bitte nicht, mich zu kontaktieren. Wir sind hier, um Ihnen zu helfen und sicherzustellen, dass Sie mit unserem Service vollkommen zufrieden sind.\n\nIch freue mich darauf, von Ihnen zu hören und verbleibe mit freundlichen Grüßen,\n\nFelix Schäfer  \nKundenservice  \nMigros Bank\n\nTERMINATE",
+        "content": "Betreff: Unterstützung beim Melden eines Besitzerwechsels einer Liegenschaft\n\nSehr geehrte Frau Bader,\n\nvielen Dank, dass Sie sich an die Migros Bank gewandt haben. Ich heiße Felix Schäfer und freue mich, Ihnen bei Ihrem Anliegen behilflich sein zu können.\n\nDer Prozess zur Meldung eines Besitzerwechsels einer Liegenschaft umfasst mehrere Schritte, die wir Ihnen im Folgenden gerne erläutern. Es ist uns wichtig, dass dieser Vorgang für Sie so reibungslos und transparent wie möglich verläuft.\n\n1. **Information über den Besitzerwechsel**: Zunächst müssen wir über den geplanten Wechsel informiert werden. Dies kann schriftlich über unser Online-Banking-Portal oder per Post an unsere Filiale erfolgen.\n\n2. **Erforderliche Dokumente**:\n   - **Kaufvertrag**: Eine Kopie des Kaufvertrags, welcher den Besitzerwechsel dokumentiert.\n   - **Amtlicher Grundbucheintrag**: Eine aktuelle Kopie des Grundbucheintrags, der den neuen Besitzer ausweist.\n   - **Personalausweis oder Reisepass**: Eine Kopie eines gültigen Ausweisdokuments sowohl des Verkäufers als auch des Käufers.\n\n3. **Terminvereinbarung**: Es empfiehlt sich, einen Termin in einer unserer Filialen zu vereinbaren, damit wir persönlich alle notwendigen Details mit Ihnen durchgehen und etwaige Fragen direkt klären können. Dies gewährleistet, dass Sie alle Informationen und Anforderungen vollständig verstehen und erfüllt haben.\n\nIch möchte Ihnen außerdem an dieser Stelle kurz auf unsere speziellen Dienstleistungen für Immobilieneigentümer hinweisen. Wenn Sie daran interessiert sind, mehr über Finanzierungsmöglichkeiten oder Versicherungslösungen zu erfahren, stehen wir Ihnen jederzeit zur Verfügung, um Sie umfassend zu beraten.\n\nFalls Sie weitere Fragen haben oder Unterstützung bei einem der Schritte benötigen, zögern Sie bitte nicht, mich zu kontaktieren. Wir sind hier, um Ihnen zu helfen und sicherzustellen, dass Sie mit unserem Service vollkommen zufrieden sind.\n\nIch freue mich darauf, von Ihnen zu hören und verbleibe mit freundlichen Grüßen,\n\nFelix Schäfer  \nKundenservice  \nMigros Bank",
         "name": "service_agent",
         "role": "user"
       }
@@ -927,7 +936,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "0ee38ba0-9258-4095-b9aa-b5e3d2a604d8"
   },
   {
     "input_settings": {
@@ -996,7 +1006,7 @@
         "role": "user"
       },
       {
-        "content": "Nein, das war eigentlich alles, was ich brauchte. Vielen Dank für Ihre rasche Unterstützung. Auf Wiederhören. TERMINATE",
+        "content": "Nein, das war eigentlich alles, was ich brauchte. Vielen Dank für Ihre rasche Unterstützung. Auf Wiederhören.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1023,7 +1033,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "d46b1182-081c-4fb4-b25c-31c638d5e92e"
   },
   {
     "input_settings": {
@@ -1102,7 +1113,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt super, vielen Dank! Eine digitale Bereitstellung ist genau das, was ich brauche. Zurzeit war das alles, was ich klären wollte. Ich hoffe, die Benachrichtigung kommt bald an. Vielen Dank für Ihre Hilfe, Frau Fischer, und Ihnen noch einen schönen Tag! TERMINATE",
+        "content": "Das klingt super, vielen Dank! Eine digitale Bereitstellung ist genau das, was ich brauche. Zurzeit war das alles, was ich klären wollte. Ich hoffe, die Benachrichtigung kommt bald an. Vielen Dank für Ihre Hilfe, Frau Fischer, und Ihnen noch einen schönen Tag!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1129,7 +1140,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "f38ff9f5-4727-451e-ba7e-c9bceb7695ae"
   },
   {
     "input_settings": {
@@ -1178,7 +1190,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Schäfer,\n\nvielen Dank für Ihre ausführliche Antwort und die klaren Anweisungen. Ich werde die notwendigen Schritte umgehend in die Wege leiten und das Formular entsprechend ausfüllen. Besonders schätze ich die Möglichkeit, die Unterlagen direkt über das Online-Banking-System einreichen zu können, da dies meinen Alltag wesentlich erleichtert.\n\nSollten sich während des Prozesses Fragen ergeben, werde ich nicht zögern, mich erneut an Sie zu wenden. Vielen Dank noch einmal für Ihre Unterstützung und die ausführlichen Informationen zu den nächsten Schritten.\n\nIch freue mich auf eine erfolgreiche Bearbeitung meines Anliegens.\n\nMit freundlichen Grüßen,\n\nGina Keller\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Schäfer,\n\nvielen Dank für Ihre ausführliche Antwort und die klaren Anweisungen. Ich werde die notwendigen Schritte umgehend in die Wege leiten und das Formular entsprechend ausfüllen. Besonders schätze ich die Möglichkeit, die Unterlagen direkt über das Online-Banking-System einreichen zu können, da dies meinen Alltag wesentlich erleichtert.\n\nSollten sich während des Prozesses Fragen ergeben, werde ich nicht zögern, mich erneut an Sie zu wenden. Vielen Dank noch einmal für Ihre Unterstützung und die ausführlichen Informationen zu den nächsten Schritten.\n\nIch freue mich auf eine erfolgreiche Bearbeitung meines Anliegens.\n\nMit freundlichen Grüßen,\n\nGina Keller",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1205,7 +1217,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "9f515b62-ed76-4dc6-90e7-ab1bcf4b8bce"
   },
   {
     "input_settings": {
@@ -1274,7 +1287,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für Ihr Angebot. Der Versand per Post würde mir tatsächlich sehr helfen, da ich mich damit einfach sicherer fühle. Das wäre alles für jetzt, danke nochmals für Ihre Unterstützung. Haben Sie einen schönen Tag. TERMINATE",
+        "content": "Vielen Dank für Ihr Angebot. Der Versand per Post würde mir tatsächlich sehr helfen, da ich mich damit einfach sicherer fühle. Das wäre alles für jetzt, danke nochmals für Ihre Unterstützung. Haben Sie einen schönen Tag.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1301,7 +1314,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "57ef68c0-eebd-41a6-b2b1-28ed5c01ce03"
   },
   {
     "input_settings": {
@@ -1360,7 +1374,7 @@
         "role": "user"
       },
       {
-        "content": "Danke, das hilft mir sehr weiter. Ich werde es über das Online-Banking versuchen und mich durch die Suchfunktion arbeiten. Sollte ich dort nicht zurechtkommen oder noch Fragen aufkommen, melde ich mich nochmal. Die angebotene Hilfe mit dem Kontoauszug werde ich erstmal nicht benötigen, aber es ist gut zu wissen, dass diese Option besteht. Ich danke Ihnen für die klare und hilfreiche Anweisung. TERMINATE",
+        "content": "Danke, das hilft mir sehr weiter. Ich werde es über das Online-Banking versuchen und mich durch die Suchfunktion arbeiten. Sollte ich dort nicht zurechtkommen oder noch Fragen aufkommen, melde ich mich nochmal. Die angebotene Hilfe mit dem Kontoauszug werde ich erstmal nicht benötigen, aber es ist gut zu wissen, dass diese Option besteht. Ich danke Ihnen für die klare und hilfreiche Anweisung.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1387,7 +1401,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "d519b939-db36-426d-a162-1b8bb3b463f1"
   },
   {
     "input_settings": {
@@ -1451,7 +1466,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Sehr geehrter Herr Meier,\n\nvielen Dank, dass Sie uns Ihre Kontonummer zur Verfügung gestellt haben. Ich werde nun umgehend mit der Überprüfung Ihres Kontos beginnen, um den Zahlendreher oder andere Unstimmigkeiten in Ihren Kontoauszügen zu identifizieren und zu klären.\n\nUnsere Fachabteilung wird sich der Angelegenheit mit höchster Priorität annehmen. Sollten wir weitere Informationen benötigen, werde ich mich umgehend bei Ihnen melden. Ansonsten werden wir Sie nach Abschluss der Überprüfung über das Ergebnis und die nächsten Schritte informieren.\n\nIch versichere Ihnen, dass wir alles daran setzen, das Problem schnellstmöglich zu lösen, sodass Sie sich keine weiteren Sorgen machen müssen.\n\nVielen Dank nochmals für Ihr Vertrauen und Ihre Geduld.\n\nMit freundlichen Grüßen,\n\nElena Weber  \nMigros Bank Kundenservice\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Meier,\n\nvielen Dank, dass Sie uns Ihre Kontonummer zur Verfügung gestellt haben. Ich werde nun umgehend mit der Überprüfung Ihres Kontos beginnen, um den Zahlendreher oder andere Unstimmigkeiten in Ihren Kontoauszügen zu identifizieren und zu klären.\n\nUnsere Fachabteilung wird sich der Angelegenheit mit höchster Priorität annehmen. Sollten wir weitere Informationen benötigen, werde ich mich umgehend bei Ihnen melden. Ansonsten werden wir Sie nach Abschluss der Überprüfung über das Ergebnis und die nächsten Schritte informieren.\n\nIch versichere Ihnen, dass wir alles daran setzen, das Problem schnellstmöglich zu lösen, sodass Sie sich keine weiteren Sorgen machen müssen.\n\nVielen Dank nochmals für Ihr Vertrauen und Ihre Geduld.\n\nMit freundlichen Grüßen,\n\nElena Weber  \nMigros Bank Kundenservice",
         "name": "service_agent",
         "role": "user"
       }
@@ -1478,7 +1493,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "578740f5-11ab-4d1d-8a28-aa40a211d137"
   },
   {
     "input_settings": {
@@ -1589,7 +1605,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "48b15d81-5528-407b-a32c-6d2032dbb73a"
   },
   {
     "input_settings": {
@@ -1648,7 +1665,7 @@
         "role": "user"
       },
       {
-        "content": "Ah, das klingt schon viel besser. Ein persönlicher Termin in Ihrer Filiale, das würde mir wirklich am meisten zusagen. Ich denke, ein klärendes Gespräch von Angesicht zu Angesicht könnte meiner Unsicherheit sehr gut entgegenwirken. \n\nVielen Dank, Quentin, für Ihre Geduld mit mir. Ich werde mich umgehend um einen Termin bemühen. Wenn währenddessen noch Fragen auftauchen, könnte ich mich erneut an Sie wenden, nicht wahr? 😊\n\nVielen Dank nochmals für Ihre Unterstützung. TERMINATE",
+        "content": "Ah, das klingt schon viel besser. Ein persönlicher Termin in Ihrer Filiale, das würde mir wirklich am meisten zusagen. Ich denke, ein klärendes Gespräch von Angesicht zu Angesicht könnte meiner Unsicherheit sehr gut entgegenwirken. \n\nVielen Dank, Quentin, für Ihre Geduld mit mir. Ich werde mich umgehend um einen Termin bemühen. Wenn währenddessen noch Fragen auftauchen, könnte ich mich erneut an Sie wenden, nicht wahr? 😊\n\nVielen Dank nochmals für Ihre Unterstützung.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1675,7 +1692,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "0e945d07-3b26-4b1b-9084-9d5e41701827"
   },
   {
     "input_settings": {
@@ -1734,7 +1752,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die Informationen, Frau Bader. Ich werde das berücksichtigen und mich gegebenenfalls an die Service-Hotline wenden oder eine Filiale besuchen. Es ist mir allerdings weiterhin wichtig, keine riskanten Entscheidungen zu treffen, daher werde ich das Thema gewissenhaft verfolgen.\n\nDanke nochmals für Ihre Hilfe!\n\nBeste Grüße,  \nEva Baumann\n\nTERMINATE",
+        "content": "Danke für die Informationen, Frau Bader. Ich werde das berücksichtigen und mich gegebenenfalls an die Service-Hotline wenden oder eine Filiale besuchen. Es ist mir allerdings weiterhin wichtig, keine riskanten Entscheidungen zu treffen, daher werde ich das Thema gewissenhaft verfolgen.\n\nDanke nochmals für Ihre Hilfe!\n\nBeste Grüße,  \nEva Baumann",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1761,7 +1779,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "a81b907f-66d0-4ac6-96b3-7385ef48ef3a"
   },
   {
     "input_settings": {
@@ -1830,7 +1849,7 @@
         "role": "user"
       },
       {
-        "content": "Okay, ich verstehe. Ich werde versuchen, die App später zu nutzen, wenn ich Zugang habe. Falls ich noch Fragen habe, melde ich mich. Danke für Ihre Hilfe. TERMINATE",
+        "content": "Okay, ich verstehe. Ich werde versuchen, die App später zu nutzen, wenn ich Zugang habe. Falls ich noch Fragen habe, melde ich mich. Danke für Ihre Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1857,6 +1876,7 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "9d02f5b4-e95b-4278-8917-aa401777da83"
   }
 ]

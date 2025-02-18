@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank, Olivia. Ich werde in der App nachsehen, wenn ich die Gebühren und Limits genauer überprüfen möchte. Ich habe momentan keine spezifischen Fragen mehr, wenn mir aber noch etwas unklar ist, melde ich mich gerne nochmals. Allen anderen einen stressfreien Abend! TERMINATE",
+        "content": "Vielen Dank, Olivia. Ich werde in der App nachsehen, wenn ich die Gebühren und Limits genauer überprüfen möchte. Ich habe momentan keine spezifischen Fragen mehr, wenn mir aber noch etwas unklar ist, melde ich mich gerne nochmals. Allen anderen einen stressfreien Abend!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "0fcc6164-d951-4b77-ab58-39196b044b20"
   },
   {
     "input_settings": {
@@ -152,7 +153,7 @@
         "role": "user"
       },
       {
-        "content": "Hallo Karin,\n\nIhre Erklärungen haben mir sehr geholfen. Ich werde mir die Informationen durch den Kopf gehen lassen und eventuell einen Beratungstermin vereinbaren. Vielen Dank für Ihre schnelle und kompetente Unterstützung.\n\nMit freundlichen Grüßen,\n\nJonas Graf\n\nTERMINATE",
+        "content": "Hallo Karin,\n\nIhre Erklärungen haben mir sehr geholfen. Ich werde mir die Informationen durch den Kopf gehen lassen und eventuell einen Beratungstermin vereinbaren. Vielen Dank für Ihre schnelle und kompetente Unterstützung.\n\nMit freundlichen Grüßen,\n\nJonas Graf",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -179,6 +180,7 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "de797d0a-5052-4b55-9502-470bdd4aeed1"
   }
 ]

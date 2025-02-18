@@ -66,7 +66,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank, Frau Huber, das ist wirklich aufschlussreich. Ich werde die vorgeschlagenen Schritte unbedingt prüfen und umsetzen. Es scheint, als gäbe es viele einfache Möglichkeiten, unnötige Ausgaben zu vermeiden und gleichzeitig die Kontrolle zu behalten, was beruhigend zu wissen ist.\n\nSollten sich bei der Umsetzung Fragen ergeben, werde ich nicht zögern, mich an Sie zu wenden. Ihre Unterstützung weiß ich sehr zu schätzen, und es ist beruhigend zu wissen, dass die Migros Bank für ihre Kunden da ist.\n\nNochmals vielen Dank für Ihre Geduld und Ihre Hilfe. Bis bald.\n\nBeste Grüße,  \nNico Schuler\n\nTERMINATE",
+        "content": "Vielen Dank, Frau Huber, das ist wirklich aufschlussreich. Ich werde die vorgeschlagenen Schritte unbedingt prüfen und umsetzen. Es scheint, als gäbe es viele einfache Möglichkeiten, unnötige Ausgaben zu vermeiden und gleichzeitig die Kontrolle zu behalten, was beruhigend zu wissen ist.\n\nSollten sich bei der Umsetzung Fragen ergeben, werde ich nicht zögern, mich an Sie zu wenden. Ihre Unterstützung weiß ich sehr zu schätzen, und es ist beruhigend zu wissen, dass die Migros Bank für ihre Kunden da ist.\n\nNochmals vielen Dank für Ihre Geduld und Ihre Hilfe. Bis bald.\n\nBeste Grüße,  \nNico Schuler",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -93,7 +93,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "1a180440-e537-4d3d-8f57-59a421704294"
   },
   {
     "input_settings": {
@@ -162,7 +163,7 @@
         "role": "user"
       },
       {
-        "content": "Okay, danke für die Infos. Werde dann wohl mal die App ausprobieren und schauen, wie weit ich damit komme. Vielleicht klappt's ja doch irgendwie darüber. Ich melde mich nochmal, wenn ich nicht weiterkomme. TERMINATE",
+        "content": "Okay, danke für die Infos. Werde dann wohl mal die App ausprobieren und schauen, wie weit ich damit komme. Vielleicht klappt's ja doch irgendwie darüber. Ich melde mich nochmal, wenn ich nicht weiterkomme.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -189,7 +190,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "55fa2495-4942-4c11-9798-0d0048802359"
   },
   {
     "input_settings": {
@@ -248,7 +250,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Graf,\n\ndanke für die detaillierte Antwort. Das hilft mir schon weiter. Ich werde mich dann direkt an die Beratungsstelle wenden, um den Verkauf von Kassenobligationen zu organisieren. Bitte stellen Sie sicher, dass dort jemand verfügbar ist, der sich schnell um mein Anliegen kümmern kann, da ich keine Zeit habe, länger zu warten.\n\nFalls noch Fragen auftreten, melde ich mich ansonsten wieder bei Ihnen. Ich hoffe, dieses Thema kann nun schleunigst abgeschlossen werden.\n\nBesten Dank und freundliche Grüße,  \nPeter Baumann\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Graf,\n\ndanke für die detaillierte Antwort. Das hilft mir schon weiter. Ich werde mich dann direkt an die Beratungsstelle wenden, um den Verkauf von Kassenobligationen zu organisieren. Bitte stellen Sie sicher, dass dort jemand verfügbar ist, der sich schnell um mein Anliegen kümmern kann, da ich keine Zeit habe, länger zu warten.\n\nFalls noch Fragen auftreten, melde ich mich ansonsten wieder bei Ihnen. Ich hoffe, dieses Thema kann nun schleunigst abgeschlossen werden.\n\nBesten Dank und freundliche Grüße,  \nPeter Baumann",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -275,7 +277,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "187f55e7-f501-4d2c-93d9-4fe0335b07da"
   },
   {
     "input_settings": {
@@ -344,7 +347,7 @@
         "role": "user"
       },
       {
-        "content": "TERMINATE",
+        "content": "",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -371,7 +374,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "180084ae-b0da-475d-b2e0-f18fd86909e3"
   },
   {
     "input_settings": {
@@ -430,7 +434,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die ausführliche Erklärung! Ich werde das gleich ausprobieren. Falls ich während des Prozesses auf Schwierigkeiten stoße, werde ich mich sicherlich beim Kundenservice melden. Sie waren mir eine große Hilfe! 😊\n\nTERMINATE",
+        "content": "Danke für die ausführliche Erklärung! Ich werde das gleich ausprobieren. Falls ich während des Prozesses auf Schwierigkeiten stoße, werde ich mich sicherlich beim Kundenservice melden. Sie waren mir eine große Hilfe! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -457,7 +461,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "db1ec194-9116-4e1b-8ab2-84e5a05f1be7"
   },
   {
     "input_settings": {
@@ -506,7 +511,7 @@
         "role": "user"
       },
       {
-        "content": "Betreff: Weitere Informationen zu meiner Anfrage\n\nSehr geehrte Frau Fischer,\n\nich benötige Unterstützung bei der Benachrichtigung über eine Kontoänderung. Die Mitteilung sollte an alle relevanten Abteilungen innerhalb der Migros Bank gesendet werden, um sicherzustellen, dass alle Transaktionen und Kontoprofilinformationen korrekt aktualisiert werden.\n\nIch erwarte eine prompte Bearbeitung, da solche Angelegenheiten oft zeitkritisch sind. Bitte teilen Sie mir mit, welche weiteren Schritte erforderlich sind, um dies unverzüglich abzuwickeln.\n\nMit freundlichen Grüßen,  \nBoris Koch  ",
+        "content": "Betreff: Weitere Informationen zu meiner Anfrage\n\nSehr geehrte Frau Fischer,\n\nich benötige Unterstützung bei der Benachrichtigung über eine Kontoänderung. Die Mitteilung sollte an alle relevanten Abteilungen innerhalb der Migros Bank gesendet werden, um sicherzustellen, dass alle Transaktionen und Kontoprofilinformationen korrekt aktualisiert werden.\n\nIch erwarte eine prompte Bearbeitung, da solche Angelegenheiten oft zeitkritisch sind. Bitte teilen Sie mir mit, welche weiteren Schritte erforderlich sind, um dies unverzüglich abzuwickeln.\n\nMit freundlichen Grüßen,  \nBoris Koch",
         "role": "assistant",
         "name": "customer_agent"
       },
@@ -516,7 +521,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Fischer,\n\nich danke Ihnen für die rasche Antwort. Ich werde die genannten Schritte schnellstmöglich durchführen, um die Kontoänderung zu veranlassen. Sollte ich hierbei auf Schwierigkeiten stoßen, werde ich mich an Sie wenden.\n\nIch hoffe auf eine zügige Bearbeitung, da dies für meine Geschäftsprozesse von höchster Dringlichkeit ist. Eine Bestätigung über den Eingang der Benachrichtigung wäre ebenfalls sehr hilfreich.\n\nVielen Dank für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nBoris Koch \n\nTERMINATE",
+        "content": "Sehr geehrte Frau Fischer,\n\nich danke Ihnen für die rasche Antwort. Ich werde die genannten Schritte schnellstmöglich durchführen, um die Kontoänderung zu veranlassen. Sollte ich hierbei auf Schwierigkeiten stoßen, werde ich mich an Sie wenden.\n\nIch hoffe auf eine zügige Bearbeitung, da dies für meine Geschäftsprozesse von höchster Dringlichkeit ist. Eine Bestätigung über den Eingang der Benachrichtigung wäre ebenfalls sehr hilfreich.\n\nVielen Dank für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nBoris Koch",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -543,7 +548,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "9da57b53-3364-4b79-881a-ccbfffe1ace8"
   },
   {
     "input_settings": {
@@ -622,7 +628,7 @@
         "role": "user"
       },
       {
-        "content": "Gut, wenn das erledigt werden kann, gebe ich Ihnen meine Kontaktdaten. Ich erwarte, dass sich jemand dann zügig bei mir meldet. Ich hoffe, es gibt tatsächlich die Möglichkeit, dass so etwas zeitnah und effizient geregelt wird. Ich will einfach nur sehen, dass die Bank meine Anliegen ernst nimmt und auch proaktiv handelt. TERMINATE",
+        "content": "Gut, wenn das erledigt werden kann, gebe ich Ihnen meine Kontaktdaten. Ich erwarte, dass sich jemand dann zügig bei mir meldet. Ich hoffe, es gibt tatsächlich die Möglichkeit, dass so etwas zeitnah und effizient geregelt wird. Ich will einfach nur sehen, dass die Bank meine Anliegen ernst nimmt und auch proaktiv handelt.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -649,7 +655,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "461ad14e-4341-465f-9832-57cbe818ef43"
   },
   {
     "input_settings": {
@@ -718,7 +725,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank, das hilft echt weiter! Denke, ich habe jetzt eine klarere Vorstellung. Ich werde noch die Website checken oder direkt mal anrufen, wenn ich mehr Details brauche. Schätze die schnelle Hilfe hier! TERMINATE",
+        "content": "Vielen Dank, das hilft echt weiter! Denke, ich habe jetzt eine klarere Vorstellung. Ich werde noch die Website checken oder direkt mal anrufen, wenn ich mehr Details brauche. Schätze die schnelle Hilfe hier!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -745,7 +752,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "8ac245df-55df-4bda-bd78-6c5315959fd1"
   },
   {
     "input_settings": {
@@ -814,7 +822,7 @@
         "role": "user"
       },
       {
-        "content": "Also wirklich, ich verstehe einfach nicht, warum das alles so kompliziert gemacht werden muss. In einer Zeit, wo eh schon alles Kopf steht, kann man nicht noch mehr Hürden gebrauchen. Ich kann doch nicht für alles irgendwohin rennen oder dauernd telefonieren. Wenn Sie das nicht irgendwie einfacher machen können, dann weiß ich auch nicht. Ich bin einfach echt verärgert!\n\nBenjamin Meier\n\nTERMINATE",
+        "content": "Also wirklich, ich verstehe einfach nicht, warum das alles so kompliziert gemacht werden muss. In einer Zeit, wo eh schon alles Kopf steht, kann man nicht noch mehr Hürden gebrauchen. Ich kann doch nicht für alles irgendwohin rennen oder dauernd telefonieren. Wenn Sie das nicht irgendwie einfacher machen können, dann weiß ich auch nicht. Ich bin einfach echt verärgert!\n\nBenjamin Meier",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -841,7 +849,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "9d92aa2f-6ff0-4f03-9ec2-5d445264852f"
   },
   {
     "input_settings": {
@@ -920,7 +929,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt soweit sehr verständlich. Ich denke, ich habe jetzt eine gute Übersicht, wohin für mich der nächste Schritt gehen könnte. Vielen Dank für Ihre geduldige Hilfe und die Klarheit bei der Erklärung. Ich werde das auf der Website nochmal genauer anschauen. Das war wirklich hilfreich. Vielen Dank nochmal und einen schönen Tag! TERMINATE",
+        "content": "Das klingt soweit sehr verständlich. Ich denke, ich habe jetzt eine gute Übersicht, wohin für mich der nächste Schritt gehen könnte. Vielen Dank für Ihre geduldige Hilfe und die Klarheit bei der Erklärung. Ich werde das auf der Website nochmal genauer anschauen. Das war wirklich hilfreich. Vielen Dank nochmal und einen schönen Tag!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -947,7 +956,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "46fd14de-ff56-434c-b70a-546914fdb93b"
   },
   {
     "input_settings": {
@@ -1016,7 +1026,7 @@
         "role": "user"
       },
       {
-        "content": "Alles klar, das klingt gut. Vielen Dank für die Unterstützung und die nützlichen Tipps! Ich hoffe, das wird schon alles klappen. Hab du auch einen schönen Tag. Bis zum nächsten Mal! 😊\n\nTERMINATE",
+        "content": "Alles klar, das klingt gut. Vielen Dank für die Unterstützung und die nützlichen Tipps! Ich hoffe, das wird schon alles klappen. Hab du auch einen schönen Tag. Bis zum nächsten Mal! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1043,7 +1053,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "288aa3f1-61d8-4b6f-85d5-f2c0d6c26519"
   },
   {
     "input_settings": {
@@ -1102,7 +1113,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die hilfreichen Infos! Dann werde ich gleich mal in die Filiale gehen und mich dort weiter informieren. Es ist schön zu wissen, dass es Menschen gibt, die sich noch um einen kümmern. Falls sich noch Fragen ergeben, melde ich mich einfach wieder. Dankeschön für die Unterstützung und die Freundlichkeit! 😊\n\nTERMINATE",
+        "content": "Vielen Dank für die hilfreichen Infos! Dann werde ich gleich mal in die Filiale gehen und mich dort weiter informieren. Es ist schön zu wissen, dass es Menschen gibt, die sich noch um einen kümmern. Falls sich noch Fragen ergeben, melde ich mich einfach wieder. Dankeschön für die Unterstützung und die Freundlichkeit! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1129,7 +1140,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "69bdb907-98b9-4a48-af2a-16cad6a77122"
   },
   {
     "input_settings": {
@@ -1173,7 +1185,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Hallo Xenia! 😊\n\nVielen Dank für Ihre Anfrage! Um eine Kontobestätigung von der Migros Bank zu erhalten, haben Sie folgende Möglichkeiten:\n\n1. **Online-Banking**: Loggen Sie sich in Ihren Online-Banking-Bereich ein. Dort sollten Sie die Option finden, eine Kontobestätigung anzufordern.\n\n2. **Kundenservice**: Sie können uns direkt kontaktieren. Besuchen Sie bitte unsere Website, da finden Sie unsere Kontaktdaten und können uns telefonisch oder per E-Mail erreichen.\n\n3. **Chat-Unterstützung**: Wenn Sie bereits bei uns registriert sind, nutzen Sie gerne den Chat auf unserer Webseite für schnelle Unterstützung.\n\nSollten Sie weitere Fragen haben oder mehr Hilfe benötigen, lassen Sie es mich wissen! Ich bin hier, um zu helfen! 🙌 ",
+        "content": "Hallo Xenia! 😊\n\nVielen Dank für Ihre Anfrage! Um eine Kontobestätigung von der Migros Bank zu erhalten, haben Sie folgende Möglichkeiten:\n\n1. **Online-Banking**: Loggen Sie sich in Ihren Online-Banking-Bereich ein. Dort sollten Sie die Option finden, eine Kontobestätigung anzufordern.\n\n2. **Kundenservice**: Sie können uns direkt kontaktieren. Besuchen Sie bitte unsere Website, da finden Sie unsere Kontaktdaten und können uns telefonisch oder per E-Mail erreichen.\n\n3. **Chat-Unterstützung**: Wenn Sie bereits bei uns registriert sind, nutzen Sie gerne den Chat auf unserer Webseite für schnelle Unterstützung.\n\nSollten Sie weitere Fragen haben oder mehr Hilfe benötigen, lassen Sie es mich wissen! Ich bin hier, um zu helfen! 🙌",
         "name": "society_of_mind",
         "role": "user"
       },
@@ -1208,7 +1220,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt super, vielen Dank für die Vorlage! Ich mach mich gleich dran, das so aufzusetzen und rauszuschicken. So langsam verstehe ich auch, wie ich es zukünftig anpacken kann. 👍 Ich hoffe, das klappt dann alles. Falls doch noch irgendetwas auftaucht, melde ich mich nochmal. TERMINATE",
+        "content": "Das klingt super, vielen Dank für die Vorlage! Ich mach mich gleich dran, das so aufzusetzen und rauszuschicken. So langsam verstehe ich auch, wie ich es zukünftig anpacken kann. 👍 Ich hoffe, das klappt dann alles. Falls doch noch irgendetwas auftaucht, melde ich mich nochmal.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1235,7 +1247,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "e5cfda97-94c2-4f60-8d39-a8dbe5afb653"
   },
   {
     "input_settings": {
@@ -1294,7 +1307,7 @@
         "role": "user"
       },
       {
-        "content": "Betreff: Re: Übersicht zu Zahlungsfristen und -vereinbarungen\n\nLiebe Frau Müller,\n\nvielen Dank für die Informationen. Ich hoffe, das Dokument wird klar und einfach gehalten sein, damit ich nicht zu lange dafür brauche. Ich bin in letzter Zeit etwas eingespannt und brauche diese Klarheit schnell.\n\nSenden Sie mir bitte das Dokument so bald wie möglich zu. Das sollte hoffentlich die meisten meiner Fragen klären. Ich schätze Ihre schnelle Hilfe sehr.\n\nViele Grüße,  \nSimon Weber\n\nTERMINATE",
+        "content": "Betreff: Re: Übersicht zu Zahlungsfristen und -vereinbarungen\n\nLiebe Frau Müller,\n\nvielen Dank für die Informationen. Ich hoffe, das Dokument wird klar und einfach gehalten sein, damit ich nicht zu lange dafür brauche. Ich bin in letzter Zeit etwas eingespannt und brauche diese Klarheit schnell.\n\nSenden Sie mir bitte das Dokument so bald wie möglich zu. Das sollte hoffentlich die meisten meiner Fragen klären. Ich schätze Ihre schnelle Hilfe sehr.\n\nViele Grüße,  \nSimon Weber",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1321,7 +1334,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "d82170d2-27ba-46a7-b084-780356013c43"
   },
   {
     "input_settings": {
@@ -1390,7 +1404,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die Erklärung! 😊 Es ist gut zu wissen, worauf ich achten muss, und ich werde mich wahrscheinlich direkt an den Kundenservice wenden, um sicherzugehen. Unklarheiten hätte ich eigentlich keine mehr, aber wenn noch was auftreten sollte, lasse ich es euch wissen. Schönen Tag noch und danke für die Unterstützung! TERMINATE",
+        "content": "Danke für die Erklärung! 😊 Es ist gut zu wissen, worauf ich achten muss, und ich werde mich wahrscheinlich direkt an den Kundenservice wenden, um sicherzugehen. Unklarheiten hätte ich eigentlich keine mehr, aber wenn noch was auftreten sollte, lasse ich es euch wissen. Schönen Tag noch und danke für die Unterstützung!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1417,7 +1431,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "727bef07-47f5-411a-a927-f53476979269"
   },
   {
     "input_settings": {
@@ -1486,7 +1501,7 @@
         "role": "user"
       },
       {
-        "content": "Nein, vielen Dank für Ihre Hilfe soweit. Ich werde die Hotline anrufen, um alles zu klären. Ich bin zuversichtlich, dass sich alles regeln lässt. Schönen Tag noch! TERMINATE",
+        "content": "Nein, vielen Dank für Ihre Hilfe soweit. Ich werde die Hotline anrufen, um alles zu klären. Ich bin zuversichtlich, dass sich alles regeln lässt. Schönen Tag noch!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1513,7 +1528,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "1f5b7a96-ed01-4015-a71e-771ed2202885"
   },
   {
     "input_settings": {
@@ -1562,7 +1578,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Weber,\n\nich danke Ihnen für die ausführlichen Informationen zu den SWIFT-Überweisungen. Ihre Antwort hilft mir sehr bei der Planung der nächsten Schritte. Wenn ich weitere Fragen oder Unklarheiten haben sollte, werde ich gerne erneut auf Sie zukommen.\n\nVielen Dank nochmal für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nGabriela Schmid\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Weber,\n\nich danke Ihnen für die ausführlichen Informationen zu den SWIFT-Überweisungen. Ihre Antwort hilft mir sehr bei der Planung der nächsten Schritte. Wenn ich weitere Fragen oder Unklarheiten haben sollte, werde ich gerne erneut auf Sie zukommen.\n\nVielen Dank nochmal für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nGabriela Schmid",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1589,7 +1605,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "3070d379-0fe1-45f0-b6cc-0c6386c663ec"
   },
   {
     "input_settings": {
@@ -1658,7 +1675,7 @@
         "role": "user"
       },
       {
-        "content": "Das ist gut zu wissen, dass es diese Unterstützung gibt. Vielen Dank für Ihre Hilfe und Geduld. Ich denke, ich habe nun alles, was ich brauche. Sollte ich noch etwas benötigen, melde ich mich gerne wieder. Vielen Dank und einen schönen Tag noch! TERMINATE",
+        "content": "Das ist gut zu wissen, dass es diese Unterstützung gibt. Vielen Dank für Ihre Hilfe und Geduld. Ich denke, ich habe nun alles, was ich brauche. Sollte ich noch etwas benötigen, melde ich mich gerne wieder. Vielen Dank und einen schönen Tag noch!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1685,7 +1702,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "7d18eaf3-f925-4e68-8ee0-c1dad0da39d6"
   },
   {
     "input_settings": {
@@ -1754,7 +1772,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt nach einem guten Plan, persönlich auf jemanden zuzugehen, der mir helfen kann. Ich werde einen Besuch in der Filiale überlegen. Vielleicht ist es wirklich einfacher, wenn ich das direkt mit jemandem klären kann. Vielen Dank für Ihre Hilfe und Geduld! Ich hoffe, das bringt mich dem Ziel schon ein großes Stück näher. TERMINATE",
+        "content": "Das klingt nach einem guten Plan, persönlich auf jemanden zuzugehen, der mir helfen kann. Ich werde einen Besuch in der Filiale überlegen. Vielleicht ist es wirklich einfacher, wenn ich das direkt mit jemandem klären kann. Vielen Dank für Ihre Hilfe und Geduld! Ich hoffe, das bringt mich dem Ziel schon ein großes Stück näher.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1781,7 +1799,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "44845583-09f5-49c7-a71a-519388de16fd"
   },
   {
     "input_settings": {
@@ -1830,7 +1849,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Zimmermann,\n\nvielen Dank für Ihre detaillierte und hilfreiche Antwort. Ich schätze die klare Anleitung, die Sie mir gegeben haben. Ich werde die erforderlichen Schritte zur Festlegung der neuen Limite baldmöglichst in Angriff nehmen.\n\nEs ist beruhigend zu wissen, dass ich mich bei Fragen oder Unsicherheiten an Sie wenden kann und so auf eine positive Erfahrung mit der Migros Bank hoffen kann.\n\nIch werde mich bald wieder bei Ihnen melden, falls ich weitere Informationen zu den anderen Dienstleistungen benötige.\n\nNochmals herzlichen Dank für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nDaniel Lang\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Zimmermann,\n\nvielen Dank für Ihre detaillierte und hilfreiche Antwort. Ich schätze die klare Anleitung, die Sie mir gegeben haben. Ich werde die erforderlichen Schritte zur Festlegung der neuen Limite baldmöglichst in Angriff nehmen.\n\nEs ist beruhigend zu wissen, dass ich mich bei Fragen oder Unsicherheiten an Sie wenden kann und so auf eine positive Erfahrung mit der Migros Bank hoffen kann.\n\nIch werde mich bald wieder bei Ihnen melden, falls ich weitere Informationen zu den anderen Dienstleistungen benötige.\n\nNochmals herzlichen Dank für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nDaniel Lang",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1857,6 +1876,7 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "0d6aa175-3155-4c1a-bdc8-000e9573098e"
   }
 ]

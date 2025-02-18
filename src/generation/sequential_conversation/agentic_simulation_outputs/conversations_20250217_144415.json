@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Müller,\n\nvielen Dank für die ausführliche Erklärung. Es beruhigt mich zu wissen, dass ich die Multikonti-Funktion direkt über die App aktivieren kann. Ich werde das gleich heute Abend ausprobieren.\n\nFalls ich dennoch auf Probleme stoße, werde ich mich an den Kundenservice wenden. Vielen Dank für Ihre geduldige Hilfe.\n\nMit freundlichen Grüßen,  \nIris Bader\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Müller,\n\nvielen Dank für die ausführliche Erklärung. Es beruhigt mich zu wissen, dass ich die Multikonti-Funktion direkt über die App aktivieren kann. Ich werde das gleich heute Abend ausprobieren.\n\nFalls ich dennoch auf Probleme stoße, werde ich mich an den Kundenservice wenden. Vielen Dank für Ihre geduldige Hilfe.\n\nMit freundlichen Grüßen,  \nIris Bader",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "92f75fa6-5144-4c0d-a98b-b4081e6a325f"
   },
   {
     "input_settings": {
@@ -142,7 +143,7 @@
         "role": "user"
       },
       {
-        "content": "Danke, ich werde daran denken! Denke, ich hab alles richtig und hoffe, dass alles glatt läuft. Falls nicht, melde ich mich wieder. Danke nochmal! TERMINATE",
+        "content": "Danke, ich werde daran denken! Denke, ich hab alles richtig und hoffe, dass alles glatt läuft. Falls nicht, melde ich mich wieder. Danke nochmal!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -169,6 +170,7 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "8e429f09-9816-43a9-a93d-6b034f9aa615"
   }
 ]

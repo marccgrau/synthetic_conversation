@@ -66,7 +66,7 @@
         "role": "user"
       },
       {
-        "content": "Ich schätze Ihre Hilfe sehr. Ich werde darauf achten, alles zu befolgen, was Sie vorgeschlagen haben. Vielen Dank, dass Sie mir die nötigen Informationen bereitgestellt haben. TERMINATE",
+        "content": "Ich schätze Ihre Hilfe sehr. Ich werde darauf achten, alles zu befolgen, was Sie vorgeschlagen haben. Vielen Dank, dass Sie mir die nötigen Informationen bereitgestellt haben.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -93,7 +93,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "586ed9ce-222e-41bd-8cca-c9a118c9d86b"
   },
   {
     "input_settings": {
@@ -152,7 +153,7 @@
         "role": "user"
       },
       {
-        "content": "Okay, danke für die Infos. Ich schau mir das mit der Kreditkarte mal an. Wenn ich noch Fragen habe, melde ich mich wieder. 😊 TERMINATE",
+        "content": "Okay, danke für die Infos. Ich schau mir das mit der Kreditkarte mal an. Wenn ich noch Fragen habe, melde ich mich wieder. 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -179,6 +180,7 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "22734f7b-ab5e-4782-a323-d8d262789045"
   }
 ]

@@ -66,7 +66,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt beruhigend. Ich denke, das könnte mir wirklich helfen, alle meine Fragen direkt loszuwerden. Vielen Dank für Ihre Geduld und Unterstützung! Ich werde das so bald wie möglich angehen. \n\nTERMINATE",
+        "content": "Das klingt beruhigend. Ich denke, das könnte mir wirklich helfen, alle meine Fragen direkt loszuwerden. Vielen Dank für Ihre Geduld und Unterstützung! Ich werde das so bald wie möglich angehen.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -93,7 +93,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "06a4230c-6567-441a-949d-934f4804de17"
   },
   {
     "input_settings": {
@@ -152,7 +153,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Bader,\n\nvielen Dank für die ausführlichen Informationen zu den Vorsorgemöglichkeiten und den Konditionen. Ihre Erklärung hat mir sehr geholfen, ein klareres Bild zu erhalten.\n\nIch werde die Informationen in Ruhe durchgehen und mich dann für einen Termin entscheiden. Sollten im Vorfeld noch weitere Fragen auftauchen, werde ich nicht zögern, mich bei Ihnen zu melden.\n\nHerzlichen Dank nochmals für Ihre Unterstützung!\n\nMit freundlichen Grüßen,  \nAnna Müller\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Bader,\n\nvielen Dank für die ausführlichen Informationen zu den Vorsorgemöglichkeiten und den Konditionen. Ihre Erklärung hat mir sehr geholfen, ein klareres Bild zu erhalten.\n\nIch werde die Informationen in Ruhe durchgehen und mich dann für einen Termin entscheiden. Sollten im Vorfeld noch weitere Fragen auftauchen, werde ich nicht zögern, mich bei Ihnen zu melden.\n\nHerzlichen Dank nochmals für Ihre Unterstützung!\n\nMit freundlichen Grüßen,  \nAnna Müller",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -179,6 +180,7 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "836c8945-f5e6-4fd9-8ca6-5abb5a663d2b"
   }
 ]

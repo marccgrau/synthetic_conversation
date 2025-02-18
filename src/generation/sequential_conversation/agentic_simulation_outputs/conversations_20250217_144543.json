@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die Tipps! Ich werde darauf achten, besonders beim Umgang mit exotischen Währungen. Ich schätze Ihr schnelles Feedback sehr. Alles Gute und bis zum nächsten Mal! TERMINATE",
+        "content": "Danke für die Tipps! Ich werde darauf achten, besonders beim Umgang mit exotischen Währungen. Ich schätze Ihr schnelles Feedback sehr. Alles Gute und bis zum nächsten Mal!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "50f70397-08fd-44cd-8a0a-0ecf8082504c"
   },
   {
     "input_settings": {
@@ -122,7 +123,7 @@
     },
     "messages": [
       {
-        "content": "\nHallo Migros Bank Team,\n\nmein Name ist Tanja Meier. Ich benötige Unterstützung bei der Klärung von Bankdienstleistungen für Unternehmen. Können Sie mir bitte weiterhelfen?\n\nVielen Dank im Voraus!\n\nFreundliche Grüße,  \nTanja Meier",
+        "content": "Hallo Migros Bank Team,\n\nmein Name ist Tanja Meier. Ich benötige Unterstützung bei der Klärung von Bankdienstleistungen für Unternehmen. Können Sie mir bitte weiterhelfen?\n\nVielen Dank im Voraus!\n\nFreundliche Grüße,  \nTanja Meier",
         "role": "assistant",
         "name": "customer_agent"
       },
@@ -142,7 +143,7 @@
         "role": "user"
       },
       {
-        "content": "Perfekt, das klingt schon viel besser! 😊 Werde mich darum kümmern, die nötigen Dokumente zusammenzustellen. Wenn ich noch weitere Fragen habe, melde ich mich einfach bei euch. Danke für die schnelle Hilfe!\n\nTERMINATE",
+        "content": "Perfekt, das klingt schon viel besser! 😊 Werde mich darum kümmern, die nötigen Dokumente zusammenzustellen. Wenn ich noch weitere Fragen habe, melde ich mich einfach bei euch. Danke für die schnelle Hilfe!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -169,6 +170,7 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "585216ee-ba31-4046-be02-f0c179bddb32"
   }
 ]

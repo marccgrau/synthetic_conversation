@@ -66,7 +66,7 @@
         "role": "user"
       },
       {
-        "content": "Okay. Ich werde das tun müssen. Etwas Frustration, aber ich danke Ihnen für Ihre Zeit. Auf Wiederhören. TERMINATE",
+        "content": "Okay. Ich werde das tun müssen. Etwas Frustration, aber ich danke Ihnen für Ihre Zeit. Auf Wiederhören.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -93,7 +93,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "ca459aba-887f-4311-a104-81d023315dac"
   },
   {
     "input_settings": {
@@ -162,7 +163,7 @@
         "role": "user"
       },
       {
-        "content": "Das ist wirklich enttäuschend. Ich hätte gedacht, dass man mir am Telefon helfen kann. Aber gut, offenbar kommen wir hier nicht weiter. Ich werde das anders klären müssen. TERMINATE.",
+        "content": "Das ist wirklich enttäuschend. Ich hätte gedacht, dass man mir am Telefon helfen kann. Aber gut, offenbar kommen wir hier nicht weiter. Ich werde das anders klären müssen. .",
         "role": "assistant",
         "name": "customer_agent"
       },
@@ -172,7 +173,7 @@
         "role": "user"
       },
       {
-        "content": "TERMINATE",
+        "content": "",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -199,7 +200,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "d0ce7ce9-098b-448b-acb6-07286944c22d"
   },
   {
     "input_settings": {
@@ -268,7 +270,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt jetzt konkreter, danke. Ich werde es so probieren. Hoffe, es klappt ohne weitere Probleme. TERMINATE",
+        "content": "Das klingt jetzt konkreter, danke. Ich werde es so probieren. Hoffe, es klappt ohne weitere Probleme.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -295,7 +297,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "bdcd3fb4-1fde-45ca-a256-0d0768089a7d"
   },
   {
     "input_settings": {
@@ -354,7 +357,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Damen und Herren,\n\nvielen Dank für Ihre ausführliche und informative Antwort. Es ist beruhigend zu wissen, dass so umfangreiche Sicherheits- und Anpassungsmaßnahmen ergriffen werden, um die Integrität und Relevanz meiner Daten zu gewährleisten. Ich werde die Gelegenheit nutzen, meine Informationen online zu überprüfen und gegebenenfalls aktualisieren.\n\nFalls ich weitere Fragen oder Anregungen dazu habe, werde ich mich gerne an Sie wenden. Vielen Dank für Ihre Unterstützung und die geduldigen Erklärungen, die mir ein besseres Verständnis für die Prozesse bei der Migros Bank gegeben haben.\n\nMit freundlichen Grüßen,\nRita Schmid\n\nTERMINATE",
+        "content": "Sehr geehrte Damen und Herren,\n\nvielen Dank für Ihre ausführliche und informative Antwort. Es ist beruhigend zu wissen, dass so umfangreiche Sicherheits- und Anpassungsmaßnahmen ergriffen werden, um die Integrität und Relevanz meiner Daten zu gewährleisten. Ich werde die Gelegenheit nutzen, meine Informationen online zu überprüfen und gegebenenfalls aktualisieren.\n\nFalls ich weitere Fragen oder Anregungen dazu habe, werde ich mich gerne an Sie wenden. Vielen Dank für Ihre Unterstützung und die geduldigen Erklärungen, die mir ein besseres Verständnis für die Prozesse bei der Migros Bank gegeben haben.\n\nMit freundlichen Grüßen,\nRita Schmid",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -381,7 +384,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "bee2e8ee-4fe8-4059-a872-936f3dd51843"
   },
   {
     "input_settings": {
@@ -450,7 +454,7 @@
         "role": "user"
       },
       {
-        "content": "Okay, das klingt ja gut, aber immer noch ziemlich allgemein. Ich glaube, ich werde doch den Kundenservice direkt kontaktieren müssen. Ich hoffe, die können mir weiterhelfen. Das Ganze ist fürs Geschäft einfach enorm wichtig. \n\nIch melde mich dann dort mal direkt. Vielen Dank trotzdem für die Informationen.\n\nTERMINATE",
+        "content": "Okay, das klingt ja gut, aber immer noch ziemlich allgemein. Ich glaube, ich werde doch den Kundenservice direkt kontaktieren müssen. Ich hoffe, die können mir weiterhelfen. Das Ganze ist fürs Geschäft einfach enorm wichtig. \n\nIch melde mich dann dort mal direkt. Vielen Dank trotzdem für die Informationen.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -477,7 +481,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "aca51d93-fc28-401f-a8ff-e3bf3a02656e"
   },
   {
     "input_settings": {
@@ -526,7 +531,7 @@
         "role": "user"
       },
       {
-        "content": "Oh, okay! 😊 Klingt machbar. Ich hab die Infos zwar noch nicht alle parat, aber ich bemühe mich, sie zusammenzubekommen. E-Mail an den Schadenfall Karten, got it! Vielen Dank für die Hilfe! Wenn ich noch was brauche, melde ich mich nochmal. Schönen Tag noch! TERMINATE",
+        "content": "Oh, okay! 😊 Klingt machbar. Ich hab die Infos zwar noch nicht alle parat, aber ich bemühe mich, sie zusammenzubekommen. E-Mail an den Schadenfall Karten, got it! Vielen Dank für die Hilfe! Wenn ich noch was brauche, melde ich mich nochmal. Schönen Tag noch!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -553,7 +558,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "c371ed3f-6dc4-460a-a0ab-5036612570ac"
   },
   {
     "input_settings": {
@@ -632,7 +638,7 @@
         "role": "user"
       },
       {
-        "content": "TERMINATE",
+        "content": "",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -659,7 +665,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "6644794c-e9f5-4db7-a6b3-f02e26907b66"
   },
   {
     "input_settings": {
@@ -728,7 +735,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Damen und Herren,\n\nich danke Ihnen für die klare Anleitung. Ich werde die Schritte ausprobieren und hoffe, dass alles reibungslos verläuft. Bei weiteren Fragen oder Unsicherheiten melde ich mich gerne erneut.\n\nVielen Dank nochmals für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nFelix Schäfer\n\nTERMINATE",
+        "content": "Sehr geehrte Damen und Herren,\n\nich danke Ihnen für die klare Anleitung. Ich werde die Schritte ausprobieren und hoffe, dass alles reibungslos verläuft. Bei weiteren Fragen oder Unsicherheiten melde ich mich gerne erneut.\n\nVielen Dank nochmals für Ihre Unterstützung.\n\nMit freundlichen Grüßen,  \nFelix Schäfer",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -755,7 +762,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "514383db-7d26-49e6-af9a-6e2f63f166a8"
   },
   {
     "input_settings": {
@@ -814,7 +822,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt wunderbar, danke! Ich werde die Website besuchen und möglicherweise einen Termin mit einem Berater vereinbaren. Ich bin optimistisch, dass ich die richtige Unterstützung finde, um meine Altersvorsorge gut zu planen. Wenn ich noch Fragen habe, melde ich mich einfach wieder bei Ihnen. Danke nochmal für die Hilfe! 😊 TERMINATE",
+        "content": "Das klingt wunderbar, danke! Ich werde die Website besuchen und möglicherweise einen Termin mit einem Berater vereinbaren. Ich bin optimistisch, dass ich die richtige Unterstützung finde, um meine Altersvorsorge gut zu planen. Wenn ich noch Fragen habe, melde ich mich einfach wieder bei Ihnen. Danke nochmal für die Hilfe! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -841,7 +849,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "2b663e51-b5bb-42b0-ade1-35eebd84088a"
   },
   {
     "input_settings": {
@@ -910,7 +919,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die schnelle Hilfe. Ich werde mich an die Service-Line wenden, um das zu klären. Sollte ich noch weitere Fragen haben, melde ich mich wieder. TERMINATE",
+        "content": "Danke für die schnelle Hilfe. Ich werde mich an die Service-Line wenden, um das zu klären. Sollte ich noch weitere Fragen haben, melde ich mich wieder.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -937,7 +946,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "1046ca72-f8e2-402a-9040-3e72059951b6"
   },
   {
     "input_settings": {
@@ -996,7 +1006,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die ausführlichen Informationen zu den Festhypotheken. Das mit der festen Laufzeit und den Zinsen klingt spannend – ich werde das auf jeden Fall im Hinterkopf behalten, wenn ich mehr über das Thema nachdenke.\n\nFalls sich noch weitere Fragen ergeben, werde ich mich gerne wieder an Sie wenden. Nochmals vielen Dank für Ihre Hilfe!\n\nMit freundlichen Grüßen,  \nTanja Meier\n\nTERMINATE",
+        "content": "Vielen Dank für die ausführlichen Informationen zu den Festhypotheken. Das mit der festen Laufzeit und den Zinsen klingt spannend – ich werde das auf jeden Fall im Hinterkopf behalten, wenn ich mehr über das Thema nachdenke.\n\nFalls sich noch weitere Fragen ergeben, werde ich mich gerne wieder an Sie wenden. Nochmals vielen Dank für Ihre Hilfe!\n\nMit freundlichen Grüßen,  \nTanja Meier",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1023,7 +1033,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "3749527d-bf66-4d93-9769-05afff757fc8"
   },
   {
     "input_settings": {
@@ -1092,7 +1103,7 @@
         "role": "user"
       },
       {
-        "content": "Das war sehr hilfreich, danke. Ich denke, die Festgeldanlagen könnten eine interessante Ergänzung zu meinem Vorsorgekonto sein. Der langfristige Plan und die Stabilität sprechen mich an. Immobilienfonds könnten ebenfalls eine Option sein, die ich mir genauer anschauen sollte. \n\nIch werde diese Informationen nochmals in Ruhe durchdenken. Danke für Ihre Unterstützung. TERMINATE",
+        "content": "Das war sehr hilfreich, danke. Ich denke, die Festgeldanlagen könnten eine interessante Ergänzung zu meinem Vorsorgekonto sein. Der langfristige Plan und die Stabilität sprechen mich an. Immobilienfonds könnten ebenfalls eine Option sein, die ich mir genauer anschauen sollte. \n\nIch werde diese Informationen nochmals in Ruhe durchdenken. Danke für Ihre Unterstützung.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1119,7 +1130,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "cc1b2ba8-7cc1-4390-9ad2-80e62e52272b"
   },
   {
     "input_settings": {
@@ -1188,7 +1200,7 @@
         "role": "user"
       },
       {
-        "content": "Danke, das klingt schon besser. Ich werde das gleich ausprobieren. Aber falls ich nicht zurechtkomme, erwarte ich, dass Sie mir weiterhelfen. Ich bin es wirklich leid, ständig nachfragen zu müssen. TERMINATE",
+        "content": "Danke, das klingt schon besser. Ich werde das gleich ausprobieren. Aber falls ich nicht zurechtkomme, erwarte ich, dass Sie mir weiterhelfen. Ich bin es wirklich leid, ständig nachfragen zu müssen.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1215,7 +1227,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "f8e33980-f1b6-4e5a-a910-52dd6e84252a"
   },
   {
     "input_settings": {
@@ -1274,7 +1287,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Damen und Herren,\n\nich danke Ihnen herzlich für die hilfreichen Informationen. Ich werde das Formular dann zu Hause ausdrucken und ausfüllen. Ihr Vorschlag, einen Termin in einer Filiale zu vereinbaren, empfinde ich als sehr hilfreich. Ich fühle mich bei einem persönlichen Gespräch immer wohler, besonders bei wichtigen Finanzangelegenheiten.\n\nIch werde den empfohlenen Weg nutzen, um einen Termin zu vereinbaren und hoffe, dass ich bald die Gelegenheit habe, mit einem Ihrer Berater persönlich zu sprechen.\n\nNochmals vielen Dank für Ihre Unterstützung und Geduld.\n\nMit freundlichen Grüßen,  \nNico Schuler\n\nTERMINATE",
+        "content": "Sehr geehrte Damen und Herren,\n\nich danke Ihnen herzlich für die hilfreichen Informationen. Ich werde das Formular dann zu Hause ausdrucken und ausfüllen. Ihr Vorschlag, einen Termin in einer Filiale zu vereinbaren, empfinde ich als sehr hilfreich. Ich fühle mich bei einem persönlichen Gespräch immer wohler, besonders bei wichtigen Finanzangelegenheiten.\n\nIch werde den empfohlenen Weg nutzen, um einen Termin zu vereinbaren und hoffe, dass ich bald die Gelegenheit habe, mit einem Ihrer Berater persönlich zu sprechen.\n\nNochmals vielen Dank für Ihre Unterstützung und Geduld.\n\nMit freundlichen Grüßen,  \nNico Schuler",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1301,7 +1314,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "33147583-bd5d-41a5-958d-5fd044789fb6"
   },
   {
     "input_settings": {
@@ -1380,7 +1394,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank, das klingt gut. Ich werde den Prozess dann wie besprochen durchführen. Ich schätze die Klarheit und Unterstützung. Einen schönen Tag noch! \n\nTERMINATE",
+        "content": "Vielen Dank, das klingt gut. Ich werde den Prozess dann wie besprochen durchführen. Ich schätze die Klarheit und Unterstützung. Einen schönen Tag noch!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1407,7 +1421,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "0909017d-9577-499f-95bf-40f154c7bd20"
   },
   {
     "input_settings": {
@@ -1466,7 +1481,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die Erklärung und die Hinweise zu den nächsten Schritten. Es beruhigt mich, dass ich bei Bedarf eine persönliche Beratung in Anspruch nehmen kann. Ich werde mich in den nächsten Tagen darum bemühen, alle erforderlichen Dokumente zusammenzustellen und das Formular korrekt auszufüllen. Nochmals vielen Dank für Ihre Unterstützung und die klare Erklärung. \n\nSollten sich weitere Fragen ergeben, werde ich nicht zögern, mich erneut an Sie zu wenden.\n\nMit besten Grüßen,  \nMaria Koch \n\nTERMINATE",
+        "content": "Vielen Dank für die Erklärung und die Hinweise zu den nächsten Schritten. Es beruhigt mich, dass ich bei Bedarf eine persönliche Beratung in Anspruch nehmen kann. Ich werde mich in den nächsten Tagen darum bemühen, alle erforderlichen Dokumente zusammenzustellen und das Formular korrekt auszufüllen. Nochmals vielen Dank für Ihre Unterstützung und die klare Erklärung. \n\nSollten sich weitere Fragen ergeben, werde ich nicht zögern, mich erneut an Sie zu wenden.\n\nMit besten Grüßen,  \nMaria Koch",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1493,7 +1508,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "5a15fae9-773d-48a1-b176-1120ec312c33"
   },
   {
     "input_settings": {
@@ -1562,7 +1578,7 @@
         "role": "user"
       },
       {
-        "content": "Es scheint also, dass ich für alle wirklich wichtigen Details am besten direkt einen Termin mit einem Berater bei Ihnen vereinbare. Das ist mir auch lieber, als all diese digitalen Plattformen zu durchstöbern. Ich werde das so machen und hoffe, dass dann alles ganz klassisch und vor allem in Ruhe besprochen werden kann. Vielen Dank für Ihre Hilfe. TERMINATE",
+        "content": "Es scheint also, dass ich für alle wirklich wichtigen Details am besten direkt einen Termin mit einem Berater bei Ihnen vereinbare. Das ist mir auch lieber, als all diese digitalen Plattformen zu durchstöbern. Ich werde das so machen und hoffe, dass dann alles ganz klassisch und vor allem in Ruhe besprochen werden kann. Vielen Dank für Ihre Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1589,7 +1605,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "d8cd2c97-74d5-41d1-9fca-d5ca7f339cd2"
   },
   {
     "input_settings": {
@@ -1658,7 +1675,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die ausführlichen Infos! Das hilft mir echt weiter. Ich weiß jetzt besser, was zu mir passen könnte. Wenn ich noch Fragen habe, melde ich mich einfach wieder. Nochmals danke für Ihre Unterstützung. 😊 TERMINATE",
+        "content": "Vielen Dank für die ausführlichen Infos! Das hilft mir echt weiter. Ich weiß jetzt besser, was zu mir passen könnte. Wenn ich noch Fragen habe, melde ich mich einfach wieder. Nochmals danke für Ihre Unterstützung. 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1685,7 +1702,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "892f54a1-0dd4-48bb-bdb7-3ddbd0d3e1cd"
   },
   {
     "input_settings": {
@@ -1744,7 +1762,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Damen und Herren,\n\nvielen Dank für den Link zu den Datenschutzrichtlinien. Ich werde mir die Informationen in Ruhe durchlesen. Es beruhigt mich zu wissen, dass Sie transparent mit diesem sensiblen Thema umgehen.\n\nSollte ich noch Fragen haben, werde ich mich gerne wieder an Sie wenden.\n\nNochmals vielen Dank für Ihre Unterstützung und schnelle Hilfe.\n\nMit freundlichen Grüßen,  \nIris Bader\n\nTERMINATE",
+        "content": "Sehr geehrte Damen und Herren,\n\nvielen Dank für den Link zu den Datenschutzrichtlinien. Ich werde mir die Informationen in Ruhe durchlesen. Es beruhigt mich zu wissen, dass Sie transparent mit diesem sensiblen Thema umgehen.\n\nSollte ich noch Fragen haben, werde ich mich gerne wieder an Sie wenden.\n\nNochmals vielen Dank für Ihre Unterstützung und schnelle Hilfe.\n\nMit freundlichen Grüßen,  \nIris Bader",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1771,7 +1789,8 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "9521b457-091c-4383-8346-b8072f78a38f"
   },
   {
     "input_settings": {
@@ -1830,7 +1849,7 @@
         "role": "user"
       },
       {
-        "content": "Alles klar, ich werde den Kundenservice von Swiss Bankers kontaktieren, um weitere Informationen zu erhalten. Vielen Dank für Ihre Hilfe! TERMINATE",
+        "content": "Alles klar, ich werde den Kundenservice von Swiss Bankers kontaktieren, um weitere Informationen zu erhalten. Vielen Dank für Ihre Hilfe!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1857,6 +1876,7 @@
         }
       }
     },
-    "agent_type": "rag"
+    "agent_type": "rag",
+    "call_id": "38f412a8-ed6d-4fe6-bc94-d16696ce3495"
   }
 ]

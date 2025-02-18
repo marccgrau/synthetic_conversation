@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Schmid,\n\nGut, dass Sie endlich Klarheit schaffen. Diese ganze Sache mit den internationalen Standards macht die Angelegenheit ziemlich kompliziert und für mich nicht nachvollziehbar. Danke, dass Sie den Vorgang nochmal detaillierter erklärt haben. Es ist einfach frustrierend, dass ich da kaum eine Wahl habe, und ich bin noch nicht überzeugt, dass das alles wirklich notwendig ist. \n\nJedenfalls weiß ich jetzt, woran ich bin. Sollte ich weitere Fragen haben, melde ich mich bei Ihrem Kundendienst. Ich hoffe, dass dann alles transparenter abläuft. \n\nMit weniger Aufwand für mich wäre das alles wesentlich besser. Aber danke für die Antwort.\n\nFreundliche Grüße,  \nJonas Graf\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Schmid,\n\nGut, dass Sie endlich Klarheit schaffen. Diese ganze Sache mit den internationalen Standards macht die Angelegenheit ziemlich kompliziert und für mich nicht nachvollziehbar. Danke, dass Sie den Vorgang nochmal detaillierter erklärt haben. Es ist einfach frustrierend, dass ich da kaum eine Wahl habe, und ich bin noch nicht überzeugt, dass das alles wirklich notwendig ist. \n\nJedenfalls weiß ich jetzt, woran ich bin. Sollte ich weitere Fragen haben, melde ich mich bei Ihrem Kundendienst. Ich hoffe, dass dann alles transparenter abläuft. \n\nMit weniger Aufwand für mich wäre das alles wesentlich besser. Aber danke für die Antwort.\n\nFreundliche Grüße,  \nJonas Graf",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "ed159f40-30a2-4b54-809e-3cfaf70ed0d2"
   },
   {
     "input_settings": {
@@ -127,7 +128,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Sehr geehrter Herr Schmid,\n\nvielen Dank, dass Sie sich an die Migros Bank gewandt haben. Ich bin Daniel Lang, und ich freue mich, Ihnen bei Ihren Anliegen bezüglich der Meldepflichten und Datenweitergabe behilflich zu sein.\n\nBei Meldepflichten handelt es sich in der Regel um gesetzliche Bestimmungen, nach denen Banken bestimmte Daten an Behörden weitergeben müssen. Diese Verpflichtungen können sich aus nationalen Gesetzen, wie z. B. dem Geldwäschereigesetz, oder internationalen Abkommen, wie dem automatischen Informationsaustausch (AIA), ergeben. Ihre persönlichen Daten werden nur im Rahmen dieser gesetzlichen Vorgaben weitergegeben, um die entsprechenden Vorschriften zu erfüllen.\n\nWenn es um die Datenweitergabe geht, ist es unser oberstes Ziel, Ihre Privatsphäre zu schützen und Ihre Daten sicher zu behandeln. Die Migros Bank unternimmt alle erforderlichen Maßnahmen, um sicherzustellen, dass Ihre Daten nur so weitergegeben werden, wie es gesetzlich vorgeschrieben ist und nur an autorisierte Stellen.\n\nSollten Sie spezifische Fragen oder Bedenken hinsichtlich Ihrer persönlichen Daten oder deren Verarbeitungsweise haben, stehe ich Ihnen gerne für weitere Informationen zur Verfügung. Bitte zögern Sie nicht, mir weitere Details zu Ihrem Anliegen mitzuteilen, damit ich noch gezielter auf Ihre Fragen eingehen kann.\n\nIch hoffe, Ihnen mit diesen Informationen weitergeholfen zu haben. Lassen Sie mich wissen, wenn Sie weitere Unterstützung benötigen.\n\nMit freundlichen Grüßen,  \nDaniel Lang  \nMigros Bank\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Schmid,\n\nvielen Dank, dass Sie sich an die Migros Bank gewandt haben. Ich bin Daniel Lang, und ich freue mich, Ihnen bei Ihren Anliegen bezüglich der Meldepflichten und Datenweitergabe behilflich zu sein.\n\nBei Meldepflichten handelt es sich in der Regel um gesetzliche Bestimmungen, nach denen Banken bestimmte Daten an Behörden weitergeben müssen. Diese Verpflichtungen können sich aus nationalen Gesetzen, wie z. B. dem Geldwäschereigesetz, oder internationalen Abkommen, wie dem automatischen Informationsaustausch (AIA), ergeben. Ihre persönlichen Daten werden nur im Rahmen dieser gesetzlichen Vorgaben weitergegeben, um die entsprechenden Vorschriften zu erfüllen.\n\nWenn es um die Datenweitergabe geht, ist es unser oberstes Ziel, Ihre Privatsphäre zu schützen und Ihre Daten sicher zu behandeln. Die Migros Bank unternimmt alle erforderlichen Maßnahmen, um sicherzustellen, dass Ihre Daten nur so weitergegeben werden, wie es gesetzlich vorgeschrieben ist und nur an autorisierte Stellen.\n\nSollten Sie spezifische Fragen oder Bedenken hinsichtlich Ihrer persönlichen Daten oder deren Verarbeitungsweise haben, stehe ich Ihnen gerne für weitere Informationen zur Verfügung. Bitte zögern Sie nicht, mir weitere Details zu Ihrem Anliegen mitzuteilen, damit ich noch gezielter auf Ihre Fragen eingehen kann.\n\nIch hoffe, Ihnen mit diesen Informationen weitergeholfen zu haben. Lassen Sie mich wissen, wenn Sie weitere Unterstützung benötigen.\n\nMit freundlichen Grüßen,  \nDaniel Lang  \nMigros Bank",
         "name": "service_agent",
         "role": "user"
       }
@@ -154,6 +155,7 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "ffb92ccd-81ee-4a91-ab12-d1d248539c2b"
   }
 ]

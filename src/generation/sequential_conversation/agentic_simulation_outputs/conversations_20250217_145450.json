@@ -66,7 +66,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt interessant, einen Fachberater zu kontaktieren könnte ebenfalls hilfreich sein. Ich schätze Ihren Rat sehr, möchte aber zuerst sicherstellen, dass ich meine Optionen kenne, bevor ich eine Entscheidung treffe. Ich werde darüber nachdenken, mich mit einem Berater in Verbindung zu setzen. Vielen Dank für Ihre Unterstützung. Das wären vorerst alle Fragen von meiner Seite.\n\nVielen Dank nochmals, und auf Wiederhören! TERMINATE",
+        "content": "Das klingt interessant, einen Fachberater zu kontaktieren könnte ebenfalls hilfreich sein. Ich schätze Ihren Rat sehr, möchte aber zuerst sicherstellen, dass ich meine Optionen kenne, bevor ich eine Entscheidung treffe. Ich werde darüber nachdenken, mich mit einem Berater in Verbindung zu setzen. Vielen Dank für Ihre Unterstützung. Das wären vorerst alle Fragen von meiner Seite.\n\nVielen Dank nochmals, und auf Wiederhören!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -93,7 +93,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "12f1a84e-7cc6-4e9c-b0c9-b9a4b4f7ef59"
   },
   {
     "input_settings": {
@@ -137,7 +138,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Betreff: Unterstützung bei individueller Berichterstattung und Analysen\n\nSehr geehrter Herr Weber,\n\nvielen Dank, dass Sie sich an uns gewandt haben. Ich schätze Ihr Vertrauen in die Migros Bank und stehe Ihnen gern zur Seite.\n\nUm Ihnen bei der Erstellung individueller Berichterstattung und Analysen für Ihre Konten zu helfen, benötigen wir einige Informationen von Ihnen. Dazu gehören:\n\n1. **Spezifische Anforderungen:** Bitte teilen Sie uns mit, welche Art von Berichterstattung oder Analyse Sie erstellen möchten. Gibt es bestimmte Daten oder Zeiträume, die besonders wichtig für Ihre Auswertung sind?\n\n2. **Nutzungszweck:** Es wäre hilfreich zu wissen, wofür Sie die Berichte und Analysen nutzen möchten. Dies kann uns helfen, die Zielsetzung zu verstehen und die Informationen entsprechend zu strukturieren.\n\n3. **Formatpräferenzen:** Bevorzugen Sie ein spezielles Format für die Berichte, wie z. B. PDF, Excel oder ein anderes Dateiformat?\n\nSobald wir diese Details von Ihnen erhalten, können wir den weiteren Prozess besser koordinieren und sicherstellen, dass Sie die maßgeschneiderten Berichte erhalten, die Ihren Bedürfnissen entsprechen.\n\nBitte antworten Sie auf diese E-Mail mit den angeforderten Informationen, damit wir den nächsten Schritt gemeinsam angehen können.\n\nIch freue mich darauf, Ihnen bei Ihrem Anliegen behilflich zu sein.\n\nMit freundlichen Grüßen,\n\nFabian Huber  \nMigros Bank  \n\nTERMINATE",
+        "content": "Betreff: Unterstützung bei individueller Berichterstattung und Analysen\n\nSehr geehrter Herr Weber,\n\nvielen Dank, dass Sie sich an uns gewandt haben. Ich schätze Ihr Vertrauen in die Migros Bank und stehe Ihnen gern zur Seite.\n\nUm Ihnen bei der Erstellung individueller Berichterstattung und Analysen für Ihre Konten zu helfen, benötigen wir einige Informationen von Ihnen. Dazu gehören:\n\n1. **Spezifische Anforderungen:** Bitte teilen Sie uns mit, welche Art von Berichterstattung oder Analyse Sie erstellen möchten. Gibt es bestimmte Daten oder Zeiträume, die besonders wichtig für Ihre Auswertung sind?\n\n2. **Nutzungszweck:** Es wäre hilfreich zu wissen, wofür Sie die Berichte und Analysen nutzen möchten. Dies kann uns helfen, die Zielsetzung zu verstehen und die Informationen entsprechend zu strukturieren.\n\n3. **Formatpräferenzen:** Bevorzugen Sie ein spezielles Format für die Berichte, wie z. B. PDF, Excel oder ein anderes Dateiformat?\n\nSobald wir diese Details von Ihnen erhalten, können wir den weiteren Prozess besser koordinieren und sicherstellen, dass Sie die maßgeschneiderten Berichte erhalten, die Ihren Bedürfnissen entsprechen.\n\nBitte antworten Sie auf diese E-Mail mit den angeforderten Informationen, damit wir den nächsten Schritt gemeinsam angehen können.\n\nIch freue mich darauf, Ihnen bei Ihrem Anliegen behilflich zu sein.\n\nMit freundlichen Grüßen,\n\nFabian Huber  \nMigros Bank",
         "name": "service_agent",
         "role": "user"
       }
@@ -164,7 +165,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "ed8216e1-12ec-4d4f-839a-e2d03e48f364"
   },
   {
     "input_settings": {
@@ -228,7 +230,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Ja, natürlich, Herr Lang. Es ist völlig verständlich, dass Sie sich in dieser Situation nervös fühlen. Ich möchte Ihnen versichern, dass wir hier sind, um Sie bei jedem Schritt zu unterstützen. Wenn Sie weitere Fragen haben oder etwas unklar sein sollte, zögern Sie bitte nicht, uns erneut zu kontaktieren. Ihr Neffe als Bevollmächtigter kann natürlich ebenfalls in den Prozess eingebunden werden, und wir stehen Ihnen beiden gerne zur Seite.\n\nSie tun bereits alles richtig, indem Sie uns kontaktieren und die notwendigen Dokumente vorbereiten. Lassen Sie uns gemeinsam sicherstellen, dass alles reibungslos verläuft. Ich wünsche Ihnen viel Kraft in dieser schwierigen Zeit und freue mich, Ihnen bei Bedarf weiterhin behilflich zu sein. Wir sind für Sie da. Bitte wenden Sie sich jederzeit erneut an uns, wenn Sie Hilfe benötigen. \n\nHabt keine Angst, weil wir hier sind, um Ihnen zu helfen und alle notwendigen Schritte zu klären. TERMINATE",
+        "content": "Ja, natürlich, Herr Lang. Es ist völlig verständlich, dass Sie sich in dieser Situation nervös fühlen. Ich möchte Ihnen versichern, dass wir hier sind, um Sie bei jedem Schritt zu unterstützen. Wenn Sie weitere Fragen haben oder etwas unklar sein sollte, zögern Sie bitte nicht, uns erneut zu kontaktieren. Ihr Neffe als Bevollmächtigter kann natürlich ebenfalls in den Prozess eingebunden werden, und wir stehen Ihnen beiden gerne zur Seite.\n\nSie tun bereits alles richtig, indem Sie uns kontaktieren und die notwendigen Dokumente vorbereiten. Lassen Sie uns gemeinsam sicherstellen, dass alles reibungslos verläuft. Ich wünsche Ihnen viel Kraft in dieser schwierigen Zeit und freue mich, Ihnen bei Bedarf weiterhin behilflich zu sein. Wir sind für Sie da. Bitte wenden Sie sich jederzeit erneut an uns, wenn Sie Hilfe benötigen. \n\nHabt keine Angst, weil wir hier sind, um Ihnen zu helfen und alle notwendigen Schritte zu klären.",
         "name": "service_agent",
         "role": "user"
       }
@@ -255,7 +257,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "c4657658-b55d-44fa-a01b-d7c1097eaf8b"
   },
   {
     "input_settings": {
@@ -334,7 +337,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für Ihre Unterstützung, Gina. Eine Beratung am frühen Nachmittag wäre ideal für mich, da ich morgens oft sehr beschäftigt bin. Ich freue mich auf die Details per E-Mail. Wenn ich noch Fragen habe, melde ich mich. Vielen Dank nochmals für Ihre schnelle Hilfe. TERMINATE",
+        "content": "Vielen Dank für Ihre Unterstützung, Gina. Eine Beratung am frühen Nachmittag wäre ideal für mich, da ich morgens oft sehr beschäftigt bin. Ich freue mich auf die Details per E-Mail. Wenn ich noch Fragen habe, melde ich mich. Vielen Dank nochmals für Ihre schnelle Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -361,7 +364,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "6082e343-389c-4527-b4c6-4fd6a8fc063b"
   },
   {
     "input_settings": {
@@ -415,7 +419,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Ja, klar. Sie brauchen die Sterbeurkunde und den Erbschein. Dann einfach alle Konten melden, damit sie eingefroren werden. Das dauert normalerweise ein paar Wochen, hängt aber vom Einzelfall ab. Greifen Sie schnell an, um Verzögerungen zu vermeiden. Wenn noch was ist, melden Sie sich. TERMINATE",
+        "content": "Ja, klar. Sie brauchen die Sterbeurkunde und den Erbschein. Dann einfach alle Konten melden, damit sie eingefroren werden. Das dauert normalerweise ein paar Wochen, hängt aber vom Einzelfall ab. Greifen Sie schnell an, um Verzögerungen zu vermeiden. Wenn noch was ist, melden Sie sich.",
         "name": "service_agent",
         "role": "user"
       }
@@ -442,7 +446,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "c8802d6a-5828-4a56-9f8a-454a93394bf3"
   },
   {
     "input_settings": {
@@ -501,7 +506,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Graf,\n\nich danke Ihnen herzlich für die Klarstellungen. Es beruhigt mich zu wissen, dass ich die Möglichkeit habe, die Dokumente direkt in einer Filiale vorzulegen, da mir das sicherlich Sicherheit gibt, dass alles korrekt abläuft.\n\nLeider ist meine derzeitige Arbeitsbelastung ziemlich hoch, weswegen ich Einiges in einem straffen Zeitplan unterbringen muss. Ihre Erläuterungen zur Bearbeitungszeit und Ihre Bereitschaft zur Unterstützung geben mir jedoch Zuversicht, dass alles rechtzeitig erledigt werden kann.\n\nFalls sich noch Fragen ergeben sollten, werde ich nicht zögern, wieder auf Sie zuzukommen. Vielen herzlichen Dank nochmals für Ihre professionelle Unterstützung.\n\nMit freundlichen Grüßen,  \nHans Vogt\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Graf,\n\nich danke Ihnen herzlich für die Klarstellungen. Es beruhigt mich zu wissen, dass ich die Möglichkeit habe, die Dokumente direkt in einer Filiale vorzulegen, da mir das sicherlich Sicherheit gibt, dass alles korrekt abläuft.\n\nLeider ist meine derzeitige Arbeitsbelastung ziemlich hoch, weswegen ich Einiges in einem straffen Zeitplan unterbringen muss. Ihre Erläuterungen zur Bearbeitungszeit und Ihre Bereitschaft zur Unterstützung geben mir jedoch Zuversicht, dass alles rechtzeitig erledigt werden kann.\n\nFalls sich noch Fragen ergeben sollten, werde ich nicht zögern, wieder auf Sie zuzukommen. Vielen herzlichen Dank nochmals für Ihre professionelle Unterstützung.\n\nMit freundlichen Grüßen,  \nHans Vogt",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -528,7 +533,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "82f3481b-fafb-4f06-9dde-7b1e7b99626b"
   },
   {
     "input_settings": {
@@ -587,7 +593,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Zimmermann,\n\nvielen Dank für Ihre detaillierte Erklärung und Ihr Verständnis für mein Anliegen. Es beruhigt mich zu wissen, dass Änderungen in der Regel mein tägliches Banking kaum beeinträchtigen, und ich bin dankbar, dass Sie mir darüber so umfassend Auskunft gegeben haben. Auch wenn es manchmal ein wenig verwirrend ist, schätze ich die klaren Antworten sehr. \n\nFalls ich noch weitere Fragen habe, werde ich nicht zögern, auf Sie zuzukommen. Vielen Dank nochmals für Ihre Hilfe und Geduld mit meiner Neugier.\n\nMit freundlichen Grüßen,  \nNico Schuler\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Zimmermann,\n\nvielen Dank für Ihre detaillierte Erklärung und Ihr Verständnis für mein Anliegen. Es beruhigt mich zu wissen, dass Änderungen in der Regel mein tägliches Banking kaum beeinträchtigen, und ich bin dankbar, dass Sie mir darüber so umfassend Auskunft gegeben haben. Auch wenn es manchmal ein wenig verwirrend ist, schätze ich die klaren Antworten sehr. \n\nFalls ich noch weitere Fragen habe, werde ich nicht zögern, auf Sie zuzukommen. Vielen Dank nochmals für Ihre Hilfe und Geduld mit meiner Neugier.\n\nMit freundlichen Grüßen,  \nNico Schuler",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -614,7 +620,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "2a36a45a-bb1d-42e7-a41d-0419188da436"
   },
   {
     "input_settings": {
@@ -673,7 +680,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die ausführliche Anleitung, Herr Vogt. 😊 Das scheint recht einfach zu sein. Ich werde es gleich ausprobieren und hoffe, dass es keine Probleme gibt. Falls doch, melde ich mich nochmals. Vielen Dank für Ihre Geduld und Hilfe!\n\nTERMINATE",
+        "content": "Vielen Dank für die ausführliche Anleitung, Herr Vogt. 😊 Das scheint recht einfach zu sein. Ich werde es gleich ausprobieren und hoffe, dass es keine Probleme gibt. Falls doch, melde ich mich nochmals. Vielen Dank für Ihre Geduld und Hilfe!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -700,7 +707,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "2f9530d0-408f-4bee-a460-5e9f1e3351b7"
   },
   {
     "input_settings": {
@@ -744,7 +752,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Hallo Nico, hier ist David Schmid von der Migros Bank! 🙂 Es klingt so, als ob du Hilfe beim Erstellen von Mietverträgen brauchst. Das ist ja spannend, aber auch ein bisschen kompliziert, oder? 🤔\n\nLeider muss ich dir direkt sagen, dass wir als Bankkundenservice bei detaillierten Mietvertragsfragen nicht direkt unterstützen können, da das eher in den Bereich eines Anwalts oder eines spezialisierten Beraters fällt. Aber ich gebe dir einen Tipp: Schau mal auf unsere Website, da gibt es oft Informationen, die dir weiterhelfen könnten. Ansonsten empfehle ich dir, dich an einen Fachmann in dem Bereich zu wenden, um alle rechtlichen Punkte korrekt abzudecken.\n\nWenn du jedoch Fragen zu deinem Konto oder anderen Finanzprodukten hast, da bin ich genau der Richtige! Lass es mich wissen, wie ich dir sonst weiterhelfen kann. 😄\n\nTERMINATE",
+        "content": "Hallo Nico, hier ist David Schmid von der Migros Bank! 🙂 Es klingt so, als ob du Hilfe beim Erstellen von Mietverträgen brauchst. Das ist ja spannend, aber auch ein bisschen kompliziert, oder? 🤔\n\nLeider muss ich dir direkt sagen, dass wir als Bankkundenservice bei detaillierten Mietvertragsfragen nicht direkt unterstützen können, da das eher in den Bereich eines Anwalts oder eines spezialisierten Beraters fällt. Aber ich gebe dir einen Tipp: Schau mal auf unsere Website, da gibt es oft Informationen, die dir weiterhelfen könnten. Ansonsten empfehle ich dir, dich an einen Fachmann in dem Bereich zu wenden, um alle rechtlichen Punkte korrekt abzudecken.\n\nWenn du jedoch Fragen zu deinem Konto oder anderen Finanzprodukten hast, da bin ich genau der Richtige! Lass es mich wissen, wie ich dir sonst weiterhelfen kann. 😄",
         "name": "service_agent",
         "role": "user"
       }
@@ -771,7 +779,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "49752579-5286-4e10-9752-7fbf08062a8e"
   },
   {
     "input_settings": {
@@ -840,7 +849,7 @@
         "role": "user"
       },
       {
-        "content": "Nein, das war schon alles, Herr Schäfer. Vielen Dank nochmals für Ihre Unterstützung und die klaren Informationen. Ich wünsche Ihnen einen angenehmen Tag. Auf Wiederhören! TERMINATE",
+        "content": "Nein, das war schon alles, Herr Schäfer. Vielen Dank nochmals für Ihre Unterstützung und die klaren Informationen. Ich wünsche Ihnen einen angenehmen Tag. Auf Wiederhören!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -867,7 +876,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "69fe7bae-80af-420b-905f-9e01538844a4"
   },
   {
     "input_settings": {
@@ -931,7 +941,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Sehr geehrter Herr Zimmermann,\n\nich danke Ihnen vielmals für Ihr Vertrauen und Ihre freundlichen Worte. Es tut mir leid, dass Sie mit diesem Anliegen beschäftigt sind, aber ich versichere Ihnen, dass ich mein Bestes geben werde, um Sie zu unterstützen. Ich freue mich, Ihren Entwurf entgegenzunehmen und Ihnen dabei zu helfen, alles reibungslos abzuwickeln.\n\nFalls Sie in der Zwischenzeit Fragen haben oder weitere Unterstützung benötigen, zögern Sie bitte nicht, mich zu kontaktieren. Ich bin hier, um Ihnen zu helfen, und entschuldige mich im Voraus, falls es dabei zu Verzögerungen oder Unklarheiten kommt.\n\nIch wünsche Ihnen viel Erfolg bei der Erstellung des Entwurfs und freue mich darauf, bald von Ihnen zu hören.\n\nMit freundlichen Grüßen,  \nUrs Fischer  \nMigros Bank\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Zimmermann,\n\nich danke Ihnen vielmals für Ihr Vertrauen und Ihre freundlichen Worte. Es tut mir leid, dass Sie mit diesem Anliegen beschäftigt sind, aber ich versichere Ihnen, dass ich mein Bestes geben werde, um Sie zu unterstützen. Ich freue mich, Ihren Entwurf entgegenzunehmen und Ihnen dabei zu helfen, alles reibungslos abzuwickeln.\n\nFalls Sie in der Zwischenzeit Fragen haben oder weitere Unterstützung benötigen, zögern Sie bitte nicht, mich zu kontaktieren. Ich bin hier, um Ihnen zu helfen, und entschuldige mich im Voraus, falls es dabei zu Verzögerungen oder Unklarheiten kommt.\n\nIch wünsche Ihnen viel Erfolg bei der Erstellung des Entwurfs und freue mich darauf, bald von Ihnen zu hören.\n\nMit freundlichen Grüßen,  \nUrs Fischer  \nMigros Bank",
         "name": "service_agent",
         "role": "user"
       }
@@ -958,7 +968,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "5a700a14-b827-416f-b3f7-0dc62c6cd786"
   },
   {
     "input_settings": {
@@ -1027,7 +1038,7 @@
         "role": "user"
       },
       {
-        "content": "Danke, das klärt schon viel. Ich werde jetzt versuchen, die Zahlung durchzuführen, und melde mich, falls es noch Fragen gibt. Ihre Unterstützung war sehr hilfreich. \n\nSchönen Tag noch! 😊 TERMINATE",
+        "content": "Danke, das klärt schon viel. Ich werde jetzt versuchen, die Zahlung durchzuführen, und melde mich, falls es noch Fragen gibt. Ihre Unterstützung war sehr hilfreich. \n\nSchönen Tag noch! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1054,7 +1065,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "b2d649c6-97fe-46f8-b5fc-48aaf395e456"
   },
   {
     "input_settings": {
@@ -1118,7 +1130,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Natürlich, Frau Roth! Zögern Sie nicht, sich jederzeit bei mir zu melden, falls Sie Hilfe benötigen. Ich bin hier, um sicherzustellen, dass alles reibungslos läuft und freue mich, Ihnen helfen zu können. 😊✨\n\nViel Erfolg beim Einrichten des Rundungssparens! Wir schaffen das zusammen. Ich wünsche Ihnen einen wunderbaren Tag!\n\nTERMINATE",
+        "content": "Natürlich, Frau Roth! Zögern Sie nicht, sich jederzeit bei mir zu melden, falls Sie Hilfe benötigen. Ich bin hier, um sicherzustellen, dass alles reibungslos läuft und freue mich, Ihnen helfen zu können. 😊✨\n\nViel Erfolg beim Einrichten des Rundungssparens! Wir schaffen das zusammen. Ich wünsche Ihnen einen wunderbaren Tag!",
         "name": "service_agent",
         "role": "user"
       }
@@ -1145,7 +1157,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "e22bb03a-3e7c-4313-8d52-706ef1b04cec"
   },
   {
     "input_settings": {
@@ -1214,7 +1227,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Lang,\n\ndanke für Ihr Engagement. Bitte halten Sie mich auf dem Laufenden, denn es ist wirklich wichtig, dass dies schnell gelöst wird.\n\nIch verlasse mich darauf, dass Sie alles tun, was möglich ist, um die Korrekturen und die Rückerstattungen bald zu veranlassen.\n\nMit freundlichen Grüßen,  \nAnna Müller\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Lang,\n\ndanke für Ihr Engagement. Bitte halten Sie mich auf dem Laufenden, denn es ist wirklich wichtig, dass dies schnell gelöst wird.\n\nIch verlasse mich darauf, dass Sie alles tun, was möglich ist, um die Korrekturen und die Rückerstattungen bald zu veranlassen.\n\nMit freundlichen Grüßen,  \nAnna Müller",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1241,7 +1254,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "93a1f66e-4ad5-496b-87a4-4173241f49fc"
   },
   {
     "input_settings": {
@@ -1310,7 +1324,7 @@
         "role": "user"
       },
       {
-        "content": "Alles klar, Olivia, ich probier’s einfach mal über die App. Danke für deine Hilfe! Ich bin sicher, das klappt irgendwie. Hab noch einen schönen Tag! 😊 TERMINATE",
+        "content": "Alles klar, Olivia, ich probier’s einfach mal über die App. Danke für deine Hilfe! Ich bin sicher, das klappt irgendwie. Hab noch einen schönen Tag! 😊",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1337,7 +1351,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "76d1d25b-2c77-4e5b-b878-43dec2515626"
   },
   {
     "input_settings": {
@@ -1401,7 +1416,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Betreff: Abschließende Informationen zu Festverzinslichen Produkten und Sicherheitsmaßnahmen\n\nSehr geehrte Frau Koch,\n\nich freue mich, dass Ihnen die bisherigen Informationen hilfreich waren, und beantworte gerne Ihre abschließenden Fragen.\n\n1. **Vorzeitige Kündigung von Festverzinslichen Produkten**:\n   Eine vorzeitige Kündigung eines festverzinslichen Anlageproduktes ist grundsätzlich möglich, allerdings sind dabei bestimmte Bedingungen und Gebühren zu beachten. Im Falle einer vorzeitigen Auflösung fällt in der Regel eine Gebühr an, die sich prozentual nach dem restlichen Anlagebetrag richtet. Die genauen Konditionen hängen von der individuellen Vereinbarung bei Vertragsabschluss ab. Wir empfehlen, sich diesbezüglich im Vorfeld beraten zu lassen, um alle Optionen und Einschränkungen vollständig zu verstehen.\n\n2. **Detailierte Beschreibung der Zwei-Faktor-Authentifizierung**:\n   Die Zwei-Faktor-Authentifizierung (2FA) bei der Migros Bank ist so konzipiert, dass sie maximale Sicherheit bei minimalem Benutzeraufwand bietet. Bei jedem Anmeldeversuch in Ihr Online-Banking-System wird zusätzlich zu Ihrem Passwort ein weiterer Sicherheitscode benötigt, den Sie zeitnah auf Ihr Mobilgerät erhalten. Dieser Code variiert bei jedem Anmeldeversuch, was unbefugten Zugriff auf Ihr Konto erheblich erschwert. Darüber hinaus kann die 2FA durch biometrische Identifikationsmethoden (z.B. Fingerabdruck oder Gesichtserkennung) ergänzt werden, falls Ihr Gerät dies unterstützt.\n\nIch hoffe, dass diese Informationen Ihnen ein besseres Verständnis für die jeweiligen Themen bieten. Ihre Sicherheit und Zufriedenheit stehen bei uns an oberster Stelle. Wenn Sie weitere Fragen haben oder zusätzliche Unterstützung benötigen, stehe ich Ihnen jederzeit gerne zur Verfügung.\n\nVielen Dank erneut für Ihr Vertrauen in die Dienstleistungen der Migros Bank.\n\nMit freundlichen Grüßen,\n\nBenjamin Meier  \nMigros Bank\n\nTERMINATE",
+        "content": "Betreff: Abschließende Informationen zu Festverzinslichen Produkten und Sicherheitsmaßnahmen\n\nSehr geehrte Frau Koch,\n\nich freue mich, dass Ihnen die bisherigen Informationen hilfreich waren, und beantworte gerne Ihre abschließenden Fragen.\n\n1. **Vorzeitige Kündigung von Festverzinslichen Produkten**:\n   Eine vorzeitige Kündigung eines festverzinslichen Anlageproduktes ist grundsätzlich möglich, allerdings sind dabei bestimmte Bedingungen und Gebühren zu beachten. Im Falle einer vorzeitigen Auflösung fällt in der Regel eine Gebühr an, die sich prozentual nach dem restlichen Anlagebetrag richtet. Die genauen Konditionen hängen von der individuellen Vereinbarung bei Vertragsabschluss ab. Wir empfehlen, sich diesbezüglich im Vorfeld beraten zu lassen, um alle Optionen und Einschränkungen vollständig zu verstehen.\n\n2. **Detailierte Beschreibung der Zwei-Faktor-Authentifizierung**:\n   Die Zwei-Faktor-Authentifizierung (2FA) bei der Migros Bank ist so konzipiert, dass sie maximale Sicherheit bei minimalem Benutzeraufwand bietet. Bei jedem Anmeldeversuch in Ihr Online-Banking-System wird zusätzlich zu Ihrem Passwort ein weiterer Sicherheitscode benötigt, den Sie zeitnah auf Ihr Mobilgerät erhalten. Dieser Code variiert bei jedem Anmeldeversuch, was unbefugten Zugriff auf Ihr Konto erheblich erschwert. Darüber hinaus kann die 2FA durch biometrische Identifikationsmethoden (z.B. Fingerabdruck oder Gesichtserkennung) ergänzt werden, falls Ihr Gerät dies unterstützt.\n\nIch hoffe, dass diese Informationen Ihnen ein besseres Verständnis für die jeweiligen Themen bieten. Ihre Sicherheit und Zufriedenheit stehen bei uns an oberster Stelle. Wenn Sie weitere Fragen haben oder zusätzliche Unterstützung benötigen, stehe ich Ihnen jederzeit gerne zur Verfügung.\n\nVielen Dank erneut für Ihr Vertrauen in die Dienstleistungen der Migros Bank.\n\nMit freundlichen Grüßen,\n\nBenjamin Meier  \nMigros Bank",
         "name": "service_agent",
         "role": "user"
       }
@@ -1428,7 +1443,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "e84cc416-6ac6-4ea9-8446-4e73b4dd070f"
   },
   {
     "input_settings": {
@@ -1472,7 +1488,7 @@
         "name": "customer_agent"
       },
       {
-        "content": "Hallo Iris, klar, ich helfe Ihnen gerne! 😊💼 Einzahlung am Bancomaten ist ganz einfach.\n\n1. Karte einführen und PIN eingeben.\n2. Menü \"Einzahlung\" auswählen.\n3. Geld in das dafür vorgesehene Fach legen.\n4. Anweisungen auf dem Bildschirm folgen und Einzahlung bestätigen.\n\nKein Stress, das sollten Sie schaffen! Zur Not stehen Ihnen unsere Mitarbeiter vor Ort zur Verfügung. Falls Sie noch Fragen haben, melden Sie sich! TERMINATE",
+        "content": "Hallo Iris, klar, ich helfe Ihnen gerne! 😊💼 Einzahlung am Bancomaten ist ganz einfach.\n\n1. Karte einführen und PIN eingeben.\n2. Menü \"Einzahlung\" auswählen.\n3. Geld in das dafür vorgesehene Fach legen.\n4. Anweisungen auf dem Bildschirm folgen und Einzahlung bestätigen.\n\nKein Stress, das sollten Sie schaffen! Zur Not stehen Ihnen unsere Mitarbeiter vor Ort zur Verfügung. Falls Sie noch Fragen haben, melden Sie sich!",
         "name": "service_agent",
         "role": "user"
       }
@@ -1499,7 +1515,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "0b2054b2-f151-4079-b043-c8dd433f5fb2"
   },
   {
     "input_settings": {
@@ -1558,7 +1575,7 @@
         "role": "user"
       },
       {
-        "content": "Betreff: Telefonische Unterstützung in Betracht ziehen\n\nLiebe Frau Schmid,\n\nvielen Dank für die detaillierte Anleitung. Ich werde auf jeden Fall versuchen, diese Schritte noch einmal nachzuvollziehen. Ihre Beschreibung klingt hilfreich, aber ich habe das Gefühl, dass ich besser zurechtkommen würde, wenn mir jemand das direkt erklärt.\n\nIch werde die Telefonnummer nutzen und mich telefonisch an den Kundenservice wenden, um durch den Prozess geführt zu werden. Manchmal ist es einfacher, wenn man sich persönlich darauf konzentrieren kann und direkt Rückfragen stellen kann.\n\nDanke nochmals für Ihre Geduld und all die Informationen, die Sie mir gegeben haben. Es beruhigt mich, dass ich mich an Sie wenden konnte, und ich werde mich darum kümmern, das bald zu klären.\n\nMit besten Grüßen,\n\nCarmen Schuler \n\nTERMINATE",
+        "content": "Betreff: Telefonische Unterstützung in Betracht ziehen\n\nLiebe Frau Schmid,\n\nvielen Dank für die detaillierte Anleitung. Ich werde auf jeden Fall versuchen, diese Schritte noch einmal nachzuvollziehen. Ihre Beschreibung klingt hilfreich, aber ich habe das Gefühl, dass ich besser zurechtkommen würde, wenn mir jemand das direkt erklärt.\n\nIch werde die Telefonnummer nutzen und mich telefonisch an den Kundenservice wenden, um durch den Prozess geführt zu werden. Manchmal ist es einfacher, wenn man sich persönlich darauf konzentrieren kann und direkt Rückfragen stellen kann.\n\nDanke nochmals für Ihre Geduld und all die Informationen, die Sie mir gegeben haben. Es beruhigt mich, dass ich mich an Sie wenden konnte, und ich werde mich darum kümmern, das bald zu klären.\n\nMit besten Grüßen,\n\nCarmen Schuler",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1585,7 +1602,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "579bb6f1-d48d-44e2-adb7-a01d0a65d7c4"
   },
   {
     "input_settings": {
@@ -1696,7 +1714,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "94dd033c-ae38-4987-8e9d-a0a7f36b579d"
   },
   {
     "input_settings": {
@@ -1765,7 +1784,7 @@
         "role": "user"
       },
       {
-        "content": "Alles klar, danke. Ich werde das Formular ausfüllen und die Fotos so schnell wie möglich schicken. Hoffentlich läuft alles reibungslos, ich hab wenig Geduld für Verzögerungen. Falls noch irgendwas gebraucht wird, schreiben Sie mir einfach, okay? TERMINATE",
+        "content": "Alles klar, danke. Ich werde das Formular ausfüllen und die Fotos so schnell wie möglich schicken. Hoffentlich läuft alles reibungslos, ich hab wenig Geduld für Verzögerungen. Falls noch irgendwas gebraucht wird, schreiben Sie mir einfach, okay?",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1792,6 +1811,7 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "bbe96b16-5de6-4d2d-82c1-97b798548250"
   }
 ]

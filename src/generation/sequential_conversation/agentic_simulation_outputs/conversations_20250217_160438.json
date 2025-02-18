@@ -66,7 +66,7 @@
         "role": "user"
       },
       {
-        "content": "Ich verstehe, danke für die Tipps. Gut zu wissen, dass es verschiedene Wege gibt, Unterstützung zu bekommen. Ich werde darüber nachdenken und mich wahrscheinlich an einen Notar wenden. Vielen Dank für Ihre Hilfe. TERMINATE",
+        "content": "Ich verstehe, danke für die Tipps. Gut zu wissen, dass es verschiedene Wege gibt, Unterstützung zu bekommen. Ich werde darüber nachdenken und mich wahrscheinlich an einen Notar wenden. Vielen Dank für Ihre Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -93,7 +93,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "d695a4e7-525e-4a5e-b96a-84c180b167b6"
   },
   {
     "input_settings": {
@@ -142,7 +143,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die schnelle Antwort, aber ich möchte lieber direkt mit jemandem sprechen. Wie kann ich telefonisch oder persönlich Unterstützung für die Kontoeröffnung bekommen? Und geht das nicht schneller? Ich habe wirklich keine Zeit für endlose Papierkram! ",
+        "content": "Danke für die schnelle Antwort, aber ich möchte lieber direkt mit jemandem sprechen. Wie kann ich telefonisch oder persönlich Unterstützung für die Kontoeröffnung bekommen? Und geht das nicht schneller? Ich habe wirklich keine Zeit für endlose Papierkram!",
         "role": "assistant",
         "name": "customer_agent"
       },
@@ -152,7 +153,7 @@
         "role": "user"
       },
       {
-        "content": "Das hört sich nach einem besseren Plan an. Wissen Sie auch, ob es nötig ist, irgendwelche speziellen Unterlagen mitzubringen? Ich will nicht noch mehr Zeit verlieren, falls ich falsch vorbereitet bin. ",
+        "content": "Das hört sich nach einem besseren Plan an. Wissen Sie auch, ob es nötig ist, irgendwelche speziellen Unterlagen mitzubringen? Ich will nicht noch mehr Zeit verlieren, falls ich falsch vorbereitet bin.",
         "role": "assistant",
         "name": "customer_agent"
       },
@@ -162,7 +163,7 @@
         "role": "user"
       },
       {
-        "content": "Gut, das klingt machbar. Ich werde mich dann umgehend darum kümmern. Danke für die Informationen. TERMINATE",
+        "content": "Gut, das klingt machbar. Ich werde mich dann umgehend darum kümmern. Danke für die Informationen.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -189,7 +190,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "e28afbf0-dd41-42ea-bcec-55c98aa6c6ae"
   },
   {
     "input_settings": {
@@ -248,7 +250,7 @@
         "role": "user"
       },
       {
-        "content": "Ja, das klingt vernünftig. Ich schätze die klare Erklärung, und ich denke, ein Gespräch mit einem Berater wäre wohl der richtige Schritt, um sicherzugehen, dass ich nichts übersehe. Vielleicht könnte ich dann auch meine Bedenken direkt ansprechen und spezifische Antworten bekommen. Ich werde darüber nachdenken, einen Termin zu vereinbaren, um alles ausführlich zu klären. Vielen Dank für Ihre Unterstützung heute. TERMINATE",
+        "content": "Ja, das klingt vernünftig. Ich schätze die klare Erklärung, und ich denke, ein Gespräch mit einem Berater wäre wohl der richtige Schritt, um sicherzugehen, dass ich nichts übersehe. Vielleicht könnte ich dann auch meine Bedenken direkt ansprechen und spezifische Antworten bekommen. Ich werde darüber nachdenken, einen Termin zu vereinbaren, um alles ausführlich zu klären. Vielen Dank für Ihre Unterstützung heute.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -275,7 +277,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "69f3e301-0c10-4342-96f8-7187362ab9e4"
   },
   {
     "input_settings": {
@@ -324,7 +327,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die Informationen. Ich werde mich dann an die zuständige Abteilung wenden, wie Sie vorgeschlagen haben. Sollte ich noch weitere Unterstützung benötigen, melde ich mich gerne wieder. Ich schätze Ihre Hilfe sehr. Auf Wiederhören! TERMINATE",
+        "content": "Vielen Dank für die Informationen. Ich werde mich dann an die zuständige Abteilung wenden, wie Sie vorgeschlagen haben. Sollte ich noch weitere Unterstützung benötigen, melde ich mich gerne wieder. Ich schätze Ihre Hilfe sehr. Auf Wiederhören!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -351,7 +354,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "93562b0b-6433-4b31-962b-bb4a5b512fcc"
   },
   {
     "input_settings": {
@@ -430,7 +434,7 @@
         "role": "user"
       },
       {
-        "content": "Gut, vielen Dank. Ich werde das online überprüfen und dann dort anrufen. Danke für Ihre Hilfe. TERMINATE",
+        "content": "Gut, vielen Dank. Ich werde das online überprüfen und dann dort anrufen. Danke für Ihre Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -457,7 +461,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "e3ba8c60-dc9a-4e7a-9203-f2ba1655ebfa"
   },
   {
     "input_settings": {
@@ -516,7 +521,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Vogt,\n\nes ist wirklich enttäuschend, dass es keine schnellere Lösung gibt. Ich verstehe, dass Sicherheitsgründe wichtig sind, aber ich dachte, die Technologie wäre inzwischen weiter. Nun gut, dann bleibt mir wohl nichts anderes übrig.\n\nBitte vereinbaren Sie einen Termin für mich, damit das Ganze ohne große Verzögerung vonstattengeht. Ich hoffe, es wird alles klappen.\n\nDanke für Ihre Unterstützung.\n\nMit genervten Grüßen,  \nGina Keller  \nTERMINATE",
+        "content": "Sehr geehrter Herr Vogt,\n\nes ist wirklich enttäuschend, dass es keine schnellere Lösung gibt. Ich verstehe, dass Sicherheitsgründe wichtig sind, aber ich dachte, die Technologie wäre inzwischen weiter. Nun gut, dann bleibt mir wohl nichts anderes übrig.\n\nBitte vereinbaren Sie einen Termin für mich, damit das Ganze ohne große Verzögerung vonstattengeht. Ich hoffe, es wird alles klappen.\n\nDanke für Ihre Unterstützung.\n\nMit genervten Grüßen,  \nGina Keller",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -543,7 +548,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "2644d444-9f38-459a-977b-30bd92f4a0f7"
   },
   {
     "input_settings": {
@@ -602,7 +608,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die ausführliche Erklärung. Es klingt so, dass es ein recht zeitaufwändiger Prozess ist, aber ich bin sicher, dass ich es schaffen werde. Ich werde mich dann so schnell wie möglich um alles kümmern. Falls ich noch Fragen habe, melde ich mich einfach wieder. Vielen Dank für Ihre Hilfe! TERMINATE",
+        "content": "Danke für die ausführliche Erklärung. Es klingt so, dass es ein recht zeitaufwändiger Prozess ist, aber ich bin sicher, dass ich es schaffen werde. Ich werde mich dann so schnell wie möglich um alles kümmern. Falls ich noch Fragen habe, melde ich mich einfach wieder. Vielen Dank für Ihre Hilfe!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -629,7 +635,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "92ef5249-1ea7-4d8e-a587-cbbf91d630de"
   },
   {
     "input_settings": {
@@ -698,7 +705,7 @@
         "role": "user"
       },
       {
-        "content": "TERMINATE",
+        "content": "",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -725,7 +732,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "26d31eea-b114-48ed-b2c3-f215f09a3008"
   },
   {
     "input_settings": {
@@ -784,7 +792,7 @@
         "role": "user"
       },
       {
-        "content": "Ich werde es versuchen, die Filiale direkt anzurufen klingt machbar. Danke für die verständliche Erklärung! Manchmal ist das alles ein bisschen überwältigend für mich. Ich hoffe, dass der Anruf dann alles ein bisschen klarer macht. Ich danke Ihnen sehr für Ihre Geduld und Hilfe! TERMINATE",
+        "content": "Ich werde es versuchen, die Filiale direkt anzurufen klingt machbar. Danke für die verständliche Erklärung! Manchmal ist das alles ein bisschen überwältigend für mich. Ich hoffe, dass der Anruf dann alles ein bisschen klarer macht. Ich danke Ihnen sehr für Ihre Geduld und Hilfe!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -811,7 +819,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "89a740b4-966d-47da-beb8-146c722083cf"
   },
   {
     "input_settings": {
@@ -880,7 +889,7 @@
         "role": "user"
       },
       {
-        "content": "Alles klar, ich kümmere mich darum. Danke für die Auskunft. TERMINATE",
+        "content": "Alles klar, ich kümmere mich darum. Danke für die Auskunft.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -907,7 +916,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "4d978560-df5d-49b7-8963-985679f6020b"
   },
   {
     "input_settings": {
@@ -966,7 +976,7 @@
         "role": "user"
       },
       {
-        "content": "Okay, das klingt schon besser. Ich werde mich dann beim E-Banking anmelden und dort nachsehen. Falls ich erneut Probleme habe, melde ich mich einfach wieder beim Kundensupport. Vielen Dank für Ihre Hilfe. TERMINATE",
+        "content": "Okay, das klingt schon besser. Ich werde mich dann beim E-Banking anmelden und dort nachsehen. Falls ich erneut Probleme habe, melde ich mich einfach wieder beim Kundensupport. Vielen Dank für Ihre Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -993,7 +1003,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "e196c659-2ccb-4dce-b77e-add54904872b"
   },
   {
     "input_settings": {
@@ -1062,7 +1073,7 @@
         "role": "user"
       },
       {
-        "content": "Ja, das scheint mir wirklich der beste Weg zu sein. Nochmals vielen Dank für Ihre Hilfe. Ich werde mir überlegen, einen Finanzberater hinzuzuziehen, bevor ich weitere Schritte unternehme. Das Gespräch hat mir sehr weitergeholfen, und ich fühle mich nun etwas weniger überwältigt von der ganzen Sache. Vielen Dank für Ihre Geduld und Unterstützung. Auf Wiederhören. TERMINATE",
+        "content": "Ja, das scheint mir wirklich der beste Weg zu sein. Nochmals vielen Dank für Ihre Hilfe. Ich werde mir überlegen, einen Finanzberater hinzuzuziehen, bevor ich weitere Schritte unternehme. Das Gespräch hat mir sehr weitergeholfen, und ich fühle mich nun etwas weniger überwältigt von der ganzen Sache. Vielen Dank für Ihre Geduld und Unterstützung. Auf Wiederhören.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1089,7 +1100,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "24b8c30f-ffa5-46d8-873e-975ba0d2452c"
   },
   {
     "input_settings": {
@@ -1168,7 +1180,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die Unterstützung. Ich werde mich bei Bedarf melden. Auf Wiederhören! TERMINATE",
+        "content": "Vielen Dank für die Unterstützung. Ich werde mich bei Bedarf melden. Auf Wiederhören!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1195,7 +1207,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "72f81254-f348-46b3-83bb-a91181edc7a7"
   },
   {
     "input_settings": {
@@ -1264,7 +1277,7 @@
         "role": "user"
       },
       {
-        "content": "Das klingt soweit schon sehr hilfreich. Ich werde die genannten Schritte umgehend ausprobieren und schauen, ob das mein Problem löst. Vielen Dank für die klare Anleitung und die Übersicht der spezifischen Einschränkungen!\n\nFalls ich bei der Durchführung noch auf weitere Schwierigkeiten stoße oder wenn ich nicht weiterkomme, melde ich mich gerne noch einmal bei Ihnen. Aber ich bin zuversichtlich, dass wir das schon hinbekommen. Herzlichen Dank nochmals für Ihre Unterstützung, ich weiß das wirklich zu schätzen!\n\nTERMINATE",
+        "content": "Das klingt soweit schon sehr hilfreich. Ich werde die genannten Schritte umgehend ausprobieren und schauen, ob das mein Problem löst. Vielen Dank für die klare Anleitung und die Übersicht der spezifischen Einschränkungen!\n\nFalls ich bei der Durchführung noch auf weitere Schwierigkeiten stoße oder wenn ich nicht weiterkomme, melde ich mich gerne noch einmal bei Ihnen. Aber ich bin zuversichtlich, dass wir das schon hinbekommen. Herzlichen Dank nochmals für Ihre Unterstützung, ich weiß das wirklich zu schätzen!",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1291,7 +1304,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "83941744-a0a3-414c-a0cb-0b1868959f9e"
   },
   {
     "input_settings": {
@@ -1350,7 +1364,7 @@
         "role": "user"
       },
       {
-        "content": "Super, das erklärt es gut, danke! Noch eine kleine Frage: Gibt es in der E-Banking-App irgendwie eine Möglichkeit, eine Vorschau oder Bestätigung der Änderungen zu sehen, bevor ich sie endgültig abschicke? Will nur sicherstellen, dass alles richtig ist, bevor es losgeht. 😅 ",
+        "content": "Super, das erklärt es gut, danke! Noch eine kleine Frage: Gibt es in der E-Banking-App irgendwie eine Möglichkeit, eine Vorschau oder Bestätigung der Änderungen zu sehen, bevor ich sie endgültig abschicke? Will nur sicherstellen, dass alles richtig ist, bevor es losgeht. 😅",
         "role": "assistant",
         "name": "customer_agent"
       },
@@ -1360,7 +1374,7 @@
         "role": "user"
       },
       {
-        "content": "Perfekt, das klingt genau nach dem, was ich brauche. Danke für die schnelle und klare Hilfe! Falls ich noch Fragen habe, weiß ich, an wen ich mich wenden kann. 👍 TERMINATE",
+        "content": "Perfekt, das klingt genau nach dem, was ich brauche. Danke für die schnelle und klare Hilfe! Falls ich noch Fragen habe, weiß ich, an wen ich mich wenden kann. 👍",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1387,7 +1401,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "7bc5bd22-7b72-41f3-a62f-031816467240"
   },
   {
     "input_settings": {
@@ -1446,7 +1461,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Meier,\n\nvielen Dank für Ihre Unterstützung und die schnellen Maßnahmen, die Sie ergriffen haben. Ich freue mich darauf, dass sich der Techniker bald bei mir meldet und das Problem schnellstmöglich behoben wird.\n\nIch werde die Kundenhotline oder die mobile App in Betracht ziehen, wenn ich weitere Unterstützung benötige.\n\nNochmals vielen Dank für Ihre Hilfe.\n\nMit freundlichen Grüßen,  \nValentina Huber\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Meier,\n\nvielen Dank für Ihre Unterstützung und die schnellen Maßnahmen, die Sie ergriffen haben. Ich freue mich darauf, dass sich der Techniker bald bei mir meldet und das Problem schnellstmöglich behoben wird.\n\nIch werde die Kundenhotline oder die mobile App in Betracht ziehen, wenn ich weitere Unterstützung benötige.\n\nNochmals vielen Dank für Ihre Hilfe.\n\nMit freundlichen Grüßen,  \nValentina Huber",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1473,7 +1488,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "9edfa635-8fd9-42d3-893a-b5b7e8b24603"
   },
   {
     "input_settings": {
@@ -1522,7 +1538,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrter Herr Graf,\n\nvielen Dank für die schnelle und informative Rückmeldung. Ich habe mir die Punkte angesehen und werde die Kundenbetreuung kontaktieren, um das neue Limit festzulegen. Sollte ich während des Prozesses auf Schwierigkeiten stoßen, werde ich mich gerne noch einmal melden.\n\nIch schätze Ihre Unterstützung und freue mich auf eine unkomplizierte Abwicklung des Anliegens.\n\nBeste Grüße,  \nFabian Huber\n\nTERMINATE",
+        "content": "Sehr geehrter Herr Graf,\n\nvielen Dank für die schnelle und informative Rückmeldung. Ich habe mir die Punkte angesehen und werde die Kundenbetreuung kontaktieren, um das neue Limit festzulegen. Sollte ich während des Prozesses auf Schwierigkeiten stoßen, werde ich mich gerne noch einmal melden.\n\nIch schätze Ihre Unterstützung und freue mich auf eine unkomplizierte Abwicklung des Anliegens.\n\nBeste Grüße,  \nFabian Huber",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1549,7 +1565,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "e1fc1d2a-58b3-4d53-91ca-a81f9b579de1"
   },
   {
     "input_settings": {
@@ -1598,7 +1615,7 @@
         "role": "user"
       },
       {
-        "content": "Sehr geehrte Frau Meier,\n\nherzlichen Dank für Ihre schnelle und ausführliche Antwort! Ihre Empfehlungen sind sehr hilfreich, und ich werde die genannten Schritte gleich ausprobieren. Besonders der Zugang über die Online-Banking-Plattform klingt vielversprechend. :-)\n\nIch werde auch in Erwägung ziehen, mit meinem Berater persönlich zu sprechen, um sicherzustellen, dass ich alle relevanten Informationen habe, die zu meinen Bedürfnissen passen.\n\nSollte ich auf Schwierigkeiten stoßen oder weitere Fragen haben, komme ich gerne auf Ihr freundliches Angebot zurück, Ihnen zu schreiben.\n\nNochmals vielen Dank für Ihre Unterstützung! Ich bin zuversichtlich, dass ich mit Ihrer Hilfe bestens informiert bin. \n\nMit freundlichen Grüßen,  \nRita Schmid\n\nTERMINATE",
+        "content": "Sehr geehrte Frau Meier,\n\nherzlichen Dank für Ihre schnelle und ausführliche Antwort! Ihre Empfehlungen sind sehr hilfreich, und ich werde die genannten Schritte gleich ausprobieren. Besonders der Zugang über die Online-Banking-Plattform klingt vielversprechend. :-)\n\nIch werde auch in Erwägung ziehen, mit meinem Berater persönlich zu sprechen, um sicherzustellen, dass ich alle relevanten Informationen habe, die zu meinen Bedürfnissen passen.\n\nSollte ich auf Schwierigkeiten stoßen oder weitere Fragen haben, komme ich gerne auf Ihr freundliches Angebot zurück, Ihnen zu schreiben.\n\nNochmals vielen Dank für Ihre Unterstützung! Ich bin zuversichtlich, dass ich mit Ihrer Hilfe bestens informiert bin. \n\nMit freundlichen Grüßen,  \nRita Schmid",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1625,7 +1642,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "5ca45d73-2af9-4fcf-bcde-fdb79660ca7a"
   },
   {
     "input_settings": {
@@ -1674,7 +1692,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die schnelle Antwort! Ich werde mich gleich mal an den Kundenservice per E-Mail wenden. Ich bin sicher, dass sich alles klären lässt. 😊\n\nFreundliche Grüße,  \nQuentin Schäfer\n\nTERMINATE",
+        "content": "Vielen Dank für die schnelle Antwort! Ich werde mich gleich mal an den Kundenservice per E-Mail wenden. Ich bin sicher, dass sich alles klären lässt. 😊\n\nFreundliche Grüße,  \nQuentin Schäfer",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1701,7 +1719,8 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "3b3976bc-51a9-4e23-be7b-917353c413f6"
   },
   {
     "input_settings": {
@@ -1760,7 +1779,7 @@
         "role": "user"
       },
       {
-        "content": "Danke für die Erklärungen. Ich werde das auf jeden Fall ausprobieren und hoffen, dass alles gut klappt. Wenn ich noch Schwierigkeiten habe, melde ich mich beim Kundenservice. Vielen Dank nochmal für die Unterstützung. TERMINATE",
+        "content": "Danke für die Erklärungen. Ich werde das auf jeden Fall ausprobieren und hoffen, dass alles gut klappt. Wenn ich noch Schwierigkeiten habe, melde ich mich beim Kundenservice. Vielen Dank nochmal für die Unterstützung.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -1787,6 +1806,7 @@
         }
       }
     },
-    "agent_type": "society_of_mind"
+    "agent_type": "society_of_mind",
+    "call_id": "9e5e9831-74ab-4655-a05f-53f58c14d2a1"
   }
 ]

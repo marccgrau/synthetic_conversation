@@ -56,7 +56,7 @@
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die Information, Herr Meier. Ich werde meine Kontoauszüge erneut prüfen und mich dann mit dem Kundenservice in Verbindung setzen. Ich hoffe, dass sich die Angelegenheit zügig klären lässt, da mir solche Vorkommnisse wirklich unangenehm sind. Ich schätze Ihre Hilfe. TERMINATE",
+        "content": "Vielen Dank für die Information, Herr Meier. Ich werde meine Kontoauszüge erneut prüfen und mich dann mit dem Kundenservice in Verbindung setzen. Ich hoffe, dass sich die Angelegenheit zügig klären lässt, da mir solche Vorkommnisse wirklich unangenehm sind. Ich schätze Ihre Hilfe.",
         "role": "assistant",
         "name": "customer_agent"
       }
@@ -83,7 +83,8 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "52b19a27-da44-44bd-8f69-56e9d4e9fead"
   },
   {
     "input_settings": {
@@ -147,27 +148,27 @@
         "name": "customer_agent"
       },
       {
-        "content": "Ja, die Stichtagsbescheinigung wird direkt an Ihre bei uns hinterlegte Adresse geschickt. Wenn es keine weiteren Fragen gibt, beende ich den Anruf. Vielen Dank. TERMINATE.",
+        "content": "Ja, die Stichtagsbescheinigung wird direkt an Ihre bei uns hinterlegte Adresse geschickt. Wenn es keine weiteren Fragen gibt, beende ich den Anruf. Vielen Dank. .",
         "name": "service_agent",
         "role": "user"
       },
       {
-        "content": "Vielen Dank für die Hilfe. Ich warte dann gespannt auf die Post. TERMINATE.",
+        "content": "Vielen Dank für die Hilfe. Ich warte dann gespannt auf die Post. .",
         "role": "assistant",
         "name": "customer_agent"
       },
       {
-        "content": "TERMINATE.",
+        "content": ".",
         "name": "service_agent",
         "role": "user"
       },
       {
-        "content": "TERMINATE.",
+        "content": ".",
         "role": "assistant",
         "name": "customer_agent"
       },
       {
-        "content": "TERMINATE.",
+        "content": ".",
         "name": "service_agent",
         "role": "user"
       }
@@ -194,6 +195,7 @@
         }
       }
     },
-    "agent_type": "simple"
+    "agent_type": "simple",
+    "call_id": "b5e30ef4-64fa-4c8a-8fa3-7485fac1d7b0"
   }
 ]
