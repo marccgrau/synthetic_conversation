@@ -1,6 +1,7 @@
 from typing import Any, Dict, List, Tuple, Union
 
 import yaml
+from anthropic import Anthropic
 from groq import Groq
 from openai import OpenAI as OpenAIClient
 
@@ -40,7 +41,9 @@ def load_yaml(file_path: str) -> Union[Dict[str, Any], List[Any]]:
         return yaml.safe_load(file)
 
 
-def get_client(config_list: List[Dict[str, Any]], tags: List[str]) -> Tuple[Union[OpenAIClient, Groq], Dict[str, Any]]:
+def get_client(
+    config_list: List[Dict[str, Any]], tags: List[str]
+) -> Tuple[Union[OpenAIClient, Groq], Dict[str, Any]]:
     """Fetch client and config based on provided tags.
 
     Parameters
@@ -62,12 +65,16 @@ def get_client(config_list: List[Dict[str, Any]], tags: List[str]) -> Tuple[Unio
         If no matching configuration is found or if the provider is unknown.
 
     """
-    config = next((cfg for cfg in config_list if all(tag in cfg["tags"] for tag in tags)), None)
+    config = next(
+        (cfg for cfg in config_list if all(tag in cfg["tags"] for tag in tags)), None
+    )
     if config:
         if "openai" in tags:
             client = OpenAIClient(api_key=config["api_key"])
         elif "groq" in tags:
             client = Groq(api_key=config["api_key"])
+        elif "anthropic" in tags:
+            client = Anthropic(api_key=config["api_key"])
         else:
             raise ValueError("Unknown provider")
         return client, config

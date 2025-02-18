@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import uuid
 from datetime import datetime
 
 import autogen
@@ -80,6 +81,7 @@ def main():
 
     # Filter configuration based on arguments
     filter_tags = [args.model_name, args.model_provider]
+    logger.info(f"Filtering configuration based on tags: {filter_tags}")
     service_client, service_config = get_client(config_list, tags=filter_tags)
     customer_client, customer_config = get_client(config_list, tags=filter_tags)
 
@@ -146,7 +148,11 @@ def main():
 
 
 def save_results(results):
-    """Save results to a JSON file."""
+    """Save results to a JSON file, adding a unique call_id to each simulated conversation."""
+    # Add a unique call_id to each conversation using a UUID
+    for conversation in results:
+        conversation["call_id"] = str(uuid.uuid4())
+
     output_dir = "agentic_simulation_outputs"
     os.makedirs(output_dir, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

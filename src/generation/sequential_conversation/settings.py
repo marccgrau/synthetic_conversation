@@ -2,7 +2,7 @@ import os
 
 from llama_index.core import Settings
 from llama_index.embeddings.openai import OpenAIEmbedding
-from llama_index.llms.openai import OpenAI
+from llama_index.llms.anthropic import Anthropic
 
 
 def configure_llm_settings(model_name: str, embedding_model: str) -> None:
@@ -21,10 +21,16 @@ def configure_llm_settings(model_name: str, embedding_model: str) -> None:
 
     """
     # Initialize the LLM with the provided model name
-    llm: OpenAI = OpenAI(
+    # llm: OpenAI = OpenAI(
+    #     model=model_name,
+    #     temperature=0.2,
+    #     api_key=os.environ.get("OPENAI_API_KEY", ""),
+    # )
+
+    llm: Anthropic = Anthropic(
         model=model_name,
         temperature=0.2,
-        api_key=os.environ.get("OPENAI_API_KEY", ""),
+        api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
     )
 
     # Initialize the embedding model with the specified embedding model name
@@ -34,10 +40,16 @@ def configure_llm_settings(model_name: str, embedding_model: str) -> None:
         api_key=os.environ.get("OPENAI_API_KEY", ""),
     )
 
+    # conversable_agent_llm = {
+    #     "model": "gpt-4o",
+    #     "api_key": os.environ.get("OPENAI_API_KEY"),
+    #     "api_type": "openai",
+    # }
+
     conversable_agent_llm = {
-        "model": "gpt-4o",
-        "api_key": os.environ.get("OPENAI_API_KEY"),
-        "api_type": "openai",
+        "model": "claude-3-5-sonnet-20241022",
+        "api_key": os.environ.get("ANTHROPIC_API_KEY"),
+        "api_type": "anthropic",
     }
 
     # Set the LLM and embedding model in the global settings

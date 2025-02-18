@@ -1,5 +1,6 @@
 from typing import Any, Dict, Union
 
+from anthropic import Anthropic
 from autogen import ConversableAgent
 from groq import Groq
 from loguru import logger
@@ -81,7 +82,7 @@ def create_customer_agent(
 
 
 def generate_initial_message(
-    client: Union[OpenAIClient, Groq],
+    client: Union[OpenAIClient, Groq, Anthropic],
     config: Dict[str, Any],
     selected_customer_name: str,
     selected_bank: str,
@@ -130,15 +131,29 @@ def generate_initial_message(
 
     Generate the introductory message in German that captures your need for help with {selected_task}.
     """
-
-    chat_completion = client.chat.completions.create(
-        messages=[
-            {
-                "role": "user",
-                "content": intro_message_prompt,
-            }
-        ],
-        model=config["model"],
-    )
-    logger.info(f"Created initial message with model: {config['model']}")
-    return chat_completion.choices[0].message.content
+    logger.info(f"Client: {client}")
+    if isinstance(client, Anthropic):
+        chat_completion = client.messages.create(
+            max_tokens=2048,
+            messages=[
+                {
+                    "role": "user",
+                    "content": intro_message_prompt,
+                }
+            ],
+            model=config["model"],
+        )
+        logger.info(f"Created initial message with model: {config['model']}")
+        return chat_completion.content
+    else:
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": intro_message_prompt,
+                }
+            ],
+            model=config["model"],
+        )
+        logger.info(f"Created initial message with model: {config['model']}")
+        return chat_completion.choices[0].message.content
