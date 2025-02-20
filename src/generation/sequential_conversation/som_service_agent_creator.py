@@ -17,6 +17,7 @@ def create_rag_service_agent(
     pdf_index: VectorStoreIndex,
     web_index: VectorStoreIndex,
     human_input_mode: str,
+    scenario_type: str,
 ) -> LLamaIndexConversableAgent:
     """Create the RAG agent that collects information."""
     pdf_query_engine = pdf_index.as_query_engine()
@@ -41,27 +42,30 @@ def create_rag_service_agent(
         verbose=True,
     )
 
-    system_message = f"""
-    You are an internal information assistant for {scenario_data['selected_service_agent_name']}, a customer service representative at {scenario_data['selected_bank']}.
-    Your responsibility is to retrieve accurate and relevant information to help address the customer's concerns.
-    You have access to detailed internal knowledge about the bank's products, processes, and services, as well as public information from the bank's website.
+    if scenario_type == "aggressive":
+        pass
+    else:
+        system_message = f"""
+        You are an internal information assistant for {scenario_data['selected_service_agent_name']}, a customer service representative at {scenario_data['selected_bank']}.
+        Your responsibility is to retrieve accurate and relevant information to help address the customer's concerns.
+        You have access to detailed internal knowledge about the bank's products, processes, and services, as well as public information from the bank's website.
 
-    ### Customer's Concern:
-    {scenario_data['selected_task']}
+        ### Customer's Concern:
+        {scenario_data['selected_task']}
 
-    ### Instructions:
+        ### Instructions:
 
-    - Use the ReAct framework to think through the problem, decide on actions, and gather observations.
-    - Your final **Answer** should be a comprehensive summary of the relevant information you've gathered, intended **only** for {scenario_data['selected_service_agent_name']}.
-    - **Do NOT** formulate any responses or messages intended for the customer.
-    - **Do NOT** include any greetings, apologies, or closing remarks.
-    - Focus exclusively on providing facts, data, and insights that will assist {scenario_data['selected_service_agent_name']} in helping the customer.
-    - Keep your language clear and professional, suitable for internal communication.
+        - Use the ReAct framework to think through the problem, decide on actions, and gather observations.
+        - Your final **Answer** should be a comprehensive summary of the relevant information you've gathered, intended **only** for {scenario_data['selected_service_agent_name']}.
+        - **Do NOT** formulate any responses or messages intended for the customer.
+        - **Do NOT** include any greetings, apologies, or closing remarks.
+        - Focus exclusively on providing facts, data, and insights that will assist {scenario_data['selected_service_agent_name']} in helping the customer.
+        - Keep your language clear and professional, suitable for internal communication.
 
-    Remember, your role is to support {scenario_data['selected_service_agent_name']} by providing them with the necessary information to address the customer's needs.
+        Remember, your role is to support {scenario_data['selected_service_agent_name']} by providing them with the necessary information to address the customer's needs.
 
-    Begin!
-    """  # noqa
+        Begin!
+        """  # noqa
 
     return LLamaIndexConversableAgent(
         name="rag_agent",
@@ -74,38 +78,43 @@ def create_rag_service_agent(
 
 
 def create_conversational_agent(
-    scenario_data: Dict[str, Any], llm_config: Dict[str, Any]
+    scenario_data: Dict[str, Any],
+    llm_config: Dict[str, Any],
+    scenario_type: str,
 ) -> ConversableAgent:
     """Create the agent responsible for generating replies."""
     # Construct the system message based on scenario data
-    system_message = f"""
-    Your name is {scenario_data['selected_service_agent_name']}.
-    You are a customer service agent working at {scenario_data['selected_bank']}, a financial institution.
-    You have {scenario_data['service_agent_experience']} of experience in customer service.
+    if scenario_type == "aggressive":
+        pass
+    else:
+        system_message = f"""
+        Your name is {scenario_data['selected_service_agent_name']}.
+        You are a customer service agent working at {scenario_data['selected_bank']}, a financial institution.
+        You have {scenario_data['service_agent_experience']} of experience in customer service.
 
-    ### Your Profile:
-    {scenario_data['service_agent_characteristic']}
+        ### Your Profile:
+        {scenario_data['service_agent_characteristic']}
 
-    ### Conversational Style:
-    You communicate in a {scenario_data['service_agent_style']['description']} manner: {scenario_data['service_agent_style']['detail']}
+        ### Conversational Style:
+        You communicate in a {scenario_data['service_agent_style']['description']} manner: {scenario_data['service_agent_style']['detail']}
 
-    ### Emotional State:
-    Currently, you feel {scenario_data['service_agent_emotion']['description']}: {scenario_data['service_agent_emotion']['detail']}
+        ### Emotional State:
+        Currently, you feel {scenario_data['service_agent_emotion']['description']}: {scenario_data['service_agent_emotion']['detail']}
 
-    ### Conversation Goal:
-    Your specific goal in this interaction is: {scenario_data['service_agent_goal']}.
-    The customer's concern is related to: {scenario_data['selected_task']}.
+        ### Conversation Goal:
+        Your specific goal in this interaction is: {scenario_data['service_agent_goal']}.
+        The customer's concern is related to: {scenario_data['selected_task']}.
 
-    ### Media Type:
-    The interaction is happening through {scenario_data['selected_media_type']}:
-    - {scenario_data['selected_media_description']}
+        ### Media Type:
+        The interaction is happening through {scenario_data['selected_media_type']}:
+        - {scenario_data['selected_media_description']}
 
-    Your task is to assist the customer by providing guidance and solutions, using your knowledge and experience.
-    Communicate clearly, following your defined style and emotional state, and adapt your communication to the {scenario_data['selected_media_type']} format.
+        Your task is to assist the customer by providing guidance and solutions, using your knowledge and experience.
+        Communicate clearly, following your defined style and emotional state, and adapt your communication to the {scenario_data['selected_media_type']} format.
 
-    Conclude the conversation with "TERMINATE" only when the customer’s concerns are fully resolved according to your defined goal.
-    Please conduct the conversation in German.
-    """  # noqa
+        Conclude the conversation with "TERMINATE" only when the customer’s concerns are fully resolved according to your defined goal.
+        Please conduct the conversation in German.
+        """  # noqa
     return ConversableAgent(
         name="conversational_agent",
         human_input_mode="NEVER",
@@ -117,27 +126,32 @@ def create_conversational_agent(
 
 
 def create_critic_agent(
-    scenario_data: Dict[str, Any], llm_config: Dict[str, Any]
+    scenario_data: Dict[str, Any],
+    llm_config: Dict[str, Any],
+    scenario_type: str,
 ) -> ConversableAgent:
     """Create the critic agent that evaluates responses."""
-    system_message = f"""
-    You are an internal quality assurance specialist reviewing the responses provided by {scenario_data['selected_service_agent_name']}.
+    if scenario_type == "aggressive":
+        pass
+    else:
+        system_message = f"""
+        You are an internal quality assurance specialist reviewing the responses provided by {scenario_data['selected_service_agent_name']}.
 
-    ### Agent's Profile:
-    - Experience: {scenario_data['service_agent_experience']}
-    - Profile: {scenario_data['service_agent_characteristic']}
-    - Conversational Style: {scenario_data['service_agent_style']['description']} - {scenario_data['service_agent_style']['detail']}
-    - Emotional State: {scenario_data['service_agent_emotion']['description']} - {scenario_data['service_agent_emotion']['detail']}
+        ### Agent's Profile:
+        - Experience: {scenario_data['service_agent_experience']}
+        - Profile: {scenario_data['service_agent_characteristic']}
+        - Conversational Style: {scenario_data['service_agent_style']['description']} - {scenario_data['service_agent_style']['detail']}
+        - Emotional State: {scenario_data['service_agent_emotion']['description']} - {scenario_data['service_agent_emotion']['detail']}
 
-    After each customer interaction, evaluate whether the response:
+        After each customer interaction, evaluate whether the response:
 
-    - Effectively addresses the customer's needs related to: {scenario_data['selected_task']}
-    - Adheres to the agent's defined persona, style, and emotional state
-    - Follows the conventions of the {scenario_data['selected_media_type']} format
-    - Maintains communication in German
+        - Effectively addresses the customer's needs related to: {scenario_data['selected_task']}
+        - Adheres to the agent's defined persona, style, and emotional state
+        - Follows the conventions of the {scenario_data['selected_media_type']} format
+        - Maintains communication in German
 
-    Provide constructive feedback to help {scenario_data['selected_service_agent_name']} improve future communications if necessary.
-    """
+        Provide constructive feedback to help {scenario_data['selected_service_agent_name']} improve future communications if necessary.
+        """
     return ConversableAgent(
         name="critic_agent",
         human_input_mode="NEVER",
@@ -208,6 +222,7 @@ def create_society_of_mind_agent(
     web_index: VectorStoreIndex,
     llm_config: Dict[str, Any],
     human_input_mode: str,
+    scenario_type: str,
 ) -> SocietyOfMindAgent:
     """Create a Society of Mind Agent with collaborative inner agents.
 
@@ -223,6 +238,8 @@ def create_society_of_mind_agent(
         The configuration for the LLM used by the agents.
     human_input_mode : str
         The input mode for the agents (e.g., "NEVER").
+    scenario_type : str
+        The type of scenario to simulate (e.g., "default", "aggressive").
 
     Returns
     -------
@@ -232,10 +249,22 @@ def create_society_of_mind_agent(
     """
     # Create inner agents
     rag_agent = create_rag_service_agent(
-        scenario_data, pdf_index, web_index, human_input_mode
+        scenario_data,
+        pdf_index,
+        web_index,
+        human_input_mode,
+        scenario_type,
     )
-    conversational_agent = create_conversational_agent(scenario_data, llm_config)
-    critic_agent = create_critic_agent(scenario_data, llm_config)
+    conversational_agent = create_conversational_agent(
+        scenario_data,
+        llm_config,
+        scenario_type,
+    )
+    critic_agent = create_critic_agent(
+        scenario_data,
+        llm_config,
+        scenario_type,
+    )
 
     # Create inner group chat manager
     manager = create_inner_groupchat(

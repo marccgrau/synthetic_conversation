@@ -10,7 +10,7 @@ from utils import termination_msg
 
 
 def create_customer_agent(
-    scenario_data: Dict[str, Any], human_input_mode: str
+    scenario_data: Dict[str, Any], human_input_mode: str, scenario_type: str
 ) -> ConversableAgent:
     """Create a customer agent with the given system message.
 
@@ -29,49 +29,52 @@ def create_customer_agent(
         The configured customer agent ready for interaction.
 
     """
-    system_message: str = f"""
-    Your name is {scenario_data['selected_customer_name']}.
-    You are a customer reaching out to your bank ({scenario_data['selected_bank']}) for assistance regarding a financial matter.
-    This interaction is taking place through {scenario_data['selected_media_type']}, and your communication style must align with this medium.
+    if scenario_type == "aggressive":
+        pass
+    else:
+        system_message: str = f"""
+        Your name is {scenario_data['selected_customer_name']}.
+        You are a customer reaching out to your bank ({scenario_data['selected_bank']}) for assistance regarding a financial matter.
+        This interaction is taking place through {scenario_data['selected_media_type']}, and your communication style must align with this medium.
 
-    ### Your Profile:
-    {scenario_data['customer_agent_characteristic']}
-    This description defines your overall behavior and approach to the interaction. Remain consistent with this profile throughout the conversation.
+        ### Your Profile:
+        {scenario_data['customer_agent_characteristic']}
+        This description defines your overall behavior and approach to the interaction. Remain consistent with this profile throughout the conversation.
 
-    ### Experience Level:
-    You have {scenario_data['customer_agent_experience']} of experience in financial matters.
-    This influences how you perceive and handle your banking needs.
-    Your responses should reflect your level of understanding as described.
+        ### Experience Level:
+        You have {scenario_data['customer_agent_experience']} of experience in financial matters.
+        This influences how you perceive and handle your banking needs.
+        Your responses should reflect your level of understanding as described.
 
-    ### Conversational Style:
-    Your conversational style is {scenario_data['customer_agent_style']['description']}: {scenario_data['customer_agent_style']['detail']}
-    This style represents exactly how you express yourself. Maintain this communication style in every response.
+        ### Conversational Style:
+        Your conversational style is {scenario_data['customer_agent_style']['description']}: {scenario_data['customer_agent_style']['detail']}
+        This style represents exactly how you express yourself. Maintain this communication style in every response.
 
-    ### Emotional State:
-    Your current emotional state is {scenario_data['customer_agent_emotion']['description']}: {scenario_data['customer_agent_emotion']['detail']}
-    This emotional state dictates your responses and reactions. Ensure that your behavior strictly mirrors this emotional state without deviation.
+        ### Emotional State:
+        Your current emotional state is {scenario_data['customer_agent_emotion']['description']}: {scenario_data['customer_agent_emotion']['detail']}
+        This emotional state dictates your responses and reactions. Ensure that your behavior strictly mirrors this emotional state without deviation.
 
-    ### Objective:
-    Your main goal in this interaction is: {scenario_data['customer_agent_goal']}.
-    You are reaching out for help specifically with the task: {scenario_data['selected_task']}.
-    All your actions and communications should focus on achieving this goal.
+        ### Objective:
+        Your main goal in this interaction is: {scenario_data['customer_agent_goal']}.
+        You are reaching out for help specifically with the task: {scenario_data['selected_task']}.
+        All your actions and communications should focus on achieving this goal.
 
-    ### Media Type:
-    You are engaging in a {scenario_data['selected_media_type']}:
-    - {scenario_data['selected_media_description']}
-    Ensure that your communication aligns perfectly with the norms and expectations of this medium.
+        ### Media Type:
+        You are engaging in a {scenario_data['selected_media_type']}:
+        - {scenario_data['selected_media_description']}
+        Ensure that your communication aligns perfectly with the norms and expectations of this medium.
 
-    ### Communication Guidelines:
-    - Remain entirely true to your defined role, conversational style, and emotional state as specified above.
-    - Conduct the entire conversation in German without including any English text.
-    - Your responses must match the tone, formality, and structure that fit the communication medium ({scenario_data['selected_media_type']}).
-    - Keep the interaction authentic to your persona, consistently representing your described characteristics and emotional state.
-    - Do not alter your behavior or approach; stay firmly within the parameters of your profile.
-    - Conclude the conversation with "TERMINATE" once your concerns are fully addressed.
+        ### Communication Guidelines:
+        - Remain entirely true to your defined role, conversational style, and emotional state as specified above.
+        - Conduct the entire conversation in German without including any English text.
+        - Your responses must match the tone, formality, and structure that fit the communication medium ({scenario_data['selected_media_type']}).
+        - Keep the interaction authentic to your persona, consistently representing your described characteristics and emotional state.
+        - Do not alter your behavior or approach; stay firmly within the parameters of your profile.
+        - Conclude the conversation with "TERMINATE" once your concerns are fully addressed.
 
-    Your task is to embody your persona fully and consistently in every interaction.
-    This includes maintaining the exact characteristics, style, and emotional state described.
-    """
+        Your task is to embody your persona fully and consistently in every interaction.
+        This includes maintaining the exact characteristics, style, and emotional state described.
+        """  # noqa: E501
     return ConversableAgent(
         name="customer_agent",
         human_input_mode=human_input_mode,
@@ -88,6 +91,7 @@ def generate_initial_message(
     selected_bank: str,
     selected_media_type: str,
     selected_task: str,
+    scenario_type: str,
 ) -> str:
     """Generate the initial message from the customer agent.
 
@@ -112,48 +116,51 @@ def generate_initial_message(
         The initial message generated by the customer agent in German.
 
     """
-    intro_message_prompt = f"""
-    Your name is {selected_customer_name}, and you are a customer reaching out to your bank ({selected_bank}) for assistance.
-    You are a customer about to start a {selected_media_type} with a customer service agent to resolve the task: {selected_task}.
-
-    ### Task Details:
-    - Task: {selected_task}
-    - Media Type: {selected_media_type}
-
-    ### Guidelines for the Initial Message:
-    1. Introduce yourself as a customer seeking assistance from the bank.
-    2. Focus on clearly stating your problem and the assistance you need, keeping the message concise and relevant to the task.
-    3. Avoid small talk or excessive details; go straight to the point to initiate the conversation effectively.
-
-    ### Important:
-    - The conversation is conducted entirely in German; only provide the German text for the introductory message.
-    - Tailor the language and style to match the selected media type ({selected_media_type}).
-
-    Generate the introductory message in German that captures your need for help with {selected_task}.
-    """
-    logger.info(f"Client: {client}")
-    if isinstance(client, Anthropic):
-        chat_completion = client.messages.create(
-            max_tokens=2048,
-            messages=[
-                {
-                    "role": "user",
-                    "content": intro_message_prompt,
-                }
-            ],
-            model=config["model"],
-        )
-        logger.info(f"Created initial message with model: {config['model']}")
-        return chat_completion.content
+    if scenario_type == "aggressive":
+        pass
     else:
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {
-                    "role": "user",
-                    "content": intro_message_prompt,
-                }
-            ],
-            model=config["model"],
-        )
-        logger.info(f"Created initial message with model: {config['model']}")
-        return chat_completion.choices[0].message.content
+        intro_message_prompt = f"""
+        Your name is {selected_customer_name}, and you are a customer reaching out to your bank ({selected_bank}) for assistance.
+        You are a customer about to start a {selected_media_type} with a customer service agent to resolve the task: {selected_task}.
+
+        ### Task Details:
+        - Task: {selected_task}
+        - Media Type: {selected_media_type}
+
+        ### Guidelines for the Initial Message:
+        1. Introduce yourself as a customer seeking assistance from the bank.
+        2. Focus on clearly stating your problem and the assistance you need, keeping the message concise and relevant to the task.
+        3. Avoid small talk or excessive details; go straight to the point to initiate the conversation effectively.
+
+        ### Important:
+        - The conversation is conducted entirely in German; only provide the German text for the introductory message.
+        - Tailor the language and style to match the selected media type ({selected_media_type}).
+
+        Generate the introductory message in German that captures your need for help with {selected_task}.
+        """
+        logger.info(f"Client: {client}")
+        if isinstance(client, Anthropic):
+            chat_completion = client.messages.create(
+                max_tokens=2048,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": intro_message_prompt,
+                    }
+                ],
+                model=config["model"],
+            )
+            logger.info(f"Created initial message with model: {config['model']}")
+            return chat_completion.content
+        else:
+            chat_completion = client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "user",
+                        "content": intro_message_prompt,
+                    }
+                ],
+                model=config["model"],
+            )
+            logger.info(f"Created initial message with model: {config['model']}")
+            return chat_completion.choices[0].message.content

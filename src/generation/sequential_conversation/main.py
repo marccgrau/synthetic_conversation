@@ -1,3 +1,33 @@
+"""
+Script for Running Conversation Simulations Between Service and Customer Agents
+
+This script simulates interactions between AI-driven customer and service agents using different configurations, models, and scenarios.
+It utilizes various AI agent types (RAG, Society of Mind, or Simple Service Agent) and executes conversational flows based on predefined scenarios.
+
+Key Features:
+- Allows configuration of different LLM models and providers.
+- Supports multiple iterations of conversation simulations.
+- Implements different agent types to model diverse conversational behaviors.
+- Loads PDF and Web-based knowledge indexes for improved AI response generation.
+- Saves each simulated conversation with a unique identifier.
+
+Modules:
+- `argparse`: Handles command-line argument parsing.
+- `json`, `os`, `uuid`, `datetime`: Manages result storage and unique identifier assignment.
+- `autogen`: Handles AI model configurations.
+- `conversation_manager`, `customer_agent_creator`, `index_manager`, `rag_service_agent_creator`, `simple_service_agent_creator`, `som_service_agent_creator`: Implements different AI agents and conversation functionalities. # noqa
+- `loguru`: Logs execution details.
+- `scenario_data`, `settings`, `utils`: Loads scenario data and manages model settings.
+
+Usage:
+Run the script with optional command-line arguments to customize model selection, iterations, agent types, and scenario settings.
+
+Example:
+```bash
+python main.py --model_name gpt-4o-mini --iterations 5 --agent_type rag --scenario default
+```
+"""
+
 import argparse
 import json
 import os
@@ -10,7 +40,7 @@ from customer_agent_creator import create_customer_agent, generate_initial_messa
 from index_manager import get_pdf_index, get_web_index
 from loguru import logger
 from rag_service_agent_creator import create_rag_service_agent
-from scenario_loader import load_scenario_data  # Import the new scenario loader
+from scenario_data import load_aggressive_scenario_data, load_default_scenario_data
 from settings import configure_llm_settings
 from simple_service_agent_creator import create_simple_service_agent
 from som_service_agent_creator import create_society_of_mind_agent
@@ -58,6 +88,12 @@ def parse_arguments():
         default="rag",
         help="Type of agent to use (e.g., 'rag', 'society_of_mind').",
     )
+    parser.add_argument(
+        "--scenario",
+        type=str,
+        default="default",
+        help="Scenario data to load (e.g., 'default', 'aggressive').",
+    )
     return parser.parse_args()
 
 
@@ -94,7 +130,10 @@ def main():
 
     for _ in range(args.iterations):
         # Sample scenario data for each run
-        scenario_data = load_scenario_data()
+        if args.scenario == "aggressive":
+            scenario_data = load_aggressive_scenario_data()
+        else:
+            scenario_data = load_default_scenario_data()
 
         # Create agents with the freshly sampled system messages and assign necessary tools
         if args.agent_type == "rag":
@@ -144,19 +183,25 @@ def main():
         results.append(result)
 
     # Save the results
-    save_results(results)
+    save_results(results, args)
 
 
-def save_results(results):
+def save_results(results, args):
     """Save results to a JSON file, adding a unique call_id to each simulated conversation."""
     # Add a unique call_id to each conversation using a UUID
     for conversation in results:
         conversation["call_id"] = str(uuid.uuid4())
 
-    output_dir = "agentic_simulation_outputs"
+    if args.scenario == "aggressive":
+        output_dir = "agentic_simulation_outputs/aggressive"
+    else:
+        output_dir = "agentic_simulation_outputs/default"
     os.makedirs(output_dir, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = os.path.join(output_dir, f"conversations_{timestamp}.json")
+    output_file = os.path.join(
+        output_dir,
+        f"conversations-{args.model_name}-{args.agent_type}-{timestamp}.json",
+    )
 
     with open(output_file, "w", encoding="utf-8") as file:
         json.dump(results, file, ensure_ascii=False, indent=2)
