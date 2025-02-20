@@ -140,7 +140,7 @@ def main():
         logger.info(f"Scenario data loaded for {args.scenario} scenario.")
         # Create agents with the freshly sampled system messages and assign necessary tools
         if args.agent_type == "rag":
-            service_agent = create_rag_service_agent(
+            service_agent, service_agent_prompt = create_rag_service_agent(
                 scenario_data,
                 pdf_index,
                 web_index,
@@ -148,7 +148,7 @@ def main():
                 args.scenario,
             )
         elif args.agent_type == "society_of_mind":
-            service_agent = create_society_of_mind_agent(
+            service_agent, service_agent_prompt = create_society_of_mind_agent(
                 scenario_data,
                 pdf_index,
                 web_index,
@@ -157,13 +157,13 @@ def main():
                 args.scenario,
             )
         else:
-            service_agent = create_simple_service_agent(
+            service_agent, service_agent_prompt = create_simple_service_agent(
                 scenario_data,
                 args.human_input_mode_sa,
                 args.scenario,
             )
         logger.info(f"Service agent created with type: {args.agent_type}")
-        customer_agent = create_customer_agent(
+        customer_agent, customer_agent_prompt = create_customer_agent(
             scenario_data,
             args.human_input_mode_ca,
             args.scenario,
@@ -187,6 +187,8 @@ def main():
             initial_message,
             scenario_data,
             args.agent_type,
+            service_agent_prompt,
+            customer_agent_prompt,
         )
         logger.info("Conversation simulation completed.")
         results.append(result)

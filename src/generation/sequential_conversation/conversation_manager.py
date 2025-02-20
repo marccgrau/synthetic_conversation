@@ -12,6 +12,8 @@ def run_conversation(
     initial_message: str,
     data: Dict[str, Any],
     agent_type: str,
+    service_agent_prompt: str,
+    customer_agent_prompt: str,
 ) -> Dict[str, Any]:
     """Run the simulated conversation between the service agent and customer agent.
 
@@ -91,6 +93,7 @@ def run_conversation(
                 "emotion": data["service_agent_emotion"],
                 "experience": data["service_agent_experience"],
                 "goal": data["service_agent_goal"],
+                "prompt": service_agent_prompt,
             },
             "customer_agent": {
                 "characteristic": data["customer_agent_characteristic"],
@@ -98,6 +101,7 @@ def run_conversation(
                 "emotion": data["customer_agent_emotion"],
                 "experience": data["customer_agent_experience"],
                 "goal": data["customer_agent_goal"],
+                "prompt": customer_agent_prompt,
             },
         },
         "messages": messages,

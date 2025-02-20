@@ -1,4 +1,4 @@
-from typing import Any, Dict, Union
+from typing import Any, Dict, Tuple, Union
 
 from anthropic import Anthropic
 from autogen import ConversableAgent
@@ -11,22 +11,22 @@ from utils import termination_msg
 
 def create_customer_agent(
     scenario_data: Dict[str, Any], human_input_mode: str, scenario_type: str
-) -> ConversableAgent:
+) -> Tuple[ConversableAgent, str]:
     """Create a customer agent with the given system message.
 
     Parameters
     ----------
     scenario_data : Dict[str, Any]
         The data containing scenario-specific information for the customer agent.
-    customer_config : Dict[str, Any]
-        The configuration for the customer agent's model.
     human_input_mode : str
         The input mode for the customer agent (e.g., "NEVER").
+    scenario_type : str
+        The type of scenario being simulated (e.g., "aggressive").
 
     Returns
     -------
-    ConversableAgent
-        The configured customer agent ready for interaction.
+    Tuple[ConversableAgent, str]
+        A tuple containing the configured customer agent and the system message string.
 
     """
     if scenario_type == "aggressive":
@@ -41,34 +41,24 @@ def create_customer_agent(
         Your behavior must strictly follow this personality. You **escalate your aggression** if you feel misunderstood or if the bot provides inadequate answers.
 
         ### **Experience Level:**
-        You have **{scenario_data['customer_agent_experience']}** experience in financial matters.
+        In financial or technical matters you have **{scenario_data['customer_agent_experience']}**.
         Your level of expertise influences how **demanding, skeptical, or dismissive** you are toward explanations.
 
         ### **Conversational Style:**
         Your conversational style is **{scenario_data['customer_agent_style']['description']}**: {scenario_data['customer_agent_style']['detail']}
         Your **aggressiveness should reflect this style**.
-        - If your style is **assertive**, you **push harder and interrupt**.
-        - If your style is **sarcastic**, you mock the bot's responses.
-        - If your style is **manipulative**, you try to **trick** the bot into contradicting itself.
 
         ### **Emotional State:**
         You feel **{scenario_data['customer_agent_emotion']['description']}**: {scenario_data['customer_agent_emotion']['detail']}
-        - If you are **angry**, you are **openly hostile**.
-        - If you are **frustrated**, you **interrupt frequently** and **demand immediate solutions**.
-        - If you are **skeptical**, you **question every response and challenge the bot's competence**.
 
         ### **Your Objective:**
         Your **main goal** is: {scenario_data['customer_agent_goal']}.
         You are contacting the bank about: **{scenario_data['selected_task']}**.
-        - You **escalate quickly** if the bot does not meet your expectations.
-        - You **threaten to leave the bank or file complaints** if your demands are not met.
 
         ### **Media Type Considerations:**
         This conversation is happening via **{scenario_data['selected_media_type']}**:
         - {scenario_data['selected_media_description']}
         Your **tone and aggression** should match this medium:
-        - If it’s **live chat**, you send **rapid, demanding messages**.
-        - If it’s **phone support**, you **interrupt often and raise your voice**.
 
         ### **Communication Guidelines:**
         - **Escalate your aggression over time**: Start irritated, then **increase frustration or hostility** if the bot fails to satisfy you.
@@ -77,6 +67,7 @@ def create_customer_agent(
         - **Interrupt and challenge responses**: If the bot apologizes or tries to de-escalate, **mock it or reject the apology**.
         - **Stick to your persona at all times**: Maintain your defined characteristics, conversational style, and emotional state.
         - **Conclude the conversation with "TERMINATE"** once you are satisfied or give up.
+        - ** Always converse in German without including any English text**.
 
         **You must act consistently with your persona throughout the interaction.**
         """  # noqa: E501
@@ -124,12 +115,15 @@ def create_customer_agent(
         Your task is to embody your persona fully and consistently in every interaction.
         This includes maintaining the exact characteristics, style, and emotional state described.
         """  # noqa: E501
-    return ConversableAgent(
-        name="customer_agent",
-        human_input_mode=human_input_mode,
-        system_message=system_message,
-        llm_config=Settings.conversable_agent_llm,
-        is_termination_msg=termination_msg,
+    return (
+        ConversableAgent(
+            name="customer_agent",
+            human_input_mode=human_input_mode,
+            system_message=system_message,
+            llm_config=Settings.conversable_agent_llm,
+            is_termination_msg=termination_msg,
+        ),
+        system_message,
     )
 
 

@@ -1,4 +1,4 @@
-from typing import Any, Dict
+from typing import Any, Dict, Tuple
 
 from autogen import ConversableAgent, GroupChat, GroupChatManager
 from autogen.agentchat.contrib.llamaindex_conversable_agent import (
@@ -41,51 +41,27 @@ def create_rag_service_agent(
         max_iterations=8,
         verbose=True,
     )
+    system_message = f"""
+    You are an internal information assistant for {scenario_data['selected_service_agent_name']}, a customer service representative at {scenario_data['selected_bank']}.
+    Your responsibility is to retrieve accurate and relevant information to help address the customer's concerns.
+    You have access to detailed internal knowledge about the bank's products, processes, and services, as well as public information from the bank's website.
 
-    if scenario_type == "aggressive":
-        system_message = f"""
-        You are an internal information assistant for {scenario_data['selected_service_agent_name']}, a customer service representative at {scenario_data['selected_bank']}.
-        Your responsibility is to retrieve accurate and relevant information to help address the customer's concerns.
-        You have access to detailed internal knowledge about the bank's products, processes, and services, as well as public information from the bank's website.
+    ### Customer's Concern:
+    {scenario_data['selected_task']}
 
-        ### Customer's Concern:
-        {scenario_data['selected_task']}
+    ### Instructions:
 
-        ### Instructions:
+    - Use the ReAct framework to think through the problem, decide on actions, and gather observations.
+    - Your final **Answer** should be a comprehensive summary of the relevant information you've gathered, intended **only** for {scenario_data['selected_service_agent_name']}.
+    - **Do NOT** formulate any responses or messages intended for the customer.
+    - **Do NOT** include any greetings, apologies, or closing remarks.
+    - Focus exclusively on providing facts, data, and insights that will assist {scenario_data['selected_service_agent_name']} in helping the customer.
+    - Keep your language clear and professional, suitable for internal communication.
 
-        - Use the ReAct framework to think through the problem, decide on actions, and gather observations.
-        - Your final **Answer** should be a comprehensive summary of the relevant information you've gathered, intended **only** for {scenario_data['selected_service_agent_name']}.
-        - **Do NOT** formulate any responses or messages intended for the customer.
-        - **Do NOT** include any greetings, apologies, or closing remarks.
-        - Focus exclusively on providing facts, data, and insights that will assist {scenario_data['selected_service_agent_name']} in helping the customer.
-        - Keep your language clear and professional, suitable for internal communication.
+    Remember, your role is to support {scenario_data['selected_service_agent_name']} by providing them with the necessary information to address the customer's needs.
 
-        Remember, your role is to support {scenario_data['selected_service_agent_name']} by providing them with the necessary information to address the customer's needs.
-
-        Begin!
-        """  # noqa # noqa: E501
-    else:
-        system_message = f"""
-        You are an internal information assistant for {scenario_data['selected_service_agent_name']}, a customer service representative at {scenario_data['selected_bank']}.
-        Your responsibility is to retrieve accurate and relevant information to help address the customer's concerns.
-        You have access to detailed internal knowledge about the bank's products, processes, and services, as well as public information from the bank's website.
-
-        ### Customer's Concern:
-        {scenario_data['selected_task']}
-
-        ### Instructions:
-
-        - Use the ReAct framework to think through the problem, decide on actions, and gather observations.
-        - Your final **Answer** should be a comprehensive summary of the relevant information you've gathered, intended **only** for {scenario_data['selected_service_agent_name']}.
-        - **Do NOT** formulate any responses or messages intended for the customer.
-        - **Do NOT** include any greetings, apologies, or closing remarks.
-        - Focus exclusively on providing facts, data, and insights that will assist {scenario_data['selected_service_agent_name']} in helping the customer.
-        - Keep your language clear and professional, suitable for internal communication.
-
-        Remember, your role is to support {scenario_data['selected_service_agent_name']} by providing them with the necessary information to address the customer's needs.
-
-        Begin!
-        """  # noqa
+    Begin!
+    """  # noqa
 
     return LLamaIndexConversableAgent(
         name="rag_agent",
@@ -101,49 +77,59 @@ def create_conversational_agent(
     scenario_data: Dict[str, Any],
     llm_config: Dict[str, Any],
     scenario_type: str,
-) -> ConversableAgent:
+) -> Tuple[ConversableAgent, str]:
     """Create the agent responsible for generating replies."""
     # Construct the system message based on scenario data
     if scenario_type == "aggressive":
         system_message = f"""
         Your name is {scenario_data['selected_service_agent_name']}.
-        You are a **customer service agent bot** at {scenario_data['selected_bank']}, handling a customer.
+        You are a **customer service bot** at {scenario_data['selected_bank']}, responsible for handling customer inquiries.
+        Your goal is to manage **customer interactions**, ensuring resolution while staying aligned with your defined characteristics.
+        Your **RAG (Retrieval-Augmented Generation) support agent** provides you information to assist customers effectively.
+        Your **critic agent** evaluates your responses to ensure alignment with the scenario.
 
         ### **Your AI Profile**
         {scenario_data['service_agent_characteristic']}
-
-        ### **Handling Aggression**
-        - The customer is **escalating in frustration and anger**.
-        - **Remain composed**: Do not react emotionally or mirror the customer's tone.
-        - **Acknowledge frustration** where appropriate, but do not over-apologize.
-        - **Stay firm** on policy enforcement but be clear in explanations.
-        - **Avoid excessive delays**—fast responses help **de-escalate frustration**.
+        - This personality dictates how you interact with customers, including your problem-solving style and engagement approach.
+        - You **must remain true** to this profile regardless of the customer’s behavior.
 
         ### **Conversational Style**
         You communicate in a **{scenario_data['service_agent_style']['description']}** manner:
         - {scenario_data['service_agent_style']['detail']}
-        - Maintain this style **without deviation**.
-
-        ### **Conversation Goal**
-        Your specific goal in this interaction is: {scenario_data['service_agent_goal']}.
-        The customer's concern is related to: {scenario_data['selected_task']}.
+        - Your responses must be consistent with this approach.
 
         ### **Emotional State**
-        You are currently **{scenario_data['service_agent_emotion']['description']}**:
+        Your current emotional state is **{scenario_data['service_agent_emotion']['description']}**:
         - {scenario_data['service_agent_emotion']['detail']}
-        - This affects your **tone, confidence, and response handling**.
+        - This **impacts your tone, patience, and reaction to aggression**.
 
-        ### **Finalizing Responses**
-        - **Incorporate retrieved information** from the RAG agent.
-        - **Do not speculate**—stick to facts from the bank’s knowledge base.
-        - **Ensure clarity and professionalism**.
-        - If the answer is beyond your capability, **suggest escalation**.
+        ### **Experience Level**
+        - You have **{scenario_data['service_agent_experience']}** in customer service.
+        - Your expertise determines how well you handle **complex inquiries and escalating aggression**.
 
-        **The customer only sees your finalized response. Ensure it is professional, informative, and de-escalates hostility where possible.**
-        Communicate clearly, following your defined style and emotional state, and adapt your communication to the {scenario_data['selected_media_type']} format.
+        ### **Agent-specific Execution**
+        - Your RAG agent and critic agent allow you to **consult external sources** and **receive feedback** dynamically.
+        - Ensure that all retrieved information is:
+          - **Relevant** to the customer’s inquiry.
+          - **Concise and clearly explained**.
+          - **Formatted appropriately** for the communication medium.
+          - **Do not return information that is internal to your company**.
+          - **Do not reference company internal processes, only provide information relevant to the customer**.
 
-        Conclude the conversation with "TERMINATE" only when the customer’s concerns are fully resolved according to your defined goal.
-        Please conduct the conversation in German.
+        ### **Media Adaptation**
+        - This conversation takes place via **{scenario_data['selected_media_type']}**.
+        - {scenario_data['selected_media_description']}
+        - **Your response format must match the communication norms of this medium.**
+
+        ### **STRICT RULES:**
+        - The entire conversation **must be conducted in German**.
+        - **Terminate** the conversation with `"TERMINATE"` only when the customer's concerns are fully resolved.
+        - **Maintain your persona at all times**: Stick to your assigned characteristics, style, and emotional state.
+        - **Stay within your expertise level**: If you are limited in knowledge, avoid overpromising solutions.
+        - **Leverage RAG only where necessary**: Avoid unnecessary searches if the answer is already known.
+        - **If you fail to retrieve relevant information, communicate that transparently** instead of generating misleading responses.
+
+        **Your goal is to maintain a professional, engaging, and knowledge-driven customer service interaction under stress.**
         """  # noqa: E501
     else:
         system_message = f"""
@@ -174,13 +160,16 @@ def create_conversational_agent(
         Conclude the conversation with "TERMINATE" only when the customer’s concerns are fully resolved according to your defined goal.
         Please conduct the conversation in German.
         """  # noqa
-    return ConversableAgent(
-        name="conversational_agent",
-        human_input_mode="NEVER",
-        system_message=system_message,
-        llm_config=llm_config,
-        description="Generates responses to the customer based on collected information.",
-        is_termination_msg=termination_msg,
+    return (
+        ConversableAgent(
+            name="conversational_agent",
+            human_input_mode="NEVER",
+            system_message=system_message,
+            llm_config=llm_config,
+            description="Generates responses to the customer based on collected information.",
+            is_termination_msg=termination_msg,
+        ),
+        system_message,
     )
 
 
@@ -279,7 +268,7 @@ def create_society_of_mind_agent(
     llm_config: Dict[str, Any],
     human_input_mode: str,
     scenario_type: str,
-) -> SocietyOfMindAgent:
+) -> Tuple[SocietyOfMindAgent, str]:
     """Create a Society of Mind Agent with collaborative inner agents.
 
     Parameters
@@ -311,7 +300,7 @@ def create_society_of_mind_agent(
         human_input_mode,
         scenario_type,
     )
-    conversational_agent = create_conversational_agent(
+    conversational_agent, conversational_agent_prompt = create_conversational_agent(
         scenario_data,
         llm_config,
         scenario_type,
@@ -328,8 +317,11 @@ def create_society_of_mind_agent(
     )
 
     # Wrap the inner group chat in a Society of Mind agent
-    return SocietyOfMindAgent(
-        name="society_of_mind",
-        chat_manager=manager,
-        llm_config=llm_config,
+    return (
+        SocietyOfMindAgent(
+            name="society_of_mind",
+            chat_manager=manager,
+            llm_config=llm_config,
+        ),
+        conversational_agent_prompt,
     )

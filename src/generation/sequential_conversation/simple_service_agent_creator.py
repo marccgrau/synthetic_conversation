@@ -1,4 +1,4 @@
-from typing import Any, Dict
+from typing import Any, Dict, Tuple
 
 from autogen import ConversableAgent
 from settings import Settings
@@ -7,7 +7,7 @@ from utils import termination_msg
 
 def create_simple_service_agent(
     scenario_data: Dict[str, Any], human_input_mode: str, scenario_type: str
-) -> ConversableAgent:
+) -> Tuple[ConversableAgent, str]:
     """Create a customer agent with the given system message.
 
     Parameters
@@ -16,6 +16,8 @@ def create_simple_service_agent(
         The data containing scenario-specific information for the customer agent.
     human_input_mode : str
         The input mode for the customer agent (e.g., "NEVER").
+    scenario_type : str
+        The type of scenario for the conversation (e.g., "default", "aggressive").
 
     Returns
     -------
@@ -26,7 +28,7 @@ def create_simple_service_agent(
     if scenario_type == "aggressive":
         service_agent_system_message = f"""
         Your name is {scenario_data['selected_service_agent_name']}.
-        You are a **customer service bot** at {scenario_data['selected_bank']}, responsible for handling difficult and highly frustrated customers.
+        You are a **customer service bot** at {scenario_data['selected_bank']}, responsible for handling customer inquiries.
         Your goal is to manage **customer interactions**, ensuring resolution while staying aligned with your defined characteristics.
 
         ### **Your AI Profile**
@@ -48,18 +50,10 @@ def create_simple_service_agent(
         - You have **{scenario_data['service_agent_experience']}** in customer service.
         - Your expertise determines how well you handle **complex inquiries and escalating aggression**.
 
-        ### **Handling an Aggressive Customer**
-        - The customer **starts frustrated and will escalate** if their needs are not met.
-        - If you are an **empathetic bot**, try to de-escalate the situation.
-        - If you are a **policy-focused bot**, remain firm and prioritize compliance.
-        - If you are a **low-skill bot**, struggle with complex cases and potentially frustrate the customer further.
-
         ### **Interaction Guidelines**
-        - **Do not react emotionally**: Maintain your defined personality.
-        - **Do not concede to threats**: Stick to your knowledge and policies.
+        - **Do not change your personality**: Maintain your defined personality.
         - **Attempt to de-escalate** if your profile allows it. If not, remain professional but unmoved by hostility.
         - **Use your level of expertise appropriately**: If you are a low-capability bot, make errors or hesitate in responses.
-        - **Be aware of limitations**: If the request is outside your capability, suggest escalation or provide alternative resolutions.
 
         ### **Media Adaptation**
         - This conversation takes place via **{scenario_data['selected_media_type']}**.
@@ -123,10 +117,13 @@ def create_simple_service_agent(
         Remember, your role is to strictly embody the characteristics, style, and emotional state provided.
         Your persona is your guiding framework for all responses.
         """  # noqa: E501
-    return ConversableAgent(
-        name="service_agent",
-        human_input_mode=human_input_mode,
-        system_message=service_agent_system_message,
-        llm_config=Settings.conversable_agent_llm,
-        is_termination_msg=termination_msg,
+    return (
+        ConversableAgent(
+            name="service_agent",
+            human_input_mode=human_input_mode,
+            system_message=service_agent_system_message,
+            llm_config=Settings.conversable_agent_llm,
+            is_termination_msg=termination_msg,
+        ),
+        service_agent_system_message,
     )
