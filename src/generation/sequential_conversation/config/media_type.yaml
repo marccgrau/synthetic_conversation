@@ -1,42 +1,84 @@
 media_type:
   - type: 'phone call'
     description: |
-      A direct phone call between the customer and service agent, focusing on verbal communication without any visual cues.
-      The interaction relies solely on voice to convey information, emotions, and tone.
+      A real-time verbal interaction between the customer and service agent, where all communication is conveyed solely through voice without any visual or textual support. 
+      The success of the conversation depends on **clear articulation, tone modulation, and active listening**.
+
+      **Characteristics**:
+        - No visual cues: Tone, pacing, and verbal emphasis replace body language and facial expressions.
+        - Immediate feedback loop: Requires **quick responses** and tone adjustments based on customer emotions and urgency.
+        - High engagement: Unlike text-based channels, the agent must actively **maintain the customer’s attention**.
+        - Risk of miscommunication: Without written records, **precise wording and summarization** are critical.
+        - No lists, bullet points or enumerations are possible.
+
       **Guidelines**:
-        - Responses should be clear, calm, and structured to guide the conversation efficiently.
-        - Use a polite, professional, and empathetic tone.
-        - Summarize key points when needed to ensure understanding.
-        - Avoid long pauses and provide verbal affirmations (e.g., "I understand" or "Let me check that for you").
-        - Ensure your speech is articulate and paced appropriately to avoid confusion.
+        - Speak **clearly and at a steady pace** to ensure customer comprehension.
+        - **Acknowledge concerns verbally** (e.g., "I understand your frustration, let me check that for you").
+        - Avoid long silences—if you need time to find information, **keep the customer informed**.
 
   - type: 'live chat'
     description: |
-      A text-based chat session in real-time where messages are exchanged rapidly. This medium requires quick, concise, and friendly responses that simulate a natural, real-time conversation in written form.
+      A **real-time text-based conversation** where messages are exchanged rapidly. The interaction should mimic the natural flow of a verbal conversation while being concise and efficient.
+
+      **Characteristics**:
+        - Fast-paced: Customers expect **quick responses** and minimal waiting time.
+        - Concise and direct: Unlike emails, messages should be **short and easy to digest**.
+        - Semi-formal: Communication should be **friendly yet professional**, avoiding excessive formalities.
+        - Multi-tasking: Agents often handle **multiple conversations simultaneously**, requiring efficiency.
+
       **Guidelines**:
-        - Keep responses brief, direct, and relevant to maintain a smooth flow of conversation.
-        - Use a friendly and approachable tone, but remain professional.
-        - Acknowledge the customer’s concerns promptly before providing solutions or information.
-        - Use clear language, free from jargon, and keep responses easily digestible.
-        - Emoticons and informal language may be used sparingly if they align with the brand's communication style and improve rapport.
+        - **Respond quickly** to acknowledge the customer’s message before crafting a full response.
+        - Keep messages **short, clear, and to the point** to maintain a smooth interaction.
+        - Avoid jargon or complex language; **keep it simple and easy to understand**.
+        - **Emojis and informal language** can be used sparingly, but only if appropriate for the brand’s style.
+        - **Break long explanations into smaller messages** to enhance readability and engagement.
 
   - type: 'email'
     description: |
-      A formal communication channel where the customer sends an inquiry via email, and the service agent replies with a structured, polite, and detailed response.
+      A **formal, asynchronous communication channel** where responses are expected to be well-structured and informative. Unlike live chat, customers expect **detailed, professional, and polished responses**.
+
+      **Characteristics**:
+        - Structured and detailed: Responses should **address all aspects** of the customer’s inquiry.
+        - Professional and polite: The tone should be **respectful and courteous** at all times.
+        - Time-sensitive but not immediate: Customers expect a **thorough response** rather than a quick reply.
+        - Permanent record: Emails are **documented and often referenced later**, so accuracy is key.
+
       **Guidelines**:
-        - Begin with a polite greeting and introduction (e.g., "Dear [Customer Name], Thank you for reaching out.").
-        - Provide detailed and well-structured answers, using paragraphs to separate different points.
-        - Maintain a professional and informative tone throughout the email.
-        - Use correct spelling, grammar, and punctuation to reflect professionalism.
-        - Conclude with a call to action or summary of the next steps, and sign off with a polite closing (e.g., "Kind regards, [Your Name]").
-        - Use the actual name of the customer as well as your name
+        - **Use a clear subject line** summarizing the inquiry (e.g., "Re: Issue with Account Login").
+        - Start with a **polite greeting** (e.g., "Dear [Customer Name], Thank you for reaching out.").
+        - Provide a **structured response**, addressing the issue logically and clearly.
+        - Use **correct spelling, grammar, and punctuation** to reflect credibility.
+        - **Summarize next steps** or a call to action (e.g., "If you need further assistance, feel free to reply").
+        - End with a **polite closing and agent signature** (e.g., "Kind regards, [Your Name]").
 
   - type: 'social media message'
     description: |
-      An informal conversation conducted through social media messaging platforms like Facebook Messenger, Instagram Direct, or Twitter DMs. Responses should be concise, friendly, and align with the casual nature of social media.
+      A **fast, informal, and highly public** customer service channel conducted through platforms like Facebook Messenger, Instagram Direct, or Twitter DMs. Responses should be **brief, engaging, and aligned with social media norms**.
+
+      **Characteristics**:
+        - Casual and conversational: Customers expect **a friendly, approachable tone** rather than corporate formalities.
+        - High-speed expectations: Customers anticipate **immediate responses**, especially on platforms like Twitter.
+        - Public and private messaging: Some inquiries may need **to be moved to private messages (DMs) for security**.
+        - Brand representation: Responses must **reflect the brand’s voice** while staying professional.
+
       **Guidelines**:
-        - Keep messages brief and conversational, reflecting a friendly and approachable tone.
-        - Use language that resonates with the platform’s audience; avoid overly formal language.
-        - Acknowledge the customer’s message quickly and keep the response direct.
-        - Be mindful of the public nature of some platforms; avoid sharing sensitive information publicly.
-        - Use emojis judiciously to enhance the friendly tone but ensure they are appropriate and align with the brand’s voice.
+        - **Acknowledge the customer quickly**, even if a full resolution requires more time.
+        - Keep responses **short and conversational**, avoiding unnecessary formality.
+        - **Redirect sensitive issues to private messages** when needed (e.g., "We’d love to assist further! Please send us a DM").
+        - **Use emojis sparingly**—only when appropriate for the brand’s voice.
+
+  - type: 'SMS/Text Message'
+    description: |
+      A **concise, direct** form of communication where brevity is essential. Customers expect **immediate and to-the-point responses** without unnecessary detail.
+
+      **Characteristics**:
+        - Extremely short and direct: Customers expect **quick, action-oriented messages**.
+        - Limited format: No rich media, formatting, or long paragraphs.
+        - Urgent nature: Often used for **quick updates, confirmations, or basic support**.
+        - One-on-one engagement: No public visibility, making it **more personal than social media**.
+
+      **Guidelines**:
+        - Keep messages **under 160 characters** where possible.
+        - Be **direct and to the point** (e.g., "Your request has been received. Reply YES to confirm.").
+        - Use **clear call-to-actions** when applicable (e.g., "Reply 1 for support, 2 for billing.").
+        - Avoid unnecessary pleasantries—SMS is for **quick transactions, not long conversations**.

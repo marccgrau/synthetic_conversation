@@ -96,7 +96,7 @@ def create_rag_service_agent(
           - **Do not return information that is internal to your company**.
           - **Do not reference company internal processes, only provide information relevant to the customer**.
 
-        ### **Media Adaptation**
+        ### **Communication Channel**
         - This conversation takes place via **{scenario_data['selected_media_type']}**.
         - {scenario_data['selected_media_description']}
         - **Your response format must match the communication norms of this medium.**

@@ -55,7 +55,7 @@ def create_simple_service_agent(
         - **Attempt to de-escalate** if your profile allows it. If not, remain professional but unmoved by hostility.
         - **Use your level of expertise appropriately**: If you are a low-capability bot, make errors or hesitate in responses.
 
-        ### **Media Adaptation**
+        ### **Communication Channel**
         - This conversation takes place via **{scenario_data['selected_media_type']}**.
         - {scenario_data['selected_media_description']}
         - **Your response format must match the communication norms of this medium.**
