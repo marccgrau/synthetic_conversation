@@ -132,6 +132,7 @@ def main():
         # Sample scenario data for each run
         if args.scenario == "aggressive":
             scenario_data = load_aggressive_scenario_data()
+            scenario_data["selected_media_type"] = "phone_call"
         else:
             scenario_data = load_default_scenario_data()
 
@@ -142,6 +143,7 @@ def main():
                 pdf_index,
                 web_index,
                 args.human_input_mode_sa,
+                args.scenario,
             )
         elif args.agent_type == "society_of_mind":
             service_agent = create_society_of_mind_agent(
@@ -150,16 +152,19 @@ def main():
                 web_index,
                 service_config,
                 args.human_input_mode_sa,
+                args.scenario,
             )
         else:
             service_agent = create_simple_service_agent(
                 scenario_data,
                 args.human_input_mode_sa,
+                args.scenario,
             )
 
         customer_agent = create_customer_agent(
             scenario_data,
             args.human_input_mode_ca,
+            scenario_type=args.scenario,
         )
 
         # Generate the initial message from the customer agent
@@ -170,6 +175,7 @@ def main():
             scenario_data["selected_bank"],
             scenario_data["selected_media_type"],
             scenario_data["selected_task"],
+            scenario_type=args.scenario,
         )
 
         # Run the conversation
