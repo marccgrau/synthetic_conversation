@@ -106,7 +106,7 @@ def create_rag_service_agent(
         - {scenario_data['selected_media_description']}
         - **Ensure responses match the expected format for this medium.**
 
-        **STRICT RULES:**
+        ### **STRICT RULES:**
         - The entire conversation **must be conducted in German**.
         - **Terminate** the conversation with `"TERMINATE"` only when the customer's concerns are fully resolved.
         - **Maintain your persona at all times**: Stick to your assigned characteristics, style, and emotional state.

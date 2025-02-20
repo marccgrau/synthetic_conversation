@@ -18,7 +18,7 @@ def load_default_scenario_data() -> Dict[str, Any]:
     personal_data: Dict[str, Any] = load_yaml("config/default/personal_data.yaml")
 
     # Randomly sample the bank, service agent name, and customer name
-    selected_bank: str = random.choice(personal_data["bank_names"])
+    selected_bank: str = random.choice(personal_data["company_name"])
     selected_customer_name: str = random.choice(personal_data["person_name"])
     selected_service_agent_name: str = random.choice(personal_data["person_name"])
 
@@ -107,9 +107,9 @@ def load_aggressive_scenario_data() -> Dict[str, Any]:
     personal_data: Dict[str, Any] = load_yaml("config/aggressive/personal_data.yaml")
 
     # Randomly sample the bank, service agent name, and customer name
-    selected_bank: str = random.choice(personal_data["bank_names"])
+    selected_bank: str = random.choice(personal_data["company_name"])
     selected_customer_name: str = random.choice(personal_data["person_name"])
-    selected_service_agent_name: str = random.choice(personal_data["person_name"])
+    selected_service_agent_name: str = random.choice(personal_data["bot_name"])
 
     # Load and sample a task from the topics_actionable_items
     tasks: Dict[str, Any] = load_yaml("config/tasks_de.yaml")["topics_actionable_items"]

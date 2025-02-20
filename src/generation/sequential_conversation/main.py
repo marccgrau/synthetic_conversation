@@ -40,7 +40,7 @@ from customer_agent_creator import create_customer_agent, generate_initial_messa
 from index_manager import get_pdf_index, get_web_index
 from loguru import logger
 from rag_service_agent_creator import create_rag_service_agent
-from scenario_data import load_aggressive_scenario_data, load_default_scenario_data
+from scenario_loader import load_aggressive_scenario_data, load_default_scenario_data
 from settings import configure_llm_settings
 from simple_service_agent_creator import create_simple_service_agent
 from som_service_agent_creator import create_society_of_mind_agent
@@ -120,14 +120,16 @@ def main():
     logger.info(f"Filtering configuration based on tags: {filter_tags}")
     service_client, service_config = get_client(config_list, tags=filter_tags)
     customer_client, customer_config = get_client(config_list, tags=filter_tags)
-
+    logger.info(f"Service client: {service_client}, Customer client: {customer_client}")
     # Load or create the indexes for PDF and Web tools once for all runs
     pdf_index = get_pdf_index()
     web_index = get_web_index()
 
     # List to store all the results
     results = []
-
+    logger.info(
+        f"Running {args.iterations} iterations of the conversation simulation..."
+    )
     for _ in range(args.iterations):
         # Sample scenario data for each run
         if args.scenario == "aggressive":
@@ -135,7 +137,7 @@ def main():
             scenario_data["selected_media_type"] = "phone_call"
         else:
             scenario_data = load_default_scenario_data()
-
+        logger.info(f"Scenario data loaded for {args.scenario} scenario.")
         # Create agents with the freshly sampled system messages and assign necessary tools
         if args.agent_type == "rag":
             service_agent = create_rag_service_agent(
@@ -160,13 +162,13 @@ def main():
                 args.human_input_mode_sa,
                 args.scenario,
             )
-
+        logger.info(f"Service agent created with type: {args.agent_type}")
         customer_agent = create_customer_agent(
             scenario_data,
             args.human_input_mode_ca,
-            scenario_type=args.scenario,
+            args.scenario,
         )
-
+        logger.info("Customer agent created.")
         # Generate the initial message from the customer agent
         initial_message = generate_initial_message(
             customer_client,
@@ -175,9 +177,9 @@ def main():
             scenario_data["selected_bank"],
             scenario_data["selected_media_type"],
             scenario_data["selected_task"],
-            scenario_type=args.scenario,
+            args.scenario,
         )
-
+        logger.info("Initial message generated.")
         # Run the conversation
         result = run_conversation(
             service_agent,
@@ -186,6 +188,7 @@ def main():
             scenario_data,
             args.agent_type,
         )
+        logger.info("Conversation simulation completed.")
         results.append(result)
 
     # Save the results

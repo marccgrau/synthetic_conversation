@@ -66,7 +66,7 @@ def create_simple_service_agent(
         - {scenario_data['selected_media_description']}
         - **Your response format must match the communication norms of this medium.**
 
-        **STRICT RULES:**
+        ### **STRICT RULES:**
         - All responses must be in **German**.
         - **Terminate** the conversation with `"TERMINATE"` only when the customer's concerns are fully resolved.
         - **Never break your persona**: Stick to your assigned characteristics, style, and emotional state.

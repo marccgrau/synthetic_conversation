@@ -4,7 +4,7 @@ from anthropic import Anthropic
 from autogen import ConversableAgent
 from groq import Groq
 from loguru import logger
-from openai import OpenAI as OpenAIClient
+from openai import OpenAI
 from settings import Settings
 from utils import termination_msg
 
@@ -134,7 +134,7 @@ def create_customer_agent(
 
 
 def generate_initial_message(
-    client: Union[OpenAIClient, Groq, Anthropic],
+    client: Union[OpenAI, Groq, Anthropic],
     config: Dict[str, Any],
     selected_customer_name: str,
     selected_bank: str,
@@ -166,7 +166,25 @@ def generate_initial_message(
 
     """
     if scenario_type == "aggressive":
-        pass
+        intro_message_prompt = f"""
+        Your name is {selected_customer_name}, and you are a customer reaching out to your bank ({selected_bank}) for assistance.
+        You are a customer about to start a {selected_media_type} with a customer service agent to resolve the task: {selected_task}.
+
+        ### Task Details:
+        - Task: {selected_task}
+        - Media Type: {selected_media_type}
+
+        ### Guidelines for the Initial Message:
+        1. Introduce yourself as a customer seeking assistance from the bank.
+        2. Focus on clearly stating your problem and the assistance you need, keeping the message concise and relevant to the task.
+        3. Avoid small talk or excessive details; go straight to the point to initiate the conversation effectively.
+
+        ### Important:
+        - The conversation is conducted entirely in German; only provide the German text for the introductory message.
+        - Tailor the language and style to match the selected media type ({selected_media_type}).
+
+        Generate the introductory message in German that captures your need for help with {selected_task}.
+        """
     else:
         intro_message_prompt = f"""
         Your name is {selected_customer_name}, and you are a customer reaching out to your bank ({selected_bank}) for assistance.
@@ -187,29 +205,14 @@ def generate_initial_message(
 
         Generate the introductory message in German that captures your need for help with {selected_task}.
         """
-        logger.info(f"Client: {client}")
-        if isinstance(client, Anthropic):
-            chat_completion = client.messages.create(
-                max_tokens=2048,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": intro_message_prompt,
-                    }
-                ],
-                model=config["model"],
-            )
-            logger.info(f"Created initial message with model: {config['model']}")
-            return chat_completion.content
-        else:
-            chat_completion = client.chat.completions.create(
-                messages=[
-                    {
-                        "role": "user",
-                        "content": intro_message_prompt,
-                    }
-                ],
-                model=config["model"],
-            )
-            logger.info(f"Created initial message with model: {config['model']}")
-            return chat_completion.choices[0].message.content
+    chat_completion = client.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": intro_message_prompt,
+            }
+        ],
+        model=config["model"],
+    )
+    logger.info(f"Created initial message with model: {config['model']}")
+    return chat_completion.choices[0].message.content

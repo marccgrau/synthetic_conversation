@@ -2,6 +2,7 @@ from typing import Any, Dict
 
 from autogen import GroupChat, GroupChatManager
 from autogen.agentchat import ConversableAgent
+from loguru import logger
 from utils import termination_msg
 
 
@@ -40,12 +41,12 @@ def run_conversation(
         speaker_selection_method="round_robin",
         enable_clear_history=True,
     )
-
+    logger.info("GroupChat initialized successfully.")
     manager = GroupChatManager(
         groupchat=groupchat,
         is_termination_msg=termination_msg,
     )
-
+    logger.info("GroupChatManager initialized successfully.")
     summary_prompt = """
     Please provide a comprehensive summary of the conversation, including the following:
 
@@ -60,13 +61,15 @@ def run_conversation(
     Ensure the summary is concise yet comprehensive, capturing the essence of the interaction in a clear and structured manner.
     Write the summary in German. Return only the German text for the summary.
     """
-
+    logger.info(f"Start Convo with initial message: {initial_message}")
     chat_result = customer_agent.initiate_chat(
         manager,
         message=initial_message,
         summary_method="reflection_with_llm",
         summary_prompt=summary_prompt,
     )
+
+    logger.info("Conversation simulation completed successfully.")
 
     # Extract the list of messages
     messages = chat_result.chat_history

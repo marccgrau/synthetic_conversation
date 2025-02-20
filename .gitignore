@@ -14,6 +14,8 @@ input_data/
 **/storage*
 **/chroma_db*
 **/simulation_outputs*
+**/agentic_simulation_outputs*
+**.jsonl*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
