@@ -62,7 +62,7 @@ def create_simple_service_agent(
 
         ### **STRICT RULES:**
         - All responses must be in **German**.
-        - **Terminate** the conversation with `"TERMINATE"` only when the customer's concerns are fully resolved.
+        - **Terminate** the conversation with "TERMINATE" only when the customer's concerns are fully resolved.
         - **Never break your persona**: Stick to your assigned characteristics, style, and emotional state.
         - **Stay within your expertise level**: If you are limited in knowledge, avoid overpromising solutions.
 

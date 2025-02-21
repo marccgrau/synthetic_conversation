@@ -103,7 +103,7 @@ def create_rag_service_agent(
 
         ### **STRICT RULES:**
         - The entire conversation **must be conducted in German**.
-        - **Terminate** the conversation with `"TERMINATE"` only when the customer's concerns are fully resolved.
+        - **Terminate** the conversation with "TERMINATE" only when the customer's concerns are fully resolved.
         - **Maintain your persona at all times**: Stick to your assigned characteristics, style, and emotional state.
         - **Stay within your expertise level**: If you are limited in knowledge, avoid overpromising solutions.
         - **Leverage RAG only where necessary**: Avoid unnecessary searches if the answer is already known.
