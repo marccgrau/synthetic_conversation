@@ -37,14 +37,21 @@ from datetime import datetime
 import autogen
 from conversation_manager import run_conversation
 from customer_agent_creator import create_customer_agent, generate_initial_message
+from dotenv import load_dotenv
 from index_manager import get_pdf_index, get_web_index
 from loguru import logger
 from rag_service_agent_creator import create_rag_service_agent
-from scenario_loader import load_aggressive_scenario_data, load_default_scenario_data
+from scenario_loader import (
+    load_aggressive_en_scenario_data,
+    load_aggressive_scenario_data,
+    load_default_scenario_data,
+)
 from settings import configure_llm_settings
 from simple_service_agent_creator import create_simple_service_agent
 from som_service_agent_creator import create_society_of_mind_agent
 from utils import get_client
+
+load_dotenv()
 
 
 def parse_arguments():
@@ -132,7 +139,10 @@ def main():
     )
     for _ in range(args.iterations):
         # Sample scenario data for each run
-        if args.scenario == "aggressive":
+        if args.scenario == "aggressive_en":
+            scenario_data = load_aggressive_en_scenario_data()
+            scenario_data["selected_media_type"] = "phone_call"
+        elif args.scenario == "aggressive":
             scenario_data = load_aggressive_scenario_data()
             scenario_data["selected_media_type"] = "phone_call"
         else:
@@ -203,7 +213,9 @@ def save_results(results, args):
     for conversation in results:
         conversation["call_id"] = str(uuid.uuid4())
 
-    if args.scenario == "aggressive":
+    if args.scenario == "aggressive_en":
+        output_dir = "agentic_simulation_outputs/aggressive_en"
+    elif args.scenario == "aggressive":
         output_dir = "agentic_simulation_outputs/aggressive"
     else:
         output_dir = "agentic_simulation_outputs/default"

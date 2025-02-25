@@ -66,5 +66,5 @@ def cleanup_json_files(directory: str) -> None:
 
 
 if __name__ == "__main__":
-    directory = "agentic_simulation_outputs/aggressive"
+    directory = "../agentic_simulation_outputs/aggressive_en"
     cleanup_json_files(directory)

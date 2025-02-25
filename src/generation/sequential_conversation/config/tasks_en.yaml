@@ -1,540 +1,63 @@
 topics_actionable_items:
-  Ämter_und_Erbschaften:
-    - Request inheritance documentation
-    - Resolve inheritance disputes
-    - Manage estate liquidation
-    - Apply for court orders related to estate
-  Nachlassabwicklung:
-    - Process inheritance claims
-    - Submit necessary documents for probate
-    - Obtain inheritance certificate
-    - Resolve outstanding debts of the deceased
-  Aufträge_an_Ämter_und_Erbschaften:
-    - Submit legal orders to probate office
-    - Request status updates on orders
-    - Amend submitted inheritance orders
-  Prozess_Beistand:
-    - Request legal assistance in probate matters
-    - Appoint a legal guardian
-    - Inquire about guardianship process
-  Auszahlung_Saldierung:
-    - Request final account balance payout
-    - Close the estate account
-    - Obtain a final account settlement statement
-  Erbe_ausgeschlagen:
-    - Submit refusal to accept inheritance
-    - Inquire about consequences of declining inheritance
-    - Obtain confirmation of refusal of inheritance
-  Prozess_bei_Meldung_Todesfall:
-    - Report a death to the authorities
-    - Submit required death certificates
-    - Request assistance with probate process
-  Schadloserklärung:
-    - Request indemnity agreements
-    - Submit indemnity claims
-  Stichtagsbescheinigung:
-    - Request certificate of key dates for probate
-    - Submit necessary documents for certification
-  Verfügungen_eines_Gerichts:
-    - Request a court order
-    - Submit appeal against court decision
-  Anlegen_Wertschriften:
-    - Invest in securities
-    - Manage an existing investment portfolio
-    - Request advice on investment strategies
-  Edelmetallkauf:
-    - Buy precious metals
-    - Request market price updates
-    - Inquire about storage options
-  Edelmetallkonto:
-    - Open a precious metal account
-    - Manage precious metal holdings
-    - Inquire about account charges and fees
-  Handhabung_Börsenanfragen:
-    - Place a stock order
-    - Inquire about current stock prices
-    - Request market analysis reports
-  Callgeld_Festgeld:
-    - Open a call or fixed deposit account
-    - Request current interest rates
-    - Inquire about early withdrawal penalties
-  Zeichnung_Callgeld_Festgeld:
-    - Apply for call or fixed deposit subscription
-    - Inquire about investment opportunities
-  Kassenobligation:
-    - Buy a treasury bond
-    - Request current bond rates
-  Zeichnung_Kassenobligation:
-    - Apply for treasury bond subscription
-    - Request details on bond maturity and interest
-  Fonds_Fondssparplan_Fondsbezugsplan:
-    - Open a mutual fund savings plan
-    - Manage a fund withdrawal plan
-    - Request fund performance reports
-  Auslandskunden:
-    - Inquire about international banking services
-    - Open an account as an international client
-    - Manage foreign transactions
-  AIA:
-    - Understand Automatic Exchange of Information rules
-    - Submit AIA documentation
-  Eröffnung_Auslandskunden:
-    - Open an account for a non-resident
-    - Inquire about account options for international clients
-  Eröffnung_US_Personen:
-    - Open an account for a US person
-    - Understand FATCA compliance requirements
-  Bancomaten:
-    - Report ATM malfunction
-    - Request ATM cash withdrawal limits
-    - Inquire about nearby ATM locations
-  Betreuung_Bancomaten:
-    - Request ATM service or maintenance
-    - Report suspicious activities at ATM
-  Geldwechsel_Bancomat:
-    - Inquire about currency exchange rates at ATM
-    - Request currency exchange services
-  Einzahlung_Bancomat:
-    - Deposit cash at an ATM
-    - Inquire about ATM deposit limits
-  Einzug_Karten:
-    - Report a card that has been captured by ATM
-    - Request retrieval of captured card
-  Handy_aufladen:
-    - Recharge mobile phone through ATM
-    - Request information on available mobile operators
-  Betragskündigung_NKK:
-    - Cancel a large amount withdrawal
-    - Request information on the process for amount cancellation
-  Betrugsfälle:
-    - Report a case of fraud
-    - Inquire about fraud protection measures
-  Betrug_über_online_Marktplätze:
-    - Report online marketplace fraud
-    - Request support for unauthorized transactions
-  Online_Anlagebetrug:
-    - Report investment fraud
-    - Inquire about online fraud prevention
-  CRM_Wertschätzungskarte_Kulanz:
-    - Request goodwill adjustments on account
-    - Inquire about loyalty rewards program
-  CRM_Beziehung_hinzufügen:
-    - Add new customer relationship in CRM
-    - Update existing customer information in CRM
-  Kulanzfall:
-    - Request a case for goodwill adjustment
-    - Submit a complaint for consideration
-  Gebührenbelastungen:
-    - Request information on fees charged
-    - Dispute a charged fee
-  Geldwäschereigesetz:
-    - Inquire about anti-money laundering regulations
-    - Submit documents for compliance verification
-  Handling_Telefonie:
-    - Inquire about handling phone queries
-    - Request information on phone support
-  Support_QR_Login_Weblink_mit_PW_Entsperrung:
-    - Request help with QR code login
-    - Reset password for secure access
-  Weiterleitung_an_Kundenbetreuer:
-    - Request referral to a customer advisor
-    - Inquire about services of a specific customer advisor
-  Konsolidierung_Feedback:
-    - Submit customer feedback
-    - Request feedback consolidation report
-  Inboundbündelungspezifische_Themen:
-    - Request handling for bundled services
-    - Inquire about inbound-specific service topics
-  Anlegen:
-    - Request investment services
-    - Inquire about investment opportunities
-  Argumentarien:
-    - Inquire about financial argument strategies
-    - Request sales pitch support
-  Finanzieren:
-    - Apply for a loan
-    - Request loan restructuring
-    - Inquire about loan interest rates
-  Tragbarkeit:
-    - Assess affordability for a loan
-    - Request a loan eligibility report
-  Hypothek:
-    - Apply for a mortgage
-    - Inquire about mortgage interest rates
-    - Request mortgage restructuring options
-  Pensions_Check_Finanzplanung:
-    - Request a pension check
-    - Request a financial planning session
-  Vorsorgen:
-    - Open a retirement savings account
-    - Request advice on retirement planning
-  Karten:
-    - Request a new debit or credit card
-    - Report a lost or stolen card
-    - Inquire about card limits and fees
-  Viseca_One_App_Online_Shopping:
-    - Inquire about app functionalities
-    - Report app issues or glitches
-  Übersicht_Gebühren_Leistungen_Kurs_bei_Fremdwährungstransaktionen_Viseca:
-    - Request a summary of fees and services
-    - Inquire about currency exchange fees
-  Gültigkeit_Maestro_Karte:
-    - Inquire about Maestro card validity
-    - Request a replacement card
-  Fremdwährung_Maestro_VisaDebit_Karten:
-    - Request currency exchange options for cards
-    - Inquire about foreign transaction fees
-  Sperrung_Visa_Debit_durch_Viseca_Fraud_Betrug:
-    - Report fraud and request card blocking
-    - Inquire about fraud protection measures
-  Verlustmeldung_durch_3_Person_Todesfallmeldung:
-    - Report card loss by a third party
-    - Notify of a death and request account closure
-  Verfügbare_Limite_VISA_Debit:
-    - Inquire about available limits for Visa debit
-  Löschung_Maestro_Karte_verlängern:
-    - Request extension for Maestro card
-    - Delete expired Maestro card
-  Beanstandung_Daten_Weiterleitung_an_Dritten:
-    - Dispute data transfer to third parties
-    - Inquire about data privacy policies
-  Schadenfall_Bestrittene_Transaktionen:
-    - Dispute fraudulent or incorrect transactions
-  Visa_Debittransaktionen_Saldo_zu_klein_Hinweis_Sperre:
-    - Report low balance issues for Visa debit
-  Kreditkarte:
-    - Request a new credit card
-    - Report a lost or stolen credit card
-    - Inquire about credit card charges and limits
-  Contactless_Payment:
-    - Inquire about contactless payment services
-    - Report contactless payment issues
-  Zusatzkarte_bestellen:
-    - Order an additional credit card
-    - Inquire about eligibility for supplementary card
-  Erneuerung_Kreditkarte:
-    - Request credit card renewal
-    - Inquire about renewal fees
-  Kündigung_Kreditkarte:
-    - Cancel a credit card
-    - Inquire about cancellation process
-  Limiten_Kreditkarte:
-    - Request credit card limit increase
-    - Inquire about credit card limit options
-  Schattenkonti:
-    - Inquire about shadow accounts
-    - Request shadow account management
-  Sperrung_aufgrund_Bonität:
-    - Inquire about creditworthiness-based blocking
-    - Request removal of credit block
-  Versicherungsleistungen:
-    - Request information about insurance services
-    - File an insurance claim
-  Maestro:
-    - Request a new Maestro card
-    - Inquire about Maestro card services
-  Schadenfall:
-    - Report an insurance claim
-    - Request claim status update
-  Bezug_EUR:
-    - Request Euro withdrawal
-    - Inquire about foreign currency withdrawal
-  Bonitätssperre:
-    - Request removal of creditworthiness block
-  Multikonti_Einzahlungskarte:
-    - Manage multiple accounts and deposit cards
-  Nutzung_im_Ausland:
-    - Inquire about international card usage
-    - Report issues using card abroad
-  PIN_vergessen:
-    - Reset forgotten PIN
-    - Request new card after multiple failed attempts
-  Sperrungen:
-    - Report card blocking
-    - Request card unlocking services
-  Versand_an_die_Niederlassung:
-    - Request delivery to branch
-    - Inquire about package status
-  Konten:
-    - Request account services
-    - Open or close an account
-  Eröffnung_einer_Bankbeziehung_in_Deutschland:
-    - Open an account in Germany
-    - Inquire about international account requirements
-  Geschenksparkonto:
-    - Open a gift savings account
-    - Inquire about gift savings account terms
-  Jugendkonten:
-    - Open a youth account
-    - Request information on youth account benefits
-  Kontoeröffnung_bestehender_Kunden:
-    - Open a new account as an existing customer
-    - Inquire about account types available
-  Mietzinsdepot:
-    - Open a rental deposit account
-    - Manage rental deposit services
-  Adressänderung:
-    - Update customer address details
-    - Request address change confirmation
-  Auflösung_Konto:
-    - Close an account
-    - Request final statement for closed account
-  Besitzerwechsel_von_Liegenschaft:
-    - Inquire about property ownership transfer
-    - Request legal documentation for property transfer
-  Eröffnung_Mietzinsdepot:
-    - Open a new rental deposit account
-  Eröffnungsstatus_Mietzinsdepots:
-    - Inquire about rental deposit account status
-  Mehrere_Mieter:
-    - Inquire about handling multiple tenants
-  Namensänderung_Mieter:
-    - Update tenant name
-    - Request confirmation of name change
-  Todesfall:
-    - Report a death
-    - Request guidance on handling deceased's accounts
-  Vermieter_Verwaltungswechsel:
-    - Inquire about landlord or management change
-  Sparheft:
-    - Open a savings booklet
-    - Request information on savings booklet terms
-  Eröffnungsantrag_Minderjährige_durch_Inhaber_elterliche_Sorge:
-    - Apply for minor account opening by guardian
-    - Inquire about required documents for account opening
-  Kundenoutput:
-    - Request output of customer data
-  Avis_Periodische_Aktivitäten:
-    - Request information on periodic account activities
-    - Inquire about account activity notices
-  Bestätigung_der_Geschäftsbeziehung_Vermögensbestätigung:
-    - Request business relationship confirmation
-    - Obtain wealth confirmation
-  Depotauszug_mit_Wertschriften_Transaktionen:
-    - Request securities transactions statement
-  Digitale_Dokumente:
-    - Inquire about digital document management
-  Gebührenverbuchung_beim_Dokumentennachdruck:
-    - Inquire about fees for document reprint
-  Erbenkonten:
-    - Inquire about heir accounts
-  Konto_mit_negativem_Saldo:
-    - Inquire about negative balance account
-  Privatkredit:
-    - Apply for a personal loan
-    - Inquire about personal loan rates
-  Jahresendverarbeitung:
-    - Request year-end processing services
-  Kontoauszüge_von_saldierten_Konten:
-    - Request account statements of settled accounts
-  Private_Banking_Report:
-    - Request a private banking report
-  Steuerverzeichnis_für_das_Depot:
-    - Request tax report for deposit accounts
-  Mutationen_Saldierungen:
-    - Inquire about account mutations or closures
-  Adresserfassung:
-    - Request address recording
-  Adressänderungen:
-    - Request address changes
-  Vorsorgekonten:
-    - Open a pension savings account
-    - Inquire about pension account options
-  Zusatzadresse_Adressat:
-    - Request additional address details
-  Namensänderung:
-    - Request name change
-    - Submit legal documents for name change
-  Bargeldbestellung:
-    - Request cash order
-  Bezüge_Euro_Konto:
-    - Request Euro withdrawals from the account
-  Notenwechsel:
-    - Request note exchange
-  Beanstandung_Transaktion:
-    - Dispute a transaction
-  Kartenerneuerung:
-    - Request card renewal
-  Vollmachten:
-    - Request power of attorney services
-    - Submit power of attorney documentation
-  Entbindung_vom_Bankkundengeheimnis:
-    - Request release from banking secrecy
-  Änderung_der_Begünstigtenordnung:
-    - Request change in beneficiary order
-  Eröffnung_2_Säule:
-    - Open second-pillar pension account
-  Eröffnung_3_Säule:
-    - Open third-pillar pension account
-  Vorsorge_Freizügigkeitsfonds:
-    - Inquire about retirement fund options
-  Kontobestätigung:
-    - Request account confirmation letter
-  Saldierung_Konto:
-    - Close the account and settle the balance
-  Zahlungsverkehr:
-    - Request payment services
-    - Inquire about payment procedures
-  Abfrage_Kurs:
-    - Request current exchange rates
-  Auslandszahlung:
-    - Request foreign payment services
-  Gebührenregelung:
-    - Inquire about fee regulations
-  Checks:
-    - Request check services
-    - Inquire about check cashing and deposits
-  Dauerauftrag:
-    - Request standing order setup
-    - Inquire about existing standing orders
-  Devisenüberträge:
-    - Request currency transfers
-  E_Payment:
-    - Inquire about electronic payment services
-  Kontotransfers:
-    - Request account transfer
-  Lastschriftverfahren:
-    - Request direct debit services
-  SWIFT:
-    - Request SWIFT payment services
-  QR_Einzahlungsschein:
-    - Request QR payment slip services
-  Revolut:
-    - Inquire about Revolut services
-  Anfragen_Privatkredit:
-    - Inquire about personal loan services
-  E_Banking:
-    - Request e-banking services
-    - Inquire about e-banking functionality
-  Börsen_Auftragsstatus:
-    - Inquire about order status on the stock market
-  Abklärungen_zu_Börsenabrechnungen:
-    - Request clarification on stock exchange statements
-  Übermittlung_der_Börsenaufträge:
-    - Inquire about transmission of stock orders
-  Teilausführung_Börsenauftrag:
-    - Inquire about partial execution of stock orders
-  Börsenabrechnung:
-    - Request stock exchange settlement report
-  Börsenauftrag:
-    - Request placement of a stock order
-  Kontodeckungsprüfung:
-    - Request account balance check
-  Limiten:
-    - Request limit adjustments
-  Valoren:
-    - Inquire about valuables handling
-  Auflösung_E_Banking_Vertrag:
-    - Cancel e-banking contract
-  Vertrag_sperren:
-    - Request contract blocking
-  Hacking:
-    - Report hacking incidents
-  Abfrageermächtigung:
-    - Request information authorization
-  eBill:
-    - Request electronic billing services
-  Firmenkunden:
-    - Request corporate banking services
-  Zahlungsstatus:
-    - Inquire about payment status
-  Einzahlungsscheine_bestellen:
-    - Order payment slips
-  Kontoautorisierung:
-    - Request account authorization
-  Depotautorisierung:
-    - Request deposit account authorization
-  Vorsorge:
-    - Request retirement savings services
-  Kontoeröffnung:
-    - Request account opening
-  Depoteröffnung:
-    - Request deposit account opening
-  Kontoauszug:
-    - Request account statements
-  Vermögensauzug:
-    - Request wealth withdrawal
-  Fehlerhafte_Bestellung:
-    - Inquire about incorrect order processing
-  Fehleingabe_Passwort:
-    - Request password reset
-  Dokumentversand:
-    - Request document mailing services
-  Fremdwährungen_bestellen:
-    - Request foreign currency ordering
-  Hypotheken:
-    - Inquire about mortgage options
-  Zahlungen:
-    - Request payment services
-  Sparplan:
-    - Request savings plan
-  TWINT:
-    - Request TWINT services
-  Vermögensverwaltung:
-    - Request wealth management services
-  Apple_Pay:
-    - Inquire about Apple Pay services
-  Zahlungen_doppelt_ausgeführt:
-    - Report duplicate payments
-  Zurückgewiesene_Zahlungen:
-    - Inquire about rejected payments
-  Zahlungen_nicht_ausgeführt:
-    - Inquire about unexecuted payments
-  KLARNA:
-    - Inquire about KLARNA payment services
-  Kontotransfer:
-    - Request account transfer services
-  Pendente_Zahlungen:
-    - Inquire about pending payments
-  QR_Rechnung:
-    - Request QR billing services
-  Salärzahlungen:
-    - Request salary payment services
-  SEPA_Überweisung:
-    - Request SEPA transfer services
-  Bankzahlung_Ausland:
-    - Request international bank payment services
-  Zahlungen_Inland:
-    - Request domestic payment services
-  E_Pay:
-    - Request electronic payment services
-  Rundungssparen:
-    - Request rounding savings services
-  Eröffnung_Unternehmen:
-    - Request business account opening
-  AIA_FATCA:
-    - Inquire about AIA and FATCA compliance
-  Identifikation_Unternehmen:
-    - Request business identification
-  Finanzierungen:
-    - Request financing services
-  Bankgarantie:
-    - Request bank guarantee services
-  Kaution:
-    - Inquire about deposit services
-  Handelsregister:
-    - Inquire about trade registry services
-  Kapitaleinzahlungskonto:
-    - Request capital deposit account
-  Einzahlungsbestätigung:
-    - Request deposit confirmation
-  Karten_Unternehmen:
-    - Request corporate card services
-  Leasing:
-    - Request leasing services
-  Namensänderung_Unternehmen:
-    - Request business name change
-  QR_Einzahlungsschein_Unternehmen:
-    - Request QR payment slip for businesses
-  Saldierung:
-    - Request account settlement
-  Sitzgesellschaften:
-    - Inquire about holding company services
-  Stockwerkeigentümergemeinschaft:
-    - Request condominium ownership services
-  Verein:
-    - Request association services
-  Vollmachten_Unternehmen:
-    - Request business power of attorney
-  Todesfall_und_Konkurs:
-    - Report a death or bankruptcy
+  Estate & Inheritance:
+    - Get support for an inheritance matter
+    - Open an heir account and understand the process
+    - Report a death to the bank and submit required documents
+    - Receive information on estate distribution and next steps
+    - Clarify estate liabilities and review outstanding claims
+
+  Accounts & Payments:
+    - Open a new account or close an existing one
+    - Obtain information on account conditions and banking services
+    - Make an international transfer and clarify associated fees
+    - Set up, modify, or cancel a standing order
+    - Resolve issues with a failed payment
+
+  Credit Cards & Bank Cards:
+    - Apply for a new credit or debit card
+    - Block a lost or stolen card
+    - Adjust the card limit or request an additional card
+    - Get information on foreign currency fees and exchange rates
+    - Receive support for a declined credit card transaction
+
+  Loans & Financing:
+    - Apply for a personal loan and discuss conditions
+    - Apply for a mortgage or adjust existing mortgage terms
+    - Plan an early repayment of a loan
+    - Check the affordability of a loan
+    - Obtain information on the requirements for loan approval
+
+  Investments & Retirement Planning:
+    - Open a securities account and receive investment strategy guidance
+    - Invest in securities and access current market information
+    - Open a retirement savings account and understand tax benefits
+    - Get information on mutual fund savings plans and investment opportunities
+    - Conduct a risk assessment for a planned investment
+
+  Fraud Cases & Security:
+    - Report suspicious activity or a fraud case
+    - Request support for the refund of a fraudulent transaction
+    - Obtain information on protective measures against online fraud
+    - Address unauthorized use of a bank card or online banking account
+    - Optimize security measures for contactless payments and online shopping
+
+  Tax & Legal Matters:
+    - Obtain information on AIA/FATCA reporting obligations
+    - Request a tax certificate or a balance statement as of a specific date
+    - Clarify inheritance tax issues and understand legal requirements
+    - Submit court orders or request information about them
+    - Seek advice on releasing bank secrecy obligations
+
+  Business Clients & Corporate Financing:
+    - Open a business account and review available services
+    - Discuss financing options for a company
+    - Apply for a bank guarantee and clarify the requirements
+    - Open a capital deposit account for business formation
+    - Obtain a leasing offer for business purposes
+
+  Digital Banking Services:
+    - Get support for issues with e-banking access
+    - Set up or modify an eBill connection
+    - Create QR invoices or process payments using QR codes
+    - Receive assistance with mobile payment methods such as Apple Pay or TWINT
+    - Optimize security settings for online banking access

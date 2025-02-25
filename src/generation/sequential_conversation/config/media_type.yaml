@@ -9,12 +9,12 @@ media_type:
         - Immediate feedback loop: Requires **quick responses** and tone adjustments based on customer emotions and urgency.
         - High engagement: Unlike text-based channels, the agent must actively **maintain the customer’s attention**.
         - Risk of miscommunication: Without written records, **precise wording and summarization** are critical.
-        - No lists, bullet points or enumerations are possible.
 
       **Guidelines**:
         - Speak **clearly and at a steady pace** to ensure customer comprehension.
         - **Acknowledge concerns verbally** (e.g., "I understand your frustration, let me check that for you").
         - Avoid long silences—if you need time to find information, **keep the customer informed**.
+        - Do not answer in lists or bullet points; **narrate your responses** for clarity.
 
   - type: 'live chat'
     description: |
