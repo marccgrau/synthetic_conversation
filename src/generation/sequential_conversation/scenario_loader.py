@@ -209,7 +209,9 @@ def load_aggressive_en_scenario_data() -> Dict[str, Any]:
     media_types: list[Dict[str, Any]] = load_yaml("config/media_type.yaml")[
         "media_type"
     ]
-    selected_media: Dict[str, str] = random.choice(media_types)
+    selected_media: Dict[str, str] = next(
+        mt for mt in media_types if mt["type"] == "phone call"
+    )
     selected_media_type: str = selected_media["type"]
     selected_media_description: str = selected_media["description"]
 

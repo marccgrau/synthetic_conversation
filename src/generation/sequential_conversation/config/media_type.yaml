@@ -3,13 +3,11 @@ media_type:
     description: |
       A real-time verbal interaction between the customer and service agent, where all communication is conveyed solely through voice without any visual or textual support. 
       The success of the conversation depends on **clear articulation, tone modulation, and active listening**.
-
       **Characteristics**:
         - No visual cues: Tone, pacing, and verbal emphasis replace body language and facial expressions.
         - Immediate feedback loop: Requires **quick responses** and tone adjustments based on customer emotions and urgency.
         - High engagement: Unlike text-based channels, the agent must actively **maintain the customer’s attention**.
         - Risk of miscommunication: Without written records, **precise wording and summarization** are critical.
-
       **Guidelines**:
         - Speak **clearly and at a steady pace** to ensure customer comprehension.
         - **Acknowledge concerns verbally** (e.g., "I understand your frustration, let me check that for you").
@@ -36,13 +34,11 @@ media_type:
   - type: 'email'
     description: |
       A **formal, asynchronous communication channel** where responses are expected to be well-structured and informative. Unlike live chat, customers expect **detailed, professional, and polished responses**.
-
       **Characteristics**:
         - Structured and detailed: Responses should **address all aspects** of the customer’s inquiry.
         - Professional and polite: The tone should be **respectful and courteous** at all times.
         - Time-sensitive but not immediate: Customers expect a **thorough response** rather than a quick reply.
         - Permanent record: Emails are **documented and often referenced later**, so accuracy is key.
-
       **Guidelines**:
         - **Use a clear subject line** summarizing the inquiry (e.g., "Re: Issue with Account Login").
         - Start with a **polite greeting** (e.g., "Dear [Customer Name], Thank you for reaching out.").

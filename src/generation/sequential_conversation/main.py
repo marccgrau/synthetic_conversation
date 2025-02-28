@@ -141,10 +141,8 @@ def main():
         # Sample scenario data for each run
         if args.scenario == "aggressive_en":
             scenario_data = load_aggressive_en_scenario_data()
-            scenario_data["selected_media_type"] = "phone_call"
         elif args.scenario == "aggressive":
             scenario_data = load_aggressive_scenario_data()
-            scenario_data["selected_media_type"] = "phone_call"
         else:
             scenario_data = load_default_scenario_data()
         logger.info(f"Scenario data loaded for {args.scenario} scenario.")
