@@ -50,6 +50,11 @@ def cleanup_json_files(directory: str) -> None:
                 # Remove any standalone occurrence of 'TERMINATE' using a regex.
                 cleaned_content = re.sub(r"\bTERMINATE\b", "", content)
                 cleaned_content = cleaned_content.strip()
+                # Change roles user -> call_center_agent and assistant -> customer
+                if message.get("role") == "user":
+                    message["role"] = "call_center_agent"
+                elif message.get("role") == "assistant":
+                    message["role"] = "customer"
                 if cleaned_content != content:
                     message["content"] = cleaned_content
                     updated = True
@@ -66,5 +71,5 @@ def cleanup_json_files(directory: str) -> None:
 
 
 if __name__ == "__main__":
-    directory = "../agentic_simulation_outputs/aggressive_en"
+    directory = "agentic_simulation_outputs/default"
     cleanup_json_files(directory)
